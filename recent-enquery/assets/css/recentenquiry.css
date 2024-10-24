@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('path-to-your-font-folder/avenir-lt-std.woff2') format('woff2'),
+    url('path-to-your-font-folder/avenir-lt-std.woff') format('woff'),
+    url('path-to-your-font-folder/avenir-lt-std.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Avenir LT Std', sans-serif;
+  font-weight: normal;
+  background: #f0f2f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a {
+  font-weight: normal;
+}
+
+/*######### css started started from here ###########*/
+
+.client-dropdown-menu{
+  display: none; 
+  position: absolute;
+  right: 30px;
+  top: 80%;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.client-dropdown-menu input[type="radio"] {
+  accent-color: transparent; /* No color by default */
+}
+
+.client-dropdown-menu input[type="radio"]:checked {
+  background: rgba(255, 255, 255, 1);
+  border: 4px solid rgba(229, 57, 53, 1)
+}
+
+
+.client-custom-dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.client-dropdown-button {
+  border: 1px solid #D9D9D9 !important;
+  border-radius: 5px;
+    background-color: transparent;
+    width: 90px;
+  padding: 3px 20.64px 3.57px 20.64px;
+
+  
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Optional: Rounded corners */
+}
+
+
+
+.client-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+ 
+  border-radius: 10px;
+  background-color: white;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 2222222222222222222;
+}
+
+.client-dropdown-option {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.client-dropdown-option:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown on button click */
+.client-custom-dropdown.active .client-dropdown-content {
+  display: block;
+}
+
+
+/*######## css started ended here ########*/
+
+
+
+.dropdown-toggle::after {
+  display: none !important;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+
+.eneuiries-card {
+  box-shadow: 0px 2.39px 7.18px 0px #00000040;
+  background: #FFFFFF;
+  max-width: 276px;
+  width: 100%;
+  border-radius: 14.37px;
+}
+
+.border-line {
+  border: 1.2px solid #F0F2F5 !important;
+}
+
+.icon-bg1 {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 12.37px;
+  background: linear-gradient(180deg, #3E3D45 0%, #202020 100%);
+
+}
+
+.enquiries-num {
+  color: #6E727A;
+
+  font-family: "Avenir LT Std";
+  font-size: 18.5px;
+  /* font-weight: 600; */
+  line-height: 39.2px;
+
+}
+
+.enq-txt {
+  color: #6E727A;
+  font-family: "Avenir LT Std";
+  font-size: 13.5px;
+  /* font-weight: 600; */
+  line-height: 24px;
+  letter-spacing: 0.01em;
+
+}
+
+
+.search-container {
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0px #00000040;
+
+  padding-block: 12px;
+  border-radius: 14px;
+}
+
+.filter-bg {
+  background: #ff00001a;
+  width: 29px;
+  height: 29px;
+  /* padding: 6px 8px 6px 8px;
+            gap: 10px; */
+  border-radius: 5px;
+}
+
+.custom-search-container {
+  width: 300px;
+  position: relative;
+}
+
+.custom-search-input {
+  border: 1px solid #e53935 !important;
+  background: #ffffff;
+
+  padding: 4.3px 16.61px 4px 11.61px;
+  gap: 0px;
+  border-radius: 10px;
+}
+
+.custom-search-input::placeholder {
+  color: #6e727a;
+  font-family: 'Avenir LT Std', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 17.04px;
+}
+
+.custom-search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+  pointer-events: none;
+}
+
+.table-custom th {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Avenir LT Std';
+  font-size: 16px;
+  text-transform: capitalize !important;
+  font-weight: 300;
+  line-height: 9.45px;
+  letter-spacing: 0.7876167297363281px;
+  padding-block: 13px;
+}
+
+.table-custom tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.red-notif-group{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.notif-box{
+    width: 500px;
+    height: 500px !important;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.tick-img{
+    position: absolute;
+    left: 32px;
+    width: 30px;
+    bottom: 300px;
+}
+
+
+.notif-center{
+    height:auto !important;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-accept {
+  background-color: #28a745;
+}
+
+.status-decline {
+  background-color: #dc3545;
+}
+
+.enquiry-table-bg {
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.enquiry-table-h {
+  color: #353439;
+  font-family: 'Avenir LT Std';
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 25.2px;
+}
+
+.table-custom tbody td {
+  font-family: 'Avenir LT Std';
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 19.2px;
+  color: #0e0d0c;
+}
+
+.custom-table-dd {
+  border: 1px solid #d9d9d9;
+  /* width: 112.55px; */
+
+  padding: 7px 19.64px 7.57px 19.64px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.complete-dot {
+  width: 6.5px;
+  height: 6.5px;
+  background: #42f18b;
+  border-radius: 50px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.complete-dot.approved {
+  background-color: #42f18b; /* Color for approved */
+}
+
+.complete-dot.pending {
+  background-color: #F1DD42; /* Color for pending */
+}
+
+.complete-dot.declined {
+  background-color: #e53935; /* Color for declined */
+}
+
+
+.tb-nm {
+  color: #6e727a;
+  font-family: 'Avenir LT Std';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23.88px;
+}
+
+.tb-nm-bg {
+  width: 30px;
+  height: 25px;
+  /* padding: 2.34px 9.36px 2.34px 9.36px; */
+  border-radius: 2.34px;
+  background: #e53935;
+}
+
+.right-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  width: 30px;
+  height: 25px;
+  /* padding: 8.55px 12.83px 8.55px 12.83px; */
+  border-radius: 2.14px;
+}
+
+.accept-txt {
+  color: #0e0d0c;
+  font-family: 'Avenir LT Std';
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: center;
+}
+
+/* zk-responsive */
+@media screen and (max-width: 768px) {
+  .eneuiries-card {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .eneuiries-card {
+    box-shadow: 0px 2.39px 7.18px 0px #00000040;
+    background: #ffffff;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 14.37px;
+  }
+  .custom-search-container {
+    width: 215px;
+  }
+}

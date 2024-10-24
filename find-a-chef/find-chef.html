@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <link rel="icon" href="assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts and icons -->
+  <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons",
+        ],
+        urls: ["assets/css/fonts.min.css"],
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      },
+    });
+  </script>
+
+  <!-- CSS Files -->
+     <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+  <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+  <link rel="stylesheet" href="../find-a-chef/assets/personal.css" />
+  <link rel="stylesheet" href="../blog-2/assets/dropdown.css">
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+     <!-- Sidebar -->
+     <div class="sidebar sidebar-style-2" data-background-color="dark">
+      <div class="sidebar-logo">
+        <!-- Logo Header -->
+        <div class="logo-header" data-background-color="dark">
+          <a href="index.html" class="logo">
+            <img src="../assets/img/kaiadmin/Frame 1597882065.png" alt="navbar brand" class="navbar-brand mt-3" />
+          </a>
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="gg-menu-right"></i>
+            </button>
+            <button class="btn btn-toggle sidenav-toggler">
+              <i class="gg-menu-left"></i>
+            </button>
+          </div>
+          <button class="topbar-toggler more">
+            <i class="gg-more-vertical-alt"></i>
+          </button>
+        </div>
+        <!-- End Logo Header -->
+      </div>
+      <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+          <ul class="nav nav-secondary d-flex flex-column gap-3">
+            <li class="nav-item ">
+              <a href="../recent-enquery/recentenquery.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/frame.png" alt="">
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item active">
+              <a href="../personal/personal.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
+                <p>Acounnt Management</p>
+              </a>
+            </li> -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
+                <p class="mb-0">Account Management</p>
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="accountDropdown" style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
+                <li>
+                  <a href="../client/client.html">
+                  <div class="form-check dropdown-item sidebardropdown-menu">
+                    <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
+                    <label class="form-check-label" for="client">Client</label>
+                  </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="../chef/chef.html">
+                  <div class="form-check dropdown-item sidebardropdown-menu">
+                    <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
+                    <label class="form-check-label" for="chef">Chef</label>
+                  </div>
+                </a>
+                </li>
+              </ul>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a href="../new-queries/queries.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+                <p>Enquiry Management</p>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="../find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+                <p>Find a Chef</p>
+              </a>
+            </li>
+            <li class="nav-item " >
+              <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
+                <p>Creating Blog Post</p>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/io 1.png" alt="">
+                <p>Enquires</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../my chat/chat.html" class="collapsed" aria-expanded="false">
+                <img class="pe-3" src="/assets/img/sidebar-links/Vector.png" alt="">
+                <p>My chats</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../my reviews/review.html">
+                <img class="pe-3" src="/assets/img/sidebar-links/like-tag.png" alt="">
+                <p>Reviews</p>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="main-panel" style="background-color: #ddd;">
+      <div class="main-header">
+        <div class="main-header-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="index.html" class="logo">
+              <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <!-- Navbar Header -->
+        <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+              <!-- <div class="input-group">
+                  <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                </div> -->
+                <div>
+                  <p class="text-danger m-0">Wellcome</p>
+                  <h5 class="text-dark">My Dashboard</h5>
+                </div>
+            </nav>
+
+            <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+              <!-- <li class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false" aria-haspopup="true">
+                  <i class="fa fa-search"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-search animated fadeIn">
+                  <form class="navbar-left navbar-form nav-search">
+                    <div class="input-group">
+                      <input type="text" placeholder="Search ..." class="form-control" />
+                    </div>
+                  </form>
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item topbar-icon dropdown hidden-caret">
+                <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                  <li>
+                    <div class="dropdown-title d-flex justify-content-between align-items-center">
+                      Messages
+                      <a href="#" class="small ">Mark all as read</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="message-notif-scroll scrollbar-outer">
+                      <div class="notif-center">
+                        <a href="#">
+                          <div class="notif-img">
+                            <img src="assets/img/jm_denis.jpg" alt="Img Profile" />
+                          </div>
+                          <div class="notif-content">
+                            <span class="subject">Jimmy Denis</span>
+                            <span class="block"> How are you ? </span>
+                            <span class="time">5 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-img">
+                            <img src="assets/img/chadengle.jpg" alt="Img Profile" />
+                          </div>
+                          <div class="notif-content">
+                            <span class="subject">Chad</span>
+                            <span class="block"> Ok, Thanks ! </span>
+                            <span class="time">12 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-img">
+                            <img src="assets/img/mlane.jpg" alt="Img Profile" />
+                          </div>
+                          <div class="notif-content">
+                            <span class="subject">Jhon Doe</span>
+                            <span class="block">
+                              Ready for the meeting today...
+                            </span>
+                            <span class="time">12 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-img">
+                            <img src="assets/img/talha.jpg" alt="Img Profile" />
+                          </div>
+                          <div class="notif-content">
+                            <span class="subject">Talha</span>
+                            <span class="block"> Hi, Apa Kabar ? </span>
+                            <span class="time">17 minutes ago</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav-item topbar-icon dropdown hidden-caret">
+                <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bell"></i>
+                  <span class="notification">4</span>
+                </a>
+                <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                  <li>
+                    <div class="dropdown-title">
+                      You have 4 new notification
+                    </div>
+                  </li>
+                  <li>
+                    <div class="notif-scroll scrollbar-outer">
+                      <div class="notif-center">
+                        <a href="#">
+                          <div class="notif-icon notif-primary">
+                            <i class="fa fa-user-plus"></i>
+                          </div>
+                          <div class="notif-content">
+                            <span class="block"> New user registered </span>
+                            <span class="time">5 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-icon notif-success">
+                            <i class="fa fa-comment"></i>
+                          </div>
+                          <div class="notif-content">
+                            <span class="block">
+                              Rahmad commented on Admin
+                            </span>
+                            <span class="time">12 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-img">
+                            <img src="assets/img/profile2.jpg" alt="Img Profile" />
+                          </div>
+                          <div class="notif-content">
+                            <span class="block">
+                              Reza send messages to you
+                            </span>
+                            <span class="time">12 minutes ago</span>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="notif-icon notif-danger">
+                            <i class="fa fa-heart"></i>
+                          </div>
+                          <div class="notif-content">
+                            <span class="block"> Farrah liked Admin </span>
+                            <span class="time">17 minutes ago</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item topbar-icon dropdown hidden-caret">
+                <a class="nav-link" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                  <i class="fas fa-layer-group"></i>
+                </a>
+                <div class="dropdown-menu quick-actions animated fadeIn">
+                  <div class="quick-actions-header">
+                    <span class="title mb-1">Quick Actions</span>
+                    <span class="subtitle op-7">Shortcuts</span>
+                  </div>
+                  <div class="quick-actions-scroll scrollbar-outer">
+                    <div class="quick-actions-items">
+                      <div class="row m-0">
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-danger rounded-circle">
+                              <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <span class="text">Calendar</span>
+                          </div>
+                        </a>
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-warning rounded-circle">
+                              <i class="fas fa-map"></i>
+                            </div>
+                            <span class="text">Maps</span>
+                          </div>
+                        </a>
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-info rounded-circle">
+                              <i class="fas fa-file-excel"></i>
+                            </div>
+                            <span class="text">Reports</span>
+                          </div>
+                        </a>
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-success rounded-circle">
+                              <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="text">Emails</span>
+                          </div>
+                        </a>
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-primary rounded-circle">
+                              <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <span class="text">Invoice</span>
+                          </div>
+                        </a>
+                        <a class="col-6 col-md-4 p-0" href="#">
+                          <div class="quick-actions-item">
+                            <div class="avatar-item bg-secondary rounded-circle">
+                              <i class="fas fa-credit-card"></i>
+                            </div>
+                            <span class="text">Payments</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+
+              <li class="nav-item topbar-user dropdown hidden-caret">
+                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                  <div class="avatar-sm">
+                    <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                  </div>
+                  <span class="profile-username">
+                    <!-- <span class="op-7">Hi,</span>
+                      <span class="fw-bold">Hizrian</span> -->
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                  <div class="dropdown-user-scroll scrollbar-outer">
+                    <li>
+                      <div class="user-box">
+                        <div class="avatar-lg">
+                          <img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
+                        </div>
+                        <div class="u-text">
+                          <h4>Hizrian</h4>
+                          <p class="text-muted">hello@example.com</p>
+                          <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">My Profile</a>
+                      <a class="dropdown-item" href="#">My Balance</a>
+                      <a class="dropdown-item" href="#">Inbox</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Account Setting</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+  
+      <section class="container px-0 px-sm-2 main-section">
+        
+        <section class="container d-flex flex-column gap-3 pt-2">
+            <h5>Find a Chef</h5>
+            <div class="form-container container px-sm-4 px-2 py-sm-4 py-2 rounded-4">
+                <h5>Quick Chef Finder Form</h5>
+
+                <form class="row g-3 w-100 rounded-3 d-flex justify-content-between">
+                    <div class="col-md-5">
+                        <label for="firstName" class="form-label">User Name</label>
+                        <input type="text" class="personal-input" placeholder="Enter" required>
+                    </div>
+                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+                        <label for="lastName" class="form-label">Event</label>
+                        <div class="custom-select personal-input" id="customSelect">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <span class="selected">Select</span>
+                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                            </div>
+                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="1">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Birthday Party</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="2">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Private Dinner</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="1">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Family Trip</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="2">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Wedding</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="1">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Festival Event</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="2">
+                                    <input type="radio" name="event">
+                                    <span class=" fw-bold">Christmas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+                        <label for="emailInfo" class="form-label">Event Type</label>
+                        <div class="custom-select personal-input" id="customSelect">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <span class="selected">Select</span>
+                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                            </div>
+                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="1">
+                                    <input type="radio" name="event-type">
+                                    <span class=" fw-bold">Breakfast</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="2">
+                                    <input type="radio" name="event-type">
+                                    <span class=" fw-bold">Brunch</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="1">
+                                    <input type="radio" name="event-type">
+                                    <span class=" fw-bold">Lunch</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                    data-value="2">
+                                    <input type="radio" name="event-type">
+                                    <span class=" fw-bold">Dinner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+                        <label for="firstName" class="form-label">Services</label>
+                        <div class="custom-select personal-input" id="customSelect">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <span class="selected">Select</span>
+                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                            </div>
+                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                                    data-value="1">
+                                    <input type="radio" name="service">
+                                    <span class=" fw-bold">Single Day</span>
+                                </div>
+                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                                    data-value="2">
+                                    <input type="radio" name="service">
+                                    <span class=" fw-bold">Several Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-2 mt-sm-3">
+                        <label for="lastName" class="form-label">Location</label>
+                        <input type="text" class="personal-input" placeholder="Enter" required>
+                    </div>
+                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+                        <label for="event" class="form-label">Number of Persons</label>
+                        <div class="custom-select personal-input" id="customSelect">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <span class="selected">Select</span>
+                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                            </div>
+                            <div class="custom-dropdown position-absolute rounded-4 mt-4">
+                                <div class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                                    data-value="1">
+                                    <input type="radio" name="person-type">
+                                    <span class="fw-bold">Children</span>
+                                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                                </div>
+                                <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                        data-value="1-1">
+                                        <input type="radio" name="person">
+                                        <span class="fw-bold">3-5</span>
+                                    </div>
+                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                        data-value="1-2">
+                                        <input type="radio" name="person">
+                                        <span class="fw-bold">5-10</span>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                                    data-value="2">
+                                    <input type="radio" name="person-type">
+                                    <span class="fw-bold">Private Dinner</span>
+                                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                                </div>
+                                <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                        data-value="2-1">
+                                        <input type="radio" name="person">
+                                        <span class="fw-bold">3-5 Guests</span>
+                                    </div>
+                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                                        data-value="2-2">
+                                        <input type="radio" name="person">
+                                        <span class="fw-bold">5-10 Guests</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="date-picker-wrapper col-5">
+                        <label class="form-label">Date</label>
+                        <input type="text" id="datepicker-from" class="date-picker-input personal-input"
+                            autocomplete="off" placeholder="From">
+                    </div>
+                    <div class="date-picker-wrapper col-5">
+                        <label class="form-label">Date</label>
+                        <input type="text" id="datepicker-to" class="date-picker-input personal-input"
+                            autocomplete="off" placeholder="To">
+                    </div> -->
+
+
+
+                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+                        <label class="form-label">Date</label>
+                        <input type="text" id="datepicker-from" class="date-picker-input personal-input"
+                            autocomplete="off" placeholder="From">
+                        <div class="calendar p-0 p-sm-2" id="calendar-from"></div>
+                    </div>
+                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+                        <label class="form-label">Date</label>
+                        <input type="text" id="datepicker-to" class="date-picker-input personal-input"
+                            autocomplete="off" placeholder="To">
+                        <div class="calendar p-0 p-sm-2" id="calendar-to"></div>
+                    </div>
+
+
+
+                    <!-- <div class="col-md-5 mt-2 mt-sm-3">
+                        <label for="lastName" class="form-label">Date</label>
+                        <input type="text" id="startDate" class="personal-input" placeholder="From"
+                            onfocus="showDate(this)" onblur="hideDate(this)">
+                    </div>
+                    <div class="col-md-5 mt-2 mt-sm-3">
+                        <label for="firstName" class="form-label">.</label>
+                        <input type="text" id="endDate" class="personal-input" placeholder="To" onfocus="showDate(this)"
+                            onblur="hideDate(this)">
+                    </div> -->
+                    <div class="col-12">
+                        <label for="firstName" class="form-label">Description</label>
+                        <textarea class="m-0 w-100 px-3 py-sm-4 py-2 rounded-4 personal-textarea"
+                            placeholder="Type Here..." style="resize: none;"></textarea>
+                    </div>
+
+
+
+
+                    <div class="participant-input-container">
+                        <label class="form-label">Assign to</label>
+                        <div id="customParticipantInput" class="form-control rounded-3 mb-2 w-100"
+                            contenteditable="true" placeholder="Add a participant"></div>
+                        <div id="suggestionsDropdown" class="suggestions-dropdown pt-2 container col-12 rounded-3"
+                            style="display: none;">
+                            <div class="dropdown-header">
+                                <a id="selectAllLink" href="#" class="link-primary">Select All</a>
+                                <a id="deselectAllLink" href="#" class="link-danger">Deselect All</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="d-flex w-100 gap-3 justify-content-sm-end justify-content-center align-items-center">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="save-btn">Save</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </section>
+
+
+    
+</div>
+  </div>
+  <!--   Core JS Files   -->
+     <!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+
+  <!-- jQuery Scrollbar -->
+  <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+  <!-- Chart JS -->
+  <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+  <!-- jQuery Sparkline -->
+  <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- Chart Circle -->
+  <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+  <!-- Datatables -->
+  <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+  <!-- jQuery Vector Maps -->
+  <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+  <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+  <!-- Kaiadmin JS -->
+  <script src="assets/js/kaiadmin.min.js"></script>
+
+  <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+  <script src="assets/js/setting-demo.js"></script>
+  <script src="assets/js/demo.js"></script>
+  <script>
+    function showDate(input) {
+        input.type = 'date'; // Change input type to date on focus
+    }
+
+    function hideDate(input) {
+        if (!input.value) { // Only change back to text if no date is selected
+            input.type = 'text'; // Change back to text
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const customSelects = document.querySelectorAll('.custom-select'); // Select all custom selects
+
+        customSelects.forEach(customSelect => {
+            const dropdown = customSelect.querySelector('.custom-dropdown');
+            const selectedSpan = customSelect.querySelector('.selected');
+
+            // Toggle dropdown visibility
+            customSelect.addEventListener('click', () => {
+                const isVisible = dropdown.style.display === 'block';
+                dropdown.style.display = isVisible ? 'none' : 'block';
+            });
+
+            // Handle selecting a parent item and toggling child items
+            dropdown.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent the event from closing the dropdown
+
+                const parentItem = e.target.closest('.parent');
+                if (parentItem) {
+                    const childDropdown = parentItem.nextElementSibling;
+                    if (childDropdown && childDropdown.classList.contains('child-dropdown')) {
+                        const isVisible = childDropdown.style.display === 'block';
+                        closeAllChildDropdowns(dropdown); // Close all other child dropdowns
+                        childDropdown.style.display = isVisible ? 'none' : 'block'; // Toggle child dropdown visibility
+                    }
+                }
+
+                // Handle final selection of child item (not a parent)
+                const childItem = e.target.closest('.dropdown-item');
+                if (childItem && !childItem.classList.contains('parent')) {
+                    selectedSpan.textContent = childItem.textContent; // Update selected text
+                    dropdown.style.display = 'none'; // Hide dropdown after final selection
+                }
+            });
+
+            // Function to close all child dropdowns
+            function closeAllChildDropdowns(container) {
+                container.querySelectorAll('.child-dropdown').forEach(childDropdown => {
+                    childDropdown.style.display = 'none';
+                });
+            }
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', (e) => {
+                if (!customSelect.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+
+    // $(function () {
+    //     $("#datepicker-from").datepicker({
+    //         dateFormat: "dd-mm-yy",
+    //         duration: "fast"
+    //     });
+
+    //     $("#datepicker-to").datepicker({
+    //         dateFormat: "dd-mm-yy",
+    //         duration: "fast"
+    //     });
+    // });
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const datepickers = [
+            { input: document.getElementById("datepicker-from"), calendar: document.getElementById("calendar-from") },
+            { input: document.getElementById("datepicker-to"), calendar: document.getElementById("calendar-to") }
+        ];
+
+        datepickers.forEach(({ input, calendar }) => {
+            input.addEventListener("focus", () => toggleCalendar(calendar, true));
+            input.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent click event from closing the calendar
+                toggleCalendar(calendar, true);
+            });
+
+            document.addEventListener("click", (e) => {
+                if (!calendar.contains(e.target) && e.target !== input) {
+                    toggleCalendar(calendar, false);
+                }
+            });
+
+            // Initialize the calendar with the current date
+            renderCalendar(calendar, new Date(), input);
+        });
+
+        function toggleCalendar(calendar, show) {
+            calendar.style.display = show ? "block" : "none";
+        }
+
+        function renderCalendar(calendar, currentDate, input) {
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+
+            let calendarHtml = `
+        <div class="calendar-header">
+            <span class="calendar-title">${monthNames[selectedDate.getMonth()]} ${selectedDate.getFullYear()}</span>
+            <div>
+                <a href="#" class="prev-btn"><i class="fa-solid fa-chevron-left" style="color: #3d3f43;"></i></a>
+                <a href="#" class="next-btn"><i class="fa-solid fa-chevron-right" style="color: #3d3f43;"></i></a>
+            </div>
+        </div>
+        <table>
+            <tbody>
+    `;
+
+            // Fill the days in the calendar
+            for (let i = 0; i < 6; i++) {
+                calendarHtml += "<tr>";
+                for (let j = 0; j < 7; j++) {
+                    const day = i * 7 + j - selectedDate.getDay() + 1;
+                    const isValidDay = day > 0 && day <= 31;
+                    const isToday = isValidDay && day === currentDate.getDate();
+                    const activeClass = isToday ? "ui-state-active" : "";
+                    calendarHtml += `<td><a href="#" class="${isValidDay ? activeClass : ""}">${isValidDay ? day : ""}</a></td>`;
+                }
+                calendarHtml += "</tr>";
+            }
+
+            calendarHtml += `
+            </tbody>
+        </table>
+    `;
+
+            calendar.innerHTML = calendarHtml;
+
+            // Attach event listeners for the navigation buttons after rendering
+            calendar.querySelector(".prev-btn").addEventListener("click", (e) => {
+                e.preventDefault();
+                renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() - 1)), input);
+            });
+
+            calendar.querySelector(".next-btn").addEventListener("click", (e) => {
+                e.preventDefault();
+                renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() + 1)), input);
+            });
+
+            // Handle date selection
+            calendar.querySelectorAll("td a").forEach(dateLink => {
+                dateLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    if (this.textContent) {
+                        // Update input value
+                        const dateValue = `${this.textContent.padStart(2, '0')}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${currentDate.getFullYear()}`;
+                        input.value = dateValue;
+
+                        // Remove the active class from all dates
+                        calendar.querySelectorAll("td a").forEach(link => link.classList.remove("ui-state-active"));
+
+                        // Add the active class to the selected date
+                        this.classList.add("ui-state-active");
+
+                        // Hide the calendar after selection
+                        toggleCalendar(calendar, false);
+                    }
+                });
+            });
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const participantsList = [
+        { name: 'Ralph Edwards' },
+        { name: 'Theresa Webb' },
+        { name: 'Esther Howard' },
+        { name: 'Marvin McKinney' },
+        { name: 'Wade Warren' }
+    ];
+
+    const participantInput = document.getElementById('customParticipantInput');
+    const suggestionsDropdown = document.getElementById('suggestionsDropdown');
+
+    // Create a hidden input for typing
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'text';
+    hiddenInput.className = 'hidden-text-input';
+    participantInput.appendChild(hiddenInput);
+
+    // Focus on hidden input when the main container is clicked
+    participantInput.addEventListener('click', () => {
+        hiddenInput.focus();
+    });
+
+    // Function to add a participant tag inside the main container
+    function addParticipant(participant) {
+        const existingParticipant = Array.from(participantInput.children).some(
+            (elem) => elem.textContent.trim() === participant.trim()
+        );
+        if (!existingParticipant) {
+            const participantElement = document.createElement('span');
+            participantElement.className = 'participant';
+            participantElement.textContent = participant;
+            participantElement.setAttribute('contenteditable', 'false'); // Make tag non-editable
+
+            // Insert the tag before the hidden input
+            participantInput.insertBefore(participantElement, hiddenInput);
+
+            hiddenInput.value = ''; // Clear the hidden input
+            suggestionsDropdown.style.display = 'none'; // Hide suggestions after adding a participant
+        }
+    }
+
+    // Function to remove all participants from the input
+    function deselectAllParticipants() {
+        Array.from(participantInput.children).forEach(child => {
+            if (child.classList.contains('participant')) {
+                child.remove();
+            }
+        });
+    }
+
+    // Function to show suggestions in the dropdown, with filtering
+    function showSuggestions() {
+        suggestionsDropdown.innerHTML = ''; // Clear previous content
+
+        // Create header with Select All and Deselect All links
+        const header = document.createElement('div');
+        header.className = 'dropdown-header';
+
+        const selectAllLink = document.createElement('a');
+        selectAllLink.textContent = 'Select All';
+        selectAllLink.href = '#';
+        selectAllLink.className = 'link-primary';
+        selectAllLink.onclick = (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            participantsList.forEach(participant => addParticipant(participant.name));
+        };
+
+        const deselectAllLink = document.createElement('a');
+        deselectAllLink.textContent = 'Deselect All';
+        deselectAllLink.href = '#';
+        deselectAllLink.className = 'link-danger';
+        deselectAllLink.onclick = (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            deselectAllParticipants();
+        };
+
+        header.appendChild(selectAllLink);
+        header.appendChild(deselectAllLink);
+        suggestionsDropdown.appendChild(header);
+
+        // Filter and show suggestions based on input
+        const filterValue = hiddenInput.value.toLowerCase();
+        participantsList.forEach(participant => {
+            if (participant.name.toLowerCase().includes(filterValue)) {
+                const suggestionElement = document.createElement('div');
+                suggestionElement.className = 'suggestion-item';
+
+                const nameText = document.createElement('span');
+                nameText.textContent = participant.name;
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = participant.name;
+                checkbox.value = participant.name;
+
+                // Set checkbox state based on whether the participant is already added
+                checkbox.checked = Array.from(participantInput.children).some(
+                    (elem) => elem.textContent.trim() === participant.name.trim()
+                );
+
+                checkbox.onchange = () => {
+                    if (checkbox.checked) {
+                        addParticipant(participant.name);
+                    } else {
+                        const participantElement = Array.from(participantInput.children).find(
+                            (elem) => elem.textContent.trim() === participant.name
+                        );
+                        if (participantElement) {
+                            participantElement.remove();
+                        }
+                    }
+                };
+
+                suggestionElement.appendChild(nameText);
+                suggestionElement.appendChild(checkbox);
+                suggestionsDropdown.appendChild(suggestionElement);
+            }
+        });
+
+        suggestionsDropdown.style.display = 'block'; // Show the dropdown
+    }
+
+    // Capture text input and add as tag on "Enter"
+    hiddenInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && hiddenInput.value.trim() !== '') {
+            addParticipant(hiddenInput.value.trim());
+            e.preventDefault(); // Prevent form submission if inside a form
+        }
+
+        // Show suggestions while typing
+        showSuggestions();
+    });
+
+    // Show dropdown when hidden input is focused
+    hiddenInput.addEventListener('focus', showSuggestions);
+
+    // Hide suggestions when clicking outside the input
+    document.addEventListener('click', (event) => {
+        if (!participantInput.contains(event.target) && !suggestionsDropdown.contains(event.target)) {
+            suggestionsDropdown.style.display = 'none';
+        }
+    });
+
+
+</script>
+
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const countryCodeSelect = document.getElementById('countryCodeSelect');
+        const selectedCode = countryCodeSelect.querySelector('.selected-code');
+        const dropdownList = countryCodeSelect.querySelector('.country-dropdown-list');
+
+        // Toggle the visibility of the dropdown list
+        countryCodeSelect.addEventListener('click', () => {
+            const isVisible = dropdownList.style.display === 'block';
+            dropdownList.style.display = isVisible ? 'none' : 'block';
+        });
+
+        // Select a country code from the dropdown
+        dropdownList.addEventListener('click', (e) => {
+            const item = e.target.closest('.dropdown-item');
+            if (item) {
+                const code = item.getAttribute('data-code');
+                selectedCode.textContent = code;
+                dropdownList.style.display = 'none';
+            }
+        });
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', (e) => {
+            if (!countryCodeSelect.contains(e.target)) {
+                dropdownList.style.display = 'none';
+            }
+        });
+    });
+
+
+
+
+    $(document).ready(function () {
+        // Prepare the preview for profile picture
+        $("#wizard-picture").change(function () {
+            readURL(this);
+        });
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function addTag(event) {
+        const tagInput = document.getElementById('tag-input');
+        const tagContainer = document.getElementById('tag-container');
+
+        if (event.key === 'Enter' && tagInput.value.trim()) {
+            addNewTag(tagInput.value.trim());
+            tagInput.value = ''; // Clear input
+        }
+    }
+
+    function addNewTag(tag) {
+        const tagContainer = document.getElementById('tag-container');
+        const tagElement = document.createElement('span');
+        tagElement.className = 'tag';
+        tagElement.textContent = tag;
+
+        const removeTag = document.createElement('span');
+        removeTag.className = 'remove-tag';
+        removeTag.textContent = '✖';
+        removeTag.onclick = function () {
+            tagElement.remove(); // Remove the tag
+        };
+
+        tagElement.appendChild(removeTag);
+        tagContainer.appendChild(tagElement);
+    }
+
+    function addTag(event) {
+        const tagInput = document.getElementById('tag-input');
+        const tagContainer = document.getElementById('tag-container');
+
+        if (event.key === 'Enter') {
+            event.preventDefault();
+
+            const tagValue = tagInput.value.trim();
+
+            // Check if input is not empty and tag limit is not exceeded
+            if (tagValue && tagContainer.children.length < 5) {
+                const tag = document.createElement('div');
+                tag.className = 'tag';
+                tag.textContent = tagValue;
+
+                // Create remove button
+                const removeButton = document.createElement('span');
+                removeButton.className = 'remove-tag';
+                removeButton.textContent = 'x';
+                removeButton.onclick = function () {
+                    tagContainer.removeChild(tag);
+                    // Re-enable input if tags are less than 5
+                    if (tagContainer.children.length < 5) {
+                        tagInput.disabled = false;
+                        tagInput.placeholder = 'Add a tag';
+                        tagInput.style.color = ''; // Reset color
+                    }
+                };
+
+                tag.appendChild(removeButton);
+                tagContainer.appendChild(tag);
+                tagInput.value = ''; // Clear the input
+
+                // Disable input and change placeholder if limit reached
+                if (tagContainer.children.length === 5) {
+                    tagInput.disabled = true; // Disable input
+                    tagInput.placeholder = 'Tag limit reached';
+                    tagInput.style.color = 'red'; // Change placeholder color
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    function toggleActive(button) {
+        button.classList.toggle('active');
+    }
+
+
+
+</script> -->
+  <script>
+    $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#177dff",
+      fillColor: "rgba(23, 125, 255, 0.14)",
+    });
+
+    $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#f3545d",
+      fillColor: "rgba(243, 84, 93, .14)",
+    });
+
+    $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#ffa534",
+      fillColor: "rgba(255, 165, 52, .14)",
+    });
+  </script>
+</body>
+
+</html>

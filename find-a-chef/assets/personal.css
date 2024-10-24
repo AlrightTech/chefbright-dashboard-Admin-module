@@ -1,0 +1,470 @@
+:root {
+    --primary-clr1: #e53935;
+    --primary-clr2: #e50c08;
+    --secondary-clr1: #171718;
+    --secondary-clr2: #d9d9d9;
+    --secondary-clr3: #ffd2d0;
+    --tertiary-clr1: #ffffff;
+    --tertiary-clr2: #000000;
+
+
+
+
+    --primarybg-color1: #f8f8f8;
+    --primarybg-color2: #ffffff;
+
+
+
+    --ease: .2s ease;
+}
+
+.main-section {
+    background-color: var(--primarybg-color1);
+}
+
+.form-container {
+    background-color: var(--primarybg-color2);
+
+}
+
+.personal-input {
+    display: block;
+    width: 100%;
+    padding: .9rem 0.75rem;
+    font-size: .8rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--primary-clr1);
+    border-radius: 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.cancel-btn {
+    border: 1px solid var(--primary-clr1);
+    border-radius: .4rem;
+    background-color: var(--primarybg-color1);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-clr1);
+    width: 6rem;
+    height: 2.5rem;
+    transition: var(--ease);
+}
+
+.cancel-btn:hover {
+    color: var(--tertiary-clr1);
+    background-color: var(--primary-clr2);
+
+
+}
+
+.save-btn {
+    border: 1px solid var(--primary-clr1);
+    border-radius: .4rem;
+    background-color: var(--primary-clr1);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--tertiary-clr1);
+    width: 6rem;
+    height: 2.5rem;
+    transition: var(--ease);
+
+}
+
+.save-btn:hover {
+    background-color: var(--primary-clr2);
+
+}
+
+
+.picture-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ___________________________________________________________________________________________________ */
+/* General styling */
+.telephone-input-wrapper  {
+    background-color: #fff;
+    position: relative;
+}
+
+.country-code-dropdown {
+    display: inline-block;
+    min-width: 70px;
+    cursor: pointer;
+}
+
+.country-dropdown-list {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ECEFF1;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.country-dropdown-list .dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Show dropdown list */
+.country-code-dropdown.active .country-dropdown-list {
+    display: block;
+}
+
+/* _______________________________________________________________________________________________________ */
+
+.option-button {
+    display: inline-block;
+    background-color: var(--secondary-clr2);
+    /* Default color */
+    color: var(--tertiary-clr2);
+    /* Text color */
+    font-size: 12px;
+    border: none;
+    border-radius: .6rem;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    text-wrap: nowrap;
+
+}
+
+.option-button.active {
+    background-color: var(--primary-clr1);
+    /* Active color */
+    color: white;
+    /* Text color when active */
+}
+
+
+.tags-input {
+    position: relative;
+}
+
+.tag {
+    background-color: var(--secondary-clr3);
+    color: var(--tertiary-clr2);
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tag .remove-tag {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+/* find a chef page */
+
+.personal-textarea {
+    border: 1px solid var(--primary-clr1);
+    height: 10rem;
+}
+
+.personal-select-box {
+    border: 1px solid var(--primary-clr1);
+    height: 10rem;
+}
+
+.custom-border {
+    border: 1px solid var(--primary-clr1);
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+/* _________________________________________________________________________________________________________________________ */
+
+
+.custom-dropdown {
+    display: none;
+    /* Keep this to control visibility */
+    background-color: var(--primarybg-color2);
+    z-index: 1000;
+    width: auto;
+    margin-left: -13px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.custom-select {
+    border: 1px solid var(--primary-clr1);
+    /* Set red border */
+}
+
+.dropdown-item {
+    padding: 10px;
+    /* Add padding to dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    /* Highlight on hover */
+}
+
+input[type='radio'] {
+    accent-color: var(--primary-clr1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________ */
+.participant-input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.participant-list-container {
+    border: 1px solid var(--primary-clr1);
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.participant-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.participant .remove-participant {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--primarybg-color2);
+    border: 1px solid var(--primary-clr1);
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.hidden-text-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    /* Adjust width as needed */
+}
+
+
+.suggestions-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Align text and checkbox */
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+#customParticipantInput {
+    border: 1px solid var(--primary-clr1);
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: text;
+}
+
+.participant {
+    background-color: var(--secondary-clr3);
+    padding: 5px 10px;
+    border-radius: .5rem;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    pointer-events: none;
+    /* Prevents direct editing */
+}
+
+
+/* _________________________________________________________________________________________________________________________ */
+
+
+
+
+/* General styles similar to what you provided */
+.calendar {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ECEFF1;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar th {
+    display: none;
+}
+
+.calendar td {
+    text-align: center;
+    width: 40px;
+}
+
+.calendar td a {
+    display: block;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--secondary-clr1);
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+.calendar td a.ui-state-active {
+    background-color: var(--primary-clr1);
+    color: white;
+    padding: .2rem .6rem;
+
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.calendar-header a {
+    cursor: pointer;
+}
+
+.calendar-title {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* .ui-datepicker {
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.ui-datepicker-calendar {
+    border-collapse: collapse;
+}
+
+th {
+    display: none;
+}
+
+.ui-datepicker-calendar tbody td a {
+    text-align: center;
+    display: block;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--primary-clr1);
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-default {
+    background-color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.ui-datepicker-calendar tbody td a:hover,
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: var(--secondary-clr3);
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: var(--primary-clr1);
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.ui-datepicker-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent !important;
+    padding: 0.5rem;
+    border: none;
+}
+
+.ui-datepicker-title {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: auto;
+}
+
+.ui-datepicker-header a {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.ui-datepicker-header a:hover {
+    background-color: transparent;
+} */

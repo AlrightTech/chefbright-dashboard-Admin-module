@@ -1,0 +1,23 @@
+.sidebardropdown-menu input[type="radio"] {
+    accent-color: transparent; 
+    background-color: transparent;
+    
+  }
+  
+  .sidebardropdown-menu input[type="radio"]:checked{
+    background: rgba(229, 57, 53, 1);
+   
+    }
+    .sidebardropdown-menu input[type="radio"]:checked + label {
+        color: rgba(229, 57, 53, 1) !important;
+      }
+   
+    
+  /* Remove background color on hover */
+.dropdown-item:hover, 
+.dropdown-item:focus {
+  background-color: transparent !important; /* No background color */
+  color: inherit !important; /* Retain the original text color */
+  box-shadow: none !important; /* Remove any shadow */
+}
+  

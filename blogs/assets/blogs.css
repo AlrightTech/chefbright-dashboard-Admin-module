@@ -1,0 +1,313 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary-color1: rgba(255, 255, 255, 1);
+  --primary-color2: rgba(229, 57, 53, 1);
+  --primary-color3: rgba(23, 23, 24, 1);
+  --primary-color4: rgba(255, 210, 208, 1);
+}
+
+/* Card Title Styling */
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+/* Labels Styling */
+label {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Input Fields Styling */
+input.form-control {
+  border: 1px solid var(--primary-color2);
+}
+
+#heading {
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary-color2);
+  border-radius: 10px;
+}
+
+/* Tags Input Styling */
+/* Tags Input Styling */
+.bootstrap-tagsinput {
+  border: 1px solid var(--primary-color2);
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 6px;
+  cursor: text;
+  background-color: var(
+    --primary-color1
+  ); /* Ensure input background is visible */
+}
+
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: var(--primary-color3);
+}
+
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid var(--primary-color2);
+  color: var(--primary-color3);
+  border-radius: 5px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.tag {
+  background-color: var(--primary-color4);
+  color: var(--primary-color3);
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.tag i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  min-width: 120px;
+  background-color: var(--primary-color1);
+  color: var(--primary-color3);
+  padding: 5px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color1);
+  color: var(--primary-color3);
+}
+
+/* Adjust label position when input is focused or has content */
+input[type="text"]:focus + label,
+input[type="text"]:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 5px;
+  font-size: 16px;
+  color: var(--primary-color2);
+}
+
+/* Buttons Styling */
+.blog-btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--primary-color3);
+  border: 1px solid var(--primary-color2);
+  width: 120px;
+  height: 36px;
+  margin-top: 20px;
+}
+.blog-btn-2{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--primary-color1);
+  background-color: var(--primary-color2);
+  width: 120px;
+  height: 36px;
+  margin-top: 20px;
+}
+
+.blog-btn:hover{
+  color: var(--primary-color1);
+  background-color: var(--primary-color2);
+  border: none;
+}
+.blog-btn-2:hover {
+  color: var(--primary-color3);
+  background-color: none;
+  border: 1px solid var(--primary-color2);
+}
+
+/* Upload Image Section */
+.upload-img {
+  border: 1px dotted var(--primary-color2);
+  border-radius: 20px;
+  width: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+  background-color: var(--primary-color1);
+}
+
+.upload-img img {
+  width: 50px;
+  height: 50px;
+}
+
+.upload-img label {
+  font-size: 16px;
+  color: var(--primary-color3);
+  cursor: pointer;
+  margin: 0;
+}
+
+#preview-image {
+  max-width: 300px;
+  max-height: 300px;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color2);
+}
+
+/* Form Fields */
+.form-label {
+  color: var(--primary-color3);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+/* Card Styling */
+.cards {
+  border: none;
+}
+
+.blog-icon {
+  cursor: pointer;
+  color: var(--primary-color2);
+}
+
+/* Blog Card Text Styling */
+h5 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 33px;
+  color: var(--primary-color3);
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 33px;
+  color: var(--primary-color3);
+}
+
+/* Icon Spacing */
+.icon-1 {
+  margin-top: 185px;
+}
+
+.icon-2 {
+  margin-top: 186px;
+}
+
+.icon-3 {
+  margin-top: 84px;
+}
+
+.icon-4 {
+  margin-top: 155px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .icon-1,
+  .icon-2,
+  .icon-3 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #heading {
+    width: 100%;
+  }
+
+  .upload-img {
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 0px;
+  }
+
+  .blog-btn,
+  .blog-btn-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3,
+  .icon-4 {
+    margin-bottom: 20px;
+  }
+
+  .blog-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  #preview-image {
+    width: 50%;
+  }
+
+  /* Adjust blog card styles */
+  .card img {
+    width: 50%;
+    height: auto;
+  }
+
+  h5 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .card-text {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 0px;
+  }
+
+  .blog-btn,
+  .blog-btn-2 {
+    width: 30%;
+    height: 35px;
+    font-size: 11px;
+  }
+}

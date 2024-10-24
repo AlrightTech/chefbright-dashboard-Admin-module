@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('path-to-your-font-folder/avenir-lt-std.woff2') format('woff2'),
+         url('path-to-your-font-folder/avenir-lt-std.woff') format('woff'),
+         url('path-to-your-font-folder/avenir-lt-std.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.modals-inputs label{
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+color: #171718;
+}
+.modals-inputs input{
+    font-family: 'Avenir LT Std', sans-serif;
+    width: 155%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #E53935;
+    padding: 5px 8px;
+}
+.modals-input-descrip input{
+    font-family: 'Avenir LT Std', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #E53935;
+    padding: 5px 8px;
+}
+.cancel-butn{
+    font-family: 'Avenir LT Std', sans-serif;
+   font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #E53935;
+    padding: 5px 35px;
+    background-color: white;
+    border: 1px solid #E53935;
+}
+.edit-butn{
+    font-family: 'Avenir LT Std', sans-serif;
+   font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #E53935;
+    padding: 5px 40px;
+    color: white;
+    background-color: #E53935;
+    border: 1px solid #E53935;
+
+}
