@@ -59,6 +59,7 @@
   <link rel="stylesheet" href="../client/assets/css/client.css" />
   <link rel="stylesheet" href="../blog-2/assets/dropdown.css">
   <link rel="stylesheet" href="../Admin-modals/assets/Admin-modals.css">
+  <link rel="stylesheet" href="../assets/css/notification.css">
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link rel="stylesheet" href="../assets/css/demo.css" />
@@ -196,222 +197,143 @@
           <!-- End Logo Header -->
         </div>
         <!-- Navbar Header -->
-        <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
-          <div class="container-fluid">
-            <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
-              <!-- <div class="input-group">
-                  <input
-                    type="text"
-                    placeholder="Search ..."
-                    class="form-control"
-                  />
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-search pe-1">
-                      <i class="fa fa-search search-icon"></i>
-                    </button>
+    <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+      <div class="container-fluid">
+        <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+          
+            <div>
+              <p class="text-danger m-0">Welcome</p>
+              <h5 class="text-dark">My Dashboard</h5>
+            </div>
+        </nav>
+
+        <!-- notification icon and menu -->
+        <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
+          
+          <li class="nav-item topbar-icon dropdown hidden-caret">
+            <img src="" alt="">
+            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="../chef/assets/images/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
+              <span class="notification">4</span>
+              <!-- <i class="fa fa-bell"></i> -->
+             
+            </a>
+            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+              <li>
+                <div class="dropdown-title d-flex justify-content-between align-items-start mb-0 border-0">
+                  <!-- left -->
+                  <div>
+                    <h5 class="fst-italic fw-lighter">Today</h5>
                   </div>
-                </div> -->
-              <div>
-                <p class="text-danger m-0">Wellcome</p>
-                <h5 class="text-dark">My Dashboard</h5>
-              </div>
 
-            </nav>
-
-            <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
-              
-              <li class="nav-item topbar-icon dropdown hidden-caret">
-                <img src="" alt="">
-                <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  <img src="./assets/images/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
-                  <i class="fa fa-bell"></i>
-                  <span class="notification">4</span>
-                </a>
-                <ul class="dropdown-menu notif-box animated fadeIn " aria-labelledby="notifDropdown">
-                  <li>
-                    <div class="dropdown-title d-flex justify-content-between align-items-start mb-0">
-                      <!-- left -->
-                      <div>
-                        <h5 class="fst-italic fw-lighter">Today</h5>
-                      </div>
-
-                      <!-- right -->
-                      <div style="color: #6E727A;" class="d-flex justify-content-between align-items-center">
-                        <span class="pe-2 cursor-pointer">Mark as Read</span>
-                        <div style="background-color:#D9D9D9; height: 12px; width: 1.5px; margin-right: 5px;"></div>
-                        <span>See All</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="notif-scroll scrollbar-outer p-3">
-                      <div class="notif-center border border-black p-2 h-auto rounded" style="font-size: 13px;">
-                        <a href="#" class="d-flex justify-content-between align-items-center notification-links">
-                            <div>
-                              <img src="./assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
-                              <span>You have received a new enquiry.</span>
-                            </div>
-                            <div>
-                              <span>23 hours ago</span>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href="#" class="d-flex justify-content-between align-items-center notification-links">
-                            <div>
-                              <img src="./assets/images/notif-bg.png" alt="notification bg" class="img-fluid" style="width: 50px;">
-                              <img src="./assets/images/tick.png" alt="tick img" class="img-fluid tick-img">
-                              <span>The enquiry is accepted by other chef.</span>
-                            </div>
-                            <div>
-                              <span>23 hours ago</span>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href="#" class="d-flex justify-content-between align-items-center notification-links">
-                            <div>
-                              <img src="./assets/images/notif-bg.png" alt="notification bg" class="img-fluid" style="width: 50px;">
-                              <img src="./assets/images/tick.png" alt="tick img" class="img-fluid tick-img">
-                              <span>The enquiry is accepted by other chef.</span>
-                            </div>
-                            <div>
-                              <span>23 hours ago</span>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href="#" class="d-flex justify-content-between align-items-center notification-links">
-                            <div>
-                              <img src="./assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
-                              <span>You have received a new enquiry.</span>
-                            </div>
-                            <div>
-                              <span>23 hours ago</span>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href="#" class="d-flex justify-content-between align-items-center notification-links">
-                            <div>
-                              <img src="./assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
-                              <span>You have received a new enquiry.</span>
-                            </div>
-                            <div>
-                              <span>23 hours ago</span>
-                            </div>
-                        </a>
-                        <hr>
-                      </div>
-                    </div>
-                  </li>
-                  
-                </ul>
+                  <!-- right -->
+                  <div style="color: #6E727A;" class="d-flex justify-content-between align-items-center">
+                    <span class="pe-2 cursor-pointer">Mark as Read</span>
+                    <div style="background-color:#D9D9D9; height: 12px; width: 1.5px; margin-right: 5px;"></div>
+                    <span>See All</span>
+                  </div>
+                </div>
               </li>
-              <!-- <li class="nav-item topbar-icon dropdown hidden-caret">
-                <a class="nav-link" data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                  <i class="fas fa-layer-group"></i>
-                </a>
-                <div class="dropdown-menu quick-actions animated fadeIn">
-                  <div class="quick-actions-header">
-                    <span class="title mb-1">Quick Actions</span>
-                    <span class="subtitle op-7">Shortcuts</span>
-                  </div>
-                  <div class="quick-actions-scroll scrollbar-outer">
-                    <div class="quick-actions-items">
-                      <div class="row m-0">
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-danger rounded-circle">
-                              <i class="far fa-calendar-alt"></i>
-                            </div>
-                            <span class="text">Calendar</span>
-                          </div>
-                        </a>
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-warning rounded-circle">
-                              <i class="fas fa-map"></i>
-                            </div>
-                            <span class="text">Maps</span>
-                          </div>
-                        </a>
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-info rounded-circle">
-                              <i class="fas fa-file-excel"></i>
-                            </div>
-                            <span class="text">Reports</span>
-                          </div>
-                        </a>
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-success rounded-circle">
-                              <i class="fas fa-envelope"></i>
-                            </div>
-                            <span class="text">Emails</span>
-                          </div>
-                        </a>
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-primary rounded-circle">
-                              <i class="fas fa-file-invoice-dollar"></i>
-                            </div>
-                            <span class="text">Invoice</span>
-                          </div>
-                        </a>
-                        <a class="col-6 col-md-4 p-0" href="#">
-                          <div class="quick-actions-item">
-                            <div class="avatar-item bg-secondary rounded-circle">
-                              <i class="fas fa-credit-card"></i>
-                            </div>
-                            <span class="text">Payments</span>
-                          </div>
-                        </a>
-                      </div>
+              <li>
+                <div class="notif-scroll scrollbar-outer p-3">
+                  <div class="notif-center border border-black p-2 rounded" style="font-size: 13px;">
+                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                        <div>
+                          <img src="../chef/assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
+                          <span class="notify-text">You have received a new enquiry.</span>
+                          <span class="notif-time">23 hours ago</span>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                        <div>
+                          <img src="../chef/assets/images/notif-bg.png" alt="notification bg" class="img-fluid extra-img" >
+                          <img src="../chef/assets/images/tick.png" alt="tick img" class="img-fluid tick-img">
+                          <span class="notify-text">The enquiry is accepted by other chef.</span>
+                          <span class="notif-time">23 hours ago</span>
+                        </div>
+                    </a>
+                    <hr>
+                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                        <div>
+                          <img src="../assets/img/person.png" alt="notification bg" class="img-fluid extra-img" >
+                          
+                          <span class="notify-text">Your profile has been updated.</span>
+                          <span class="notif-time">23 hours ago</span>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                        <div>
+                          <img src="../chef/assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
+                          <span class="notify-text">The enquiry is accepted by other chef.</span>
+                          <span class="notif-time">23 hours ago</span>
+                        </div>
+                        
+                    </a>
+                    <hr>
+                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                        <div>
+                          <img src="../chef/assets/images/red-notification-group.png" alt="notification group" class="img-fluid red-notif-group">
+                          <span class="notify-text">You have received a new enquiry.</span>
+                          <span class="notif-time">23 hours ago</span>
+                        </div>
+                    </a>
+                    <hr>
+                    <br><br>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <button class="btn btn-outline-danger pe-4 ps-4 pt-1 pb-1">Cancel</button>
                     </div>
                   </div>
                 </div>
-              </li> -->
-
-              <li class="nav-item topbar-user dropdown hidden-caret">
-                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                  <div class="avatar-sm">
-                    <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
-                  </div>
-                  <span class="profile-username">
-                    <!-- <span class="op-7">Hi,</span>
-                      <span class="fw-bold">Hizrian</span> -->
-                  </span>
-                </a>
-                <ul class="dropdown-menu dropdown-user animated fadeIn">
-                  <div class="dropdown-user-scroll scrollbar-outer">
-                    <li>
-                      <div class="user-box">
-                        <div class="avatar-lg">
-                          <img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
-                        </div>
-                        <div class="u-text">
-                          <h4>Hizrian</h4>
-                          <p class="text-muted">hello@example.com</p>
-                          <a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">My Profile</a>
-                      <a class="dropdown-item" href="#">My Balance</a>
-                      <a class="dropdown-item" href="#">Inbox</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Account Setting</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Logout</a>
-                    </li>
-                  </div>
-                </ul>
               </li>
             </ul>
-          </div>
-        </nav>
-        <!-- End Navbar -->
+          </li>
+          
+
+          <li class="nav-item topbar-user dropdown hidden-caret">
+            <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+              <div class="avatar-sm">
+                <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+              </div>
+              <span class="profile-username">
+            
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-user animated fadeIn">
+              <div class="dropdown-user-scroll scrollbar-outer">
+                <li>
+                  <div class="user-box">
+                    <div class="avatar-lg">
+                      <img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
+                    </div>
+                    <div class="u-text">
+                      <h4>Hizrian</h4>
+                      <p class="text-muted">hello@example.com</p>
+                      <a href="../view my page/profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">My Profile</a>
+                  <a class="dropdown-item" href="#">My Balance</a>
+                  <a class="dropdown-item" href="#">Inbox</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Account Setting</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
       </div>
 
       <div class="container">
