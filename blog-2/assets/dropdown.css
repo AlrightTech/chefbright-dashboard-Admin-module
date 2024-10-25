@@ -20,4 +20,91 @@
   color: inherit !important; /* Retain the original text color */
   box-shadow: none !important; /* Remove any shadow */
 }
+
+
+
+
+
+/* edit drop css here  */
+
+/* Styling the three vertical lines for the dropdown header */
+.dot-dropdown-toggle-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2px;
+  height: 20px;
+  margin-top: -40px;
+  cursor: pointer;
+}
+.dot-dropdown-toggle-icon span {
+  display: block;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin: 2px 0;
+  
+}
+ /* Styling the dropdown container */
+ .dot-custom-dropdown{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+/* Customize the dropdown items */
+.dot-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.dot-dropdown-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.dot-dropdown-item label {
+  margin-left: 10px;
+}
+
+.dot-dropdown-item input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Styling the red active radio button for 'Edit' */
+.dot-dropdown-item input[type="radio"]:checked{
+  appearance: none; /* Remove the browser's default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-color: #A82825;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.dot-dropdown-item input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+/* .dot-dropdown-item input[type="radio"]:checked + label::before {
+  content: '\25CF'; 
+  color: red;
+  margin-right: 10px;
+} */
+
+/* Rest of the radio button styling */
+.dot-form-check-input {
+ 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
   
