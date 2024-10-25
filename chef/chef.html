@@ -931,56 +931,50 @@
 
 
                 <!--################### modal for edit started fro here ###############-->
-       <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="width: 150%;">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Responsive form layout -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="fname">First Name *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="fname" id="name" placeholder="Bennie" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="sname">Surname *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="sname" id="sname" placeholder="Kulas" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Email">Email</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Email" id="Email" placeholder="email@example.com" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Phone No">Phone No *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Phone No" id="Phone No" placeholder="+333 333" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country">Country</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country" id="Country" placeholder="Canada" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country code">Country Code</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country code" id="Country code" placeholder="45634" class="form-control">
+          </div>
         </div>
-        <div class="modal-body">
-         <div class="d-flex gap-5 modals-inputs">
-            <div class="">
-                <label for="fname">First  Name *</label><br>
-                <input type="text" name="fname" id="name" placeholder="Bennie ">
-            </div>
-            <div class= "ps-5 ms-5">
-                <label for="sname">Surname*</label><br>
-                <input type="text" name="sname" id="sname" placeholder=" Kulas ">
-            </div>
-         </div>
-         <div class="d-flex gap-5 modals-inputs pt-2">
-            <div class="">
-                <label for="Email">Email</label><br>
-                <input type="text" name="Email" id="Email" placeholder="Birthday ">
-            </div >
-            <div class= "ps-5 ms-5">
-                <label for="Phone No">Phone No*</label><br>
-                <input type="text" name="Phone No" id="Phone No" placeholder=" +333 333">
-            </div>
-         </div>
-         <div class="d-flex gap-5 modals-inputs pt-2">
-            <div class="">
-                <label for="Country ">Country </label><br>
-                <input type="text" name="Country " id="Country " placeholder="Canada ">
-            </div>
-            <div class= "ps-5 ms-5">
-                <label for="Country code">Country code</label><br>
-                <input type="text" name="Country code" id="Country code" placeholder=" 45634">
-            </div>
-         </div>
-        
-        
-         
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn cancel-butn me-5" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn  edit-butn">Edit</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn cancel-butn me-2" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn edit-butn">Edit</button>
       </div>
     </div>
   </div>
+</div>
                         <!--################### modal for edit ended fro here ###############-->
 
 
