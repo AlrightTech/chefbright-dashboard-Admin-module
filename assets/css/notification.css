@@ -69,13 +69,14 @@ a {
 
 .enq-txt {
     color: #6E727A;
-    font-family: "Avenir LT Std";
-    font-size: 13.5px;
-    /* font-weight: 600; */
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.01em;
-
 }
+
+
 
 .search-container {
     background: #FFFFFF;
@@ -228,13 +229,13 @@ a {
 
 .enquiry-table-h {
     color: #353439;
-    font-family: "Avenir LT Std";
-    font-size: 13px;
-    font-style: italic;
+    font-family: sans-serif;
+    font-size: 12px;
+    /* font-style: italic; */
     font-weight: 600;
     line-height: 25.2px;
-
 }
+ 
 
 .table-custom tbody td {
     font-family: "Avenir LT Std";
@@ -244,7 +245,17 @@ a {
     color: #0E0D0C;
 
 }
+.dashboard-h{
+    font-size: 14px;
+    font-weight: 500;
+}
 
+.welcome-h{
+    font-size: 11px;
+    font-weight: 800;
+    color: rgba(229, 57, 53, 1);
+    
+}
 .custom-table-dd {
     border: 1px solid #D9D9D9;
     /* width: 112.55px; */
