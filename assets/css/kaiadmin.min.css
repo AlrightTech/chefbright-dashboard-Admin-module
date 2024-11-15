@@ -6078,7 +6078,7 @@ label.error {
 
 .navbar .navbar-nav .notification {
   position: absolute;
-  background-color: #31ce36;
+  background-color: #E53935;
   text-align: center;
   border-radius: 10px;
   min-width: 17px;
@@ -6087,8 +6087,8 @@ label.error {
   color: #fff;
   font-weight: 300;
   line-height: 17px;
-  top: 3px;
-  right: 3px;
+  top: 6px;
+  right: 7px;
   letter-spacing: -1px;
 }
 

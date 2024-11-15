@@ -2199,6 +2199,10 @@ label {
   padding: 0 10px;
   display: inline-block; }
 
+.thead-h{
+    font-family:sans-serif;
+  } 
+
 .card-product {
   background: #fff;
   border-radius: 10px;
@@ -3161,7 +3165,7 @@ label.error {
 
 .navbar .navbar-nav .notification {
   position: absolute;
-  background-color: #31CE36;
+  background-color: #E53935;
   text-align: center;
   border-radius: 10px;
   min-width: 17px;
