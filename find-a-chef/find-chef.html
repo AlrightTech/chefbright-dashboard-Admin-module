@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chef Bright - Admin Dashboard</title>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-  
+
   <!-- favicon -->
   <link rel="icon" href="../assets/img/kaiadmin/cut 1.png" type="image/x-icon" />
 
@@ -29,8 +30,8 @@
   </script>
 
   <!-- CSS Files -->
-     <!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/css/plugins.min.css" />
   <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
@@ -44,8 +45,8 @@
 
 <body>
   <div class="wrapper">
-     <!-- Sidebar -->
-     <div class="sidebar sidebar-style-2" data-background-color="dark">
+    <!-- Sidebar -->
+    <div class="sidebar sidebar-style-2" data-background-color="dark">
       <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
@@ -83,52 +84,54 @@
             </li> -->
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
                 <p class="mb-0">Account Management</p>
               </a>
-            
-              <ul class="dropdown-menu" aria-labelledby="accountDropdown" style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
+
+              <ul class="dropdown-menu" aria-labelledby="accountDropdown"
+                style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
                 <li onclick="location.href='../client/client.html'">
                   <a href="../client/client.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-                    <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
-                    <label class="form-check-label" for="client">Client</label>
+                    <div class="form-check dropdown-item sidebardropdown-menu">
+                      <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
+                      <label class="form-check-label" for="client">Client</label>
                   </a>
-                  </div>
-                </li>
-                <li  onclick="location.href='../chef/chef.html'">
-                  <a href="../chef/chef.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-                    <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
-                    <label class="form-check-label" for="chef">Chef</label>
-                  </div>
-                </a>
-                </li>
-              </ul>
-            </li>
-            
-            
-            
-            <li class="nav-item">
-              <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
-                <p>Enquiry Management</p>
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a href="../find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
-                <p>Find a Chef</p>
-              </a>
-            </li>
-            <li class="nav-item " >
-              <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
-                <p>Creating Blog Post</p>
-              </a>
-            </li>
-            <!-- <li class="nav-item">
+        </div>
+        </li>
+        <li onclick="location.href='../chef/chef.html'">
+          <a href="../chef/chef.html">
+            <div class="form-check dropdown-item sidebardropdown-menu">
+              <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
+              <label class="form-check-label" for="chef">Chef</label>
+            </div>
+          </a>
+        </li>
+        </ul>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
+            <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+            <p>Enquiry Management</p>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="../find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
+            <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+            <p>Find a Chef</p>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
+            <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
+            <p>Creating Blog Post</p>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
               <a href="#" class="collapsed" aria-expanded="false">
                 <img class="pe-3" src="/assets/img/sidebar-links/io 1.png" alt="">
                 <p>Enquires</p>
@@ -146,332 +149,353 @@
                 <p>Reviews</p>
               </a>
             </li> -->
-          </ul>
-        </div>
+        </ul>
       </div>
     </div>
-    <!-- End Sidebar -->
+  </div>
+  <!-- End Sidebar -->
 
-    <div class="main-panel" style="background-color: #ddd;">
-      <div class="main-header">
-        <div class="main-header-logo">
-          <!-- Logo Header -->
-          <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
-              <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
-            </a>
-            <div class="nav-toggle">
-              <button class="btn btn-toggle toggle-sidebar">
-                <i class="gg-menu-right"></i>
-              </button>
-              <button class="btn btn-toggle sidenav-toggler">
-                <i class="gg-menu-left"></i>
-              </button>
-            </div>
-            <button class="topbar-toggler more">
-              <i class="gg-more-vertical-alt"></i>
+  <div class="main-panel" style="background-color: #ddd;">
+    <div class="main-header">
+      <div class="main-header-logo">
+        <!-- Logo Header -->
+        <div class="logo-header" data-background-color="dark">
+          <a href="index.html" class="logo">
+            <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+          </a>
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="gg-menu-right"></i>
+            </button>
+            <button class="btn btn-toggle sidenav-toggler">
+              <i class="gg-menu-left"></i>
             </button>
           </div>
-          <!-- End Logo Header -->
+          <button class="topbar-toggler more">
+            <i class="gg-more-vertical-alt"></i>
+          </button>
         </div>
+        <!-- End Logo Header -->
+      </div>
       <!-- Navbar Header -->
-    <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
-      <div class="container-fluid">
-        <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
-          
+      <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
+
             <div>
               <p class="text-danger m-0">Welcome</p>
               <h5 class="text-dark">My Dashboard</h5>
             </div>
-        </nav>
+          </nav>
 
-        <!-- notification icon and menu -->
-        <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
-          
-          <li class="nav-item topbar-icon dropdown hidden-caret">
-            <img src="" alt="">
-            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img src="../assets/img/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
-              <span class="notification">4</span>
-              <!-- <i class="fa fa-bell"></i> -->
-             
-            </a>
-            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
-              <li>
-                <div class="dropdown-title d-flex justify-content-between align-items-start mb-0 border-0">
-                  <!-- left -->
-                  <div>
-                    <h5 class="fst-italic fw-lighter">Today</h5>
-                  </div>
+          <!-- notification icon and menu -->
+          <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
 
-                  <!-- right -->
-                  <div style="color: #6E727A;" class="d-flex justify-content-between align-items-center">
-                    <span class="pe-2 cursor-pointer">Mark as Read</span>
-                    <div style="background-color:#D9D9D9; height: 12px; width: 1.5px; margin-right: 5px;"></div>
-                    <span>See All</span>
+            <li class="nav-item topbar-icon dropdown hidden-caret">
+              <img src="" alt="">
+              <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
+                <span class="notification">11</span>
+                <!-- <i class="fa fa-bell"></i> -->
+
+              </a>
+              <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                <li>
+                  <div class="dropdown-title d-flex justify-content-between align-items-start mb-0 border-0">
+                    <!-- left -->
+                    <div>
+                      <h5 class="fst-italic fw-lighter">Today</h5>
+                    </div>
+
+                    <!-- right -->
+                    <div style="color: #6E727A;" class="d-flex justify-content-between align-items-center">
+                      <span class="pe-2 cursor-pointer">Mark as Read</span>
+                      <div style="background-color:#D9D9D9; height: 12px; width: 1.5px; margin-right: 5px;"></div>
+                      <span>See All</span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="notif-scroll scrollbar-outer p-3">
-                  <div class="notif-center border border-black p-2 rounded" style="font-size: 13px;">
-                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                </li>
+                <li>
+                  <div class="notif-scroll scrollbar-outer p-3">
+                    <div class="notif-center border border-black p-2 rounded" style="font-size: 13px;">
+                      <a href="#" class="d-flex justify-content-between align-items-center notification-links">
                         <div>
-                          <img src="../assets/img/bell full.png" alt="notification group" class="img-fluid red-notif-group">
+                          <img src="../assets/img/bell full.png" alt="notification group"
+                            class="img-fluid red-notif-group">
                           <span class="notify-text">You have received a new enquiry.</span>
                           <span class="notif-time">23 hours ago</span>
                         </div>
-                        
-                    </a>
-                    <hr>
-                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+
+                      </a>
+                      <hr>
+                      <a href="#" class="d-flex justify-content-between align-items-center notification-links">
                         <div>
-                          <img src="../assets/img/circle.png" alt="notification bg" class="img-fluid extra-img" >
+                          <img src="../assets/img/circle.png" alt="notification bg" class="img-fluid extra-img">
                           <img src="../assets/img/tick.png" alt="tick img" class="img-fluid tick-img">
                           <span class="notify-text">The enquiry is accepted by other chef.</span>
                           <span class="notif-time">23 hours ago</span>
                         </div>
-                    </a>
-                    <hr>
-                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+                      </a>
+                      <hr>
+                      <a href="#" class="d-flex justify-content-between align-items-center notification-links">
                         <div>
-                          <img src="../assets/img/person.png" alt="notification bg" class="img-fluid extra-img" >
-                          
+                          <img src="../assets/img/person.png" alt="notification bg" class="img-fluid extra-img">
+
                           <span class="notify-text">Your profile has been updated.</span>
                           <span class="notif-time">23 hours ago</span>
                         </div>
-                        
-                    </a>
-                    <hr>
-                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+
+                      </a>
+                      <hr>
+                      <a href="#" class="d-flex justify-content-between align-items-center notification-links">
                         <div>
-                          <img src="../assets/img/bell full.png" alt="notification group" class="img-fluid red-notif-group">
+                          <img src="../assets/img/bell full.png" alt="notification group"
+                            class="img-fluid red-notif-group">
                           <span class="notify-text">The enquiry is accepted by other chef.</span>
                           <span class="notif-time">23 hours ago</span>
                         </div>
-                        
-                    </a>
-                    <hr>
-                    <a href="#" class="d-flex justify-content-between align-items-center notification-links">
+
+                      </a>
+                      <hr>
+                      <a href="#" class="d-flex justify-content-between align-items-center notification-links">
                         <div>
-                          <img src="../assets/img/bell full.png" alt="notification group" class="img-fluid red-notif-group">
+                          <img src="../assets/img/bell full.png" alt="notification group"
+                            class="img-fluid red-notif-group">
                           <span class="notify-text">You have received a new enquiry.</span>
                           <span class="notif-time">23 hours ago</span>
                         </div>
-                    </a>
-                    <hr>
-                    <br><br>
-                    <div class="d-flex justify-content-end align-items-center">
-                      <button class="btn btn-outline-danger pe-4 ps-4 pt-1 pb-1">Cancel</button>
+                      </a>
+                      <hr>
+                      <br><br>
+                      <div class="d-flex justify-content-end align-items-center">
+                        <button class="btn btn-outline-danger pe-4 ps-4 pt-1 pb-1">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item topbar-user dropdown hidden-caret">
+              <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                <div class="avatar-sm">
+                  <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                </div>
+                <span class="profile-username">
+
+                </span>
+              </a>
+              <ul class="dropdown-menu dropdown-user animated fadeIn">
+                <div class="dropdown-user-scroll scrollbar-outer">
+                  <li>
+                    <div class="user-box">
+                      <div class="avatar-lg">
+                        <img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
+                      </div>
+                      <div class="u-text">
+                        <h4>Hizrian</h4>
+                        <p class="text-muted">hello@example.com</p>
+                        <a href="../view my page/profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">My Profile</a>
+                    <a class="dropdown-item" href="#">My Balance</a>
+                    <a class="dropdown-item" href="#">Inbox</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Account Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </div>
+
+    <section class="container px-0 px-sm-2 main-section">
+
+      <section class="container d-flex flex-column gap-3 pt-2" style="background: #F0F2F5;">
+        <h5>Find a Chef</h5>
+        <div class="form-container container px-sm-4 px-2 py-sm-4 py-2 rounded-4">
+          <h5>Quick Chef Finder Form</h5>
+
+          <form class="row g-3 w-100 rounded-3 d-flex justify-content-between">
+            <div class="col-md-5">
+              <label for="firstName" class="form-label">User Name</label>
+              <input type="text" class="personal-input" placeholder="Enter" required>
+            </div>
+            <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+              <label for="lastName" class="form-label">Event</label>
+              <div class="custom-select personal-input" id="customSelect">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <span class="selected">Select</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                </div>
+                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="1">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Birthday Party</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="2">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Private Dinner</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="1">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Family Trip</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="2">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Wedding</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="1">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Festival Event</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="2">
+                    <input type="radio" name="event">
+                    <span class=" fw-bold">Christmas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+              <label for="emailInfo" class="form-label">Event Type</label>
+              <div class="custom-select personal-input" id="customSelect">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <span class="selected">Enter Type</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                </div>
+                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="1">
+                    <input type="radio" name="event-type">
+                    <span class=" fw-bold">Breakfast</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="2">
+                    <input type="radio" name="event-type">
+                    <span class=" fw-bold">Brunch</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="1">
+                    <input type="radio" name="event-type">
+                    <span class=" fw-bold">Lunch</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    data-value="2">
+                    <input type="radio" name="event-type">
+                    <span class=" fw-bold">Dinner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+              <label for="firstName" class="form-label">Services</label>
+              <div class="custom-select personal-input" id="customSelect">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <span class="selected">Select</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                </div>
+                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                    data-value="1">
+                    <input type="radio" name="service">
+                    <span class=" fw-bold">Single Day</span>
+                  </div>
+                  <div
+                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                    data-value="2">
+                    <input type="radio" name="service">
+                    <span class=" fw-bold">Several Dates</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 mt-2 mt-sm-3">
+              <label for="lastName" class="form-label">Location</label>
+              <input type="text" class="personal-input" placeholder="Enter" required>
+            </div>
+            <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
+              <label for="event" class="form-label">Number of Persons</label>
+              <div class="custom-select personal-input" id="customSelect">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <span class="selected">Select</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                </div>
+                <div class="custom-dropdown position-absolute rounded-4 mt-4">
+                  <div
+                    class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                    data-value="1">
+                    <input type="radio" name="person-type">
+                    <span class="fw-bold">Children</span>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                  </div>
+                  <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                    <div
+                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="1-1">
+                      <input type="radio" name="person">
+                      <span class="fw-bold">3-5</span>
+                    </div>
+                    <div
+                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="1-2">
+                      <input type="radio" name="person">
+                      <span class="fw-bold">5-10</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                    data-value="2">
+                    <input type="radio" name="person-type">
+                    <span class="fw-bold">Private Dinner</span>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                  </div>
+                  <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                    <div
+                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="2-1">
+                      <input type="radio" name="person">
+                      <span class="fw-bold">3-5 Guests</span>
+                    </div>
+                    <div
+                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="2-2">
+                      <input type="radio" name="person">
+                      <span class="fw-bold">5-10 Guests</span>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </li>
-          
-
-          <li class="nav-item topbar-user dropdown hidden-caret">
-            <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
-              <div class="avatar-sm">
-                <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
               </div>
-              <span class="profile-username">
-            
-              </span>
-            </a>
-            <ul class="dropdown-menu dropdown-user animated fadeIn">
-              <div class="dropdown-user-scroll scrollbar-outer">
-                <li>
-                  <div class="user-box">
-                    <div class="avatar-lg">
-                      <img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
-                    </div>
-                    <div class="u-text">
-                      <h4>Hizrian</h4>
-                      <p class="text-muted">hello@example.com</p>
-                      <a href="../view my page/profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">My Profile</a>
-                  <a class="dropdown-item" href="#">My Balance</a>
-                  <a class="dropdown-item" href="#">Inbox</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Account Setting</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Logout</a>
-                </li>
-              </div>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-      </div>
-  
-      <section class="container px-0 px-sm-2 main-section">
-        
-        <section class="container d-flex flex-column gap-3 pt-2">
-            <h5>Find a Chef</h5>
-            <div class="form-container container px-sm-4 px-2 py-sm-4 py-2 rounded-4">
-                <h5>Quick Chef Finder Form</h5>
-
-                <form class="row g-3 w-100 rounded-3 d-flex justify-content-between">
-                    <div class="col-md-5">
-                        <label for="firstName" class="form-label">User Name</label>
-                        <input type="text" class="personal-input" placeholder="Enter" required>
-                    </div>
-                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-                        <label for="lastName" class="form-label">Event</label>
-                        <div class="custom-select personal-input" id="customSelect">
-                            <div class="d-flex justify-content-between align-items-center w-100">
-                                <span class="selected">Select</span>
-                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
-                            </div>
-                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="1">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Birthday Party</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="2">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Private Dinner</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="1">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Family Trip</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="2">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Wedding</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="1">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Festival Event</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="2">
-                                    <input type="radio" name="event">
-                                    <span class=" fw-bold">Christmas</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-                        <label for="emailInfo" class="form-label">Event Type</label>
-                        <div class="custom-select personal-input" id="customSelect">
-                            <div class="d-flex justify-content-between align-items-center w-100">
-                                <span class="selected">Select</span>
-                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
-                            </div>
-                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="1">
-                                    <input type="radio" name="event-type">
-                                    <span class=" fw-bold">Breakfast</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="2">
-                                    <input type="radio" name="event-type">
-                                    <span class=" fw-bold">Brunch</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="1">
-                                    <input type="radio" name="event-type">
-                                    <span class=" fw-bold">Lunch</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                    data-value="2">
-                                    <input type="radio" name="event-type">
-                                    <span class=" fw-bold">Dinner</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-                        <label for="firstName" class="form-label">Services</label>
-                        <div class="custom-select personal-input" id="customSelect">
-                            <div class="d-flex justify-content-between align-items-center w-100">
-                                <span class="selected">Select</span>
-                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
-                            </div>
-                            <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
-                                    data-value="1">
-                                    <input type="radio" name="service">
-                                    <span class=" fw-bold">Single Day</span>
-                                </div>
-                                <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
-                                    data-value="2">
-                                    <input type="radio" name="service">
-                                    <span class=" fw-bold">Several Days</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 mt-2 mt-sm-3">
-                        <label for="lastName" class="form-label">Location</label>
-                        <input type="text" class="personal-input" placeholder="Enter" required>
-                    </div>
-                    <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-                        <label for="event" class="form-label">Number of Persons</label>
-                        <div class="custom-select personal-input" id="customSelect">
-                            <div class="d-flex justify-content-between align-items-center w-100">
-                                <span class="selected">Select</span>
-                                <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
-                            </div>
-                            <div class="custom-dropdown position-absolute rounded-4 mt-4">
-                                <div class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
-                                    data-value="1">
-                                    <input type="radio" name="person-type">
-                                    <span class="fw-bold">Children</span>
-                                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
-                                </div>
-                                <div class="child-dropdown" style="display: none; padding-left: 20px;">
-                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                        data-value="1-1">
-                                        <input type="radio" name="person">
-                                        <span class="fw-bold">3-5</span>
-                                    </div>
-                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                        data-value="1-2">
-                                        <input type="radio" name="person">
-                                        <span class="fw-bold">5-10</span>
-                                    </div>
-                                </div>
-
-                                <div class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
-                                    data-value="2">
-                                    <input type="radio" name="person-type">
-                                    <span class="fw-bold">Private Dinner</span>
-                                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
-                                </div>
-                                <div class="child-dropdown" style="display: none; padding-left: 20px;">
-                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                        data-value="2-1">
-                                        <input type="radio" name="person">
-                                        <span class="fw-bold">3-5 Guests</span>
-                                    </div>
-                                    <div class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                                        data-value="2-2">
-                                        <input type="radio" name="person">
-                                        <span class="fw-bold">5-10 Guests</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="date-picker-wrapper col-5">
+            </div>
+            <!-- <div class="date-picker-wrapper col-5">
                         <label class="form-label">Date</label>
                         <input type="text" id="datepicker-from" class="date-picker-input personal-input"
                             autocomplete="off" placeholder="From">
@@ -484,22 +508,22 @@
 
 
 
-                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
-                        <label class="form-label">Date</label>
-                        <input type="text" id="datepicker-from" class="date-picker-input personal-input"
-                            autocomplete="off" placeholder="From">
-                        <div class="calendar p-0 p-sm-2" id="calendar-from"></div>
-                    </div>
-                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
-                        <label class="form-label">Date</label>
-                        <input type="text" id="datepicker-to" class="date-picker-input personal-input"
-                            autocomplete="off" placeholder="To">
-                        <div class="calendar p-0 p-sm-2" id="calendar-to"></div>
-                    </div>
+            <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+              <label class="form-label">Date</label>
+              <input type="text" id="datepicker-from" class="date-picker-input personal-input" autocomplete="off"
+                placeholder="From">
+              <div class="calendar p-0 p-sm-2" id="calendar-from"></div>
+            </div>
+            <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+              <label class="form-label">Date</label>
+              <input type="text" id="datepicker-to" class="date-picker-input personal-input" autocomplete="off"
+                placeholder="To">
+              <div class="calendar p-0 p-sm-2" id="calendar-to"></div>
+            </div>
 
 
 
-                    <!-- <div class="col-md-5 mt-2 mt-sm-3">
+            <!-- <div class="col-md-5 mt-2 mt-sm-3">
                         <label for="lastName" class="form-label">Date</label>
                         <input type="text" id="startDate" class="personal-input" placeholder="From"
                             onfocus="showDate(this)" onblur="hideDate(this)">
@@ -509,179 +533,610 @@
                         <input type="text" id="endDate" class="personal-input" placeholder="To" onfocus="showDate(this)"
                             onblur="hideDate(this)">
                     </div> -->
-                    <div class="col-12">
-                        <label for="firstName" class="form-label">Description</label>
-                        <textarea class="m-0 w-100 px-3 py-sm-4 py-2 rounded-4 personal-textarea"
-                            placeholder="Type Here..." style="resize: none;"></textarea>
-                    </div>
-
-
-
-
-                    <div class="participant-input-container">
-                        <label class="form-label">Assign to</label>
-                        <div id="customParticipantInput" class="form-control rounded-3 mb-2 w-100"
-                            contenteditable="true" placeholder="Add a participant"></div>
-                        <div id="suggestionsDropdown" class="suggestions-dropdown pt-2 container col-12 rounded-3"
-                            style="display: none;">
-                            <div class="dropdown-header">
-                                <a id="selectAllLink" href="#" class="link-primary">Select All</a>
-                                <a id="deselectAllLink" href="#" class="link-danger">Deselect All</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="d-flex w-100 gap-3 justify-content-sm-end justify-content-center align-items-center">
-                        <button class="cancel-btn">Cancel</button>
-                        <button class="save-btn">Save</button>
-                    </div>
-
-                </form>
+            <div class="col-12">
+              <label for="firstName" class="form-label">Description</label>
+              <textarea class="m-0 w-100 rounded-4 personal-textarea"
+                style="padding-block: 11px; font-size: 11.5px; padding-inline: 10px;" placeholder="Type Here..."
+                style="resize: none;"></textarea>
             </div>
-        </section>
+
+
+
+
+            <div class="participant-input-container">
+              <label class="form-label">Assign to</label>
+              <!-- <div id="customParticipantInput" class="form-control rounded-3 mb-2 w-100" contenteditable="true"
+                placeholder="Add a participant"></div>
+              <div id="suggestionsDropdown" class="suggestions-dropdown pt-2 container col-12 rounded-3"
+                style="display: none;">
+                <div class="dropdown-header">
+                  <a id="selectAllLink" href="#" class="link-primary">Select All</a>
+                  <a id="deselectAllLink" href="#" class="link-danger">Deselect All</a>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- amna -->
+            <!-- amna -->
+
+            <style>
+              .slet-all {
+                color: #0E0D0C;
+                font-family: "Avenir LT Std";
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 28.8px;
+              }
+
+              .dslet-all {
+                font-family: "Avenir LT Std";
+                font-size: 11.5px;
+                font-weight: 500;
+                line-height: 21.6px;
+                color: #171718;
+              }
+
+              .optn-bdr-analysii {
+                padding: 8px 24px;
+                border-radius: 8px;
+                border: 1px solid #E53935;
+              }
+
+              .selected-peoples-analysii {
+                padding: 2px 7px 2px 1.5px;
+                gap: 11.46px;
+                border-radius: 8px;
+                background: #F5B0AE;
+                /* width: 138px; */
+                /* height: 35px; */
+                display: flex !important;
+                align-items: center !important;
+              }
+
+              .form-select-analysii {
+                --bs-form-select-bg-img: none;
+                display: block;
+              }
+
+              .custom-dropdown-container-analysii {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+              }
+
+              .asin-peoples-analysii {
+                appearance: none;
+                -webkit-appearance: none;
+                padding-right: 50px;
+                border: 1px solid #E53935;
+                border-radius: 8px;
+                height: 37px;
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+                z-index: 2;
+              }
+
+              .custom-icon-analysii {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                align-items: center;
+                pointer-events: none;
+                z-index: 1;
+              }
+
+              .vertical-line-analysii {
+                width: 1.15px;
+                height: 24px;
+                background-color: #6E727A;
+                margin-right: 8px;
+              }
+
+              .dropdown-img-analysii {
+                width: 24px;
+                height: 24px;
+                border-radius: 97.65px;
+              }
+
+              .dropdown-options-analysii {
+                display: none;
+                position: absolute;
+                width: 92%;
+                z-index: 1000;
+                background-color: white;
+              }
+
+              .dropdown-options-analysii.show {
+                display: block;
+                margin-top: 12px;
+              }
+              .dropdown-options-analysii .selected-peoples-analysii {
+    background: transparent;
+  }
+
+              .custom-checkbox-analysii {
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+              }
+
+              .custom-checkbox-analysii input {
+                display: none;
+              }
+
+              .checkmark-analysii {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #E53935;
+                border-radius: 3px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #E53935;
+              }
+
+              .custom-checkbox-analysii input:checked + .checkmark-analysii::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .custom-checkbox-analysii input:checked + .checkmark-analysii {
+    background: #E53935;
+  }
+
+  #selectedOptions-analysii .selected-peoples-analysii {
+    background: #F5B0AE;
+    padding: 2px 7px 2px 1.5px;
+    gap: 11.46px;
+    border-radius: 8px;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Modified styles for checkboxes */
+  .custom-checkbox-analysii .checkmark-analysii {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E53935;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+              /* .custom-checkbox-analysii input:checked + .checkmark-analysii::after {
+    content: '';
+    display: inline-block;    
+    background-color: #E53935;
+    background-image: url('../find-a-chef/assets/img/tik.svg');
+    background-size: cover;
+    background-position: center;
+    color: transparent; 
+} */
+
+              #selectedOptions-analysii {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-top: 2px;
+              }
+            </style>
+
+            <div class="container">
+                <div class="custom-dropdown-container-analysii">
+                  <div class="form-select-analysii asin-peoples-analysii" id="customSelect-analysii">
+                    <div id="selectedOptions-analysii"></div>
+                    <div class="placeholder-analysii"></div>
+                  </div>
+                  <div class="custom-icon-analysii">
+                    <span class="vertical-line-analysii"></span>
+                    <img src="../find-a-chef/assets/img/dd-img.png"
+                      style="width: 25px; height: 25px; border-radius: 99px;" alt="Icon" class="dropdown-img-analysii" />
+                  </div>
+                </div>
+                <div class="dropdown-options-analysii optn-bdr-analysii" id="dropdownOptions-analysii">
+                  <div class="mb-2 d-flex justify-content-between">
+                    <div id="selectAll-analysii" class="slet-all" style="cursor: pointer;">Select All</div>
+                    <div id="deselectAll-analysii" class="dslet-all" style="cursor: pointer;">Deselect All</div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Cameron</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Cameron" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Alex</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Alex" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div><div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-analysii d-flex justify-content-between mb-2">
+                    <div class="selected-peoples-analysii d-flex align-items-center">
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">Taylor</p>
+                    </div>
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Taylor" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const customSelectAnalysii = document.getElementById('customSelect-analysii');
+                const dropdownOptionsAnalysii = document.getElementById('dropdownOptions-analysii');
+                const selectAllAnalysii = document.getElementById('selectAll-analysii');
+                const deselectAllAnalysii = document.getElementById('deselectAll-analysii');
+                const checkboxesAnalysii = document.querySelectorAll('.custom-checkbox-analysii input');
+                const selectedOptionsAnalysii = document.getElementById('selectedOptions-analysii');
+                const placeholderAnalysii = document.querySelector('.placeholder-analysii');
+
+                customSelectAnalysii.addEventListener('click', function () {
+                  dropdownOptionsAnalysii.classList.toggle('show');
+                });
+
+                function updateSelectedOptionsAnalysii() {
+                  selectedOptionsAnalysii.innerHTML = '';
+                  let selected = false;
+                  checkboxesAnalysii.forEach(checkbox => {
+                    if (checkbox.checked) {
+                      selected = true;
+                      const option = document.createElement('div');
+                      option.className = 'selected-peoples-analysii d-flex justify-content-center align-items-center';
+                      option.innerHTML = `
+                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                      <p class="mb-0">${checkbox.value}</p>
+                  `;
+                      selectedOptionsAnalysii.appendChild(option);
+                    }
+                  });
+                  placeholderAnalysii.style.display = selected ? 'none' : 'block';
+                }
+
+                checkboxesAnalysii.forEach(checkbox => {
+                  checkbox.addEventListener('change', updateSelectedOptionsAnalysii);
+                });
+
+                selectAllAnalysii.addEventListener('click', function () {
+                  checkboxesAnalysii.forEach(checkbox => checkbox.checked = true);
+                  updateSelectedOptionsAnalysii();
+                });
+
+                deselectAllAnalysii.addEventListener('click', function () {
+                  checkboxesAnalysii.forEach(checkbox => checkbox.checked = false);
+                  updateSelectedOptionsAnalysii();
+                });
+
+                document.addEventListener('click', function (event) {
+                  if (!customSelectAnalysii.contains(event.target) && !dropdownOptionsAnalysii.contains(event.target)) {
+                    dropdownOptionsAnalysii.classList.remove('show');
+                  }
+                });
+              });
+            </script>
+            <!-- amna -->
+             <style>
+              .abcd-ok {
+                
+padding: 6px;
+border-radius: 8px;
+
+              }
+             </style>
+             <div class="abcd-ok"></div>
+            <!-- amna -->
+
+            <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center" style="gap: 34px;">
+              <button class="cancel-btn">Cancel</button>
+              <button class="save-btn">Send</button>
+            </div>
+
+          </form>
+        </div>
+      </section>
     </section>
 
 
-    
-</div>
+
   </div>
-     <!--########## js for dropdown for Table ended here ############-->
-    <!--   Core JS Files   -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  </div>
+  <!--########## js for dropdown for Table ended here ############-->
+  <!--   Core JS Files   -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script> -->
-      <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
-      <script src="../assets/js/core/popper.min.js"></script>
-      <script src="../assets/js/core/bootstrap.min.js"></script>
-  
-      <!-- jQuery Scrollbar -->
-      <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-  
-      <!-- Chart JS -->
-      <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
-  
-      <!-- jQuery Sparkline -->
-      <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-  
-      <!-- Chart Circle -->
-      <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
-  
-      <!-- Datatables -->
-      <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
-  
-      <!-- Bootstrap Notify -->
-      <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-  
-      <!-- jQuery Vector Maps -->
-      <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-      <script src="../assets/js/plugin/jsvectormap/world.js"></script>
-  
-      <!-- Sweet Alert -->
-      <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-  
-      <!-- Kaiadmin JS -->
-      <script src="../assets/js/kaiadmin.min.js"></script>
-  
-      <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-      <script src="../assets/js/setting-demo.js"></script>
-      <script>
-        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#177dff",
-          fillColor: "rgba(23, 125, 255, 0.14)",
-        });
-  
-        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#f3545d",
-          fillColor: "rgba(243, 84, 93, .14)",
-        });
-  
-        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#ffa534",
-          fillColor: "rgba(255, 165, 52, .14)",
-        });
-      </script>
+  <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+
+  <!-- jQuery Scrollbar -->
+  <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+  <!-- Chart JS -->
+  <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+  <!-- jQuery Sparkline -->
+  <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- Chart Circle -->
+  <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+  <!-- Datatables -->
+  <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+  <!-- jQuery Vector Maps -->
+  <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+  <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+  <!-- Kaiadmin JS -->
+  <script src="../assets/js/kaiadmin.min.js"></script>
+
+  <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+  <script src="../assets/js/setting-demo.js"></script>
+  <script>
+    $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#177dff",
+      fillColor: "rgba(23, 125, 255, 0.14)",
+    });
+
+    $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#f3545d",
+      fillColor: "rgba(243, 84, 93, .14)",
+    });
+
+    $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+      type: "line",
+      height: "70",
+      width: "100%",
+      lineWidth: "2",
+      lineColor: "#ffa534",
+      fillColor: "rgba(255, 165, 52, .14)",
+    });
+  </script>
   <script>
     function showDate(input) {
-        input.type = 'date'; // Change input type to date on focus
+      input.type = 'date'; // Change input type to date on focus
     }
 
     function hideDate(input) {
-        if (!input.value) { // Only change back to text if no date is selected
-            input.type = 'text'; // Change back to text
-        }
+      if (!input.value) { // Only change back to text if no date is selected
+        input.type = 'text'; // Change back to text
+      }
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        const customSelects = document.querySelectorAll('.custom-select'); // Select all custom selects
+      const customSelects = document.querySelectorAll('.custom-select'); // Select all custom selects
 
-        customSelects.forEach(customSelect => {
-            const dropdown = customSelect.querySelector('.custom-dropdown');
-            const selectedSpan = customSelect.querySelector('.selected');
+      customSelects.forEach(customSelect => {
+        const dropdown = customSelect.querySelector('.custom-dropdown');
+        const selectedSpan = customSelect.querySelector('.selected');
 
-            // Toggle dropdown visibility
-            customSelect.addEventListener('click', () => {
-                const isVisible = dropdown.style.display === 'block';
-                dropdown.style.display = isVisible ? 'none' : 'block';
-            });
-
-            // Handle selecting a parent item and toggling child items
-            dropdown.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent the event from closing the dropdown
-
-                const parentItem = e.target.closest('.parent');
-                if (parentItem) {
-                    const childDropdown = parentItem.nextElementSibling;
-                    if (childDropdown && childDropdown.classList.contains('child-dropdown')) {
-                        const isVisible = childDropdown.style.display === 'block';
-                        closeAllChildDropdowns(dropdown); // Close all other child dropdowns
-                        childDropdown.style.display = isVisible ? 'none' : 'block'; // Toggle child dropdown visibility
-                    }
-                }
-
-                // Handle final selection of child item (not a parent)
-                const childItem = e.target.closest('.dropdown-item');
-                if (childItem && !childItem.classList.contains('parent')) {
-                    selectedSpan.textContent = childItem.textContent; // Update selected text
-                    dropdown.style.display = 'none'; // Hide dropdown after final selection
-                }
-            });
-
-            // Function to close all child dropdowns
-            function closeAllChildDropdowns(container) {
-                container.querySelectorAll('.child-dropdown').forEach(childDropdown => {
-                    childDropdown.style.display = 'none';
-                });
-            }
-
-            // Close the dropdown if clicked outside
-            document.addEventListener('click', (e) => {
-                if (!customSelect.contains(e.target)) {
-                    dropdown.style.display = 'none';
-                }
-            });
+        // Toggle dropdown visibility
+        customSelect.addEventListener('click', () => {
+          const isVisible = dropdown.style.display === 'block';
+          dropdown.style.display = isVisible ? 'none' : 'block';
         });
+
+        // Handle selecting a parent item and toggling child items
+        dropdown.addEventListener('click', (e) => {
+          e.stopPropagation(); // Prevent the event from closing the dropdown
+
+          const parentItem = e.target.closest('.parent');
+          if (parentItem) {
+            const childDropdown = parentItem.nextElementSibling;
+            if (childDropdown && childDropdown.classList.contains('child-dropdown')) {
+              const isVisible = childDropdown.style.display === 'block';
+              closeAllChildDropdowns(dropdown); // Close all other child dropdowns
+              childDropdown.style.display = isVisible ? 'none' : 'block'; // Toggle child dropdown visibility
+            }
+          }
+
+          // Handle final selection of child item (not a parent)
+          const childItem = e.target.closest('.dropdown-item');
+          if (childItem && !childItem.classList.contains('parent')) {
+            selectedSpan.textContent = childItem.textContent; // Update selected text
+            dropdown.style.display = 'none'; // Hide dropdown after final selection
+          }
+        });
+
+        // Function to close all child dropdowns
+        function closeAllChildDropdowns(container) {
+          container.querySelectorAll('.child-dropdown').forEach(childDropdown => {
+            childDropdown.style.display = 'none';
+          });
+        }
+
+        // Close the dropdown if clicked outside
+        document.addEventListener('click', (e) => {
+          if (!customSelect.contains(e.target)) {
+            dropdown.style.display = 'none';
+          }
+        });
+      });
     });
 
 
@@ -707,37 +1162,37 @@
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        const datepickers = [
-            { input: document.getElementById("datepicker-from"), calendar: document.getElementById("calendar-from") },
-            { input: document.getElementById("datepicker-to"), calendar: document.getElementById("calendar-to") }
-        ];
+      const datepickers = [
+        { input: document.getElementById("datepicker-from"), calendar: document.getElementById("calendar-from") },
+        { input: document.getElementById("datepicker-to"), calendar: document.getElementById("calendar-to") }
+      ];
 
-        datepickers.forEach(({ input, calendar }) => {
-            input.addEventListener("focus", () => toggleCalendar(calendar, true));
-            input.addEventListener("click", (e) => {
-                e.stopPropagation(); // Prevent click event from closing the calendar
-                toggleCalendar(calendar, true);
-            });
-
-            document.addEventListener("click", (e) => {
-                if (!calendar.contains(e.target) && e.target !== input) {
-                    toggleCalendar(calendar, false);
-                }
-            });
-
-            // Initialize the calendar with the current date
-            renderCalendar(calendar, new Date(), input);
+      datepickers.forEach(({ input, calendar }) => {
+        input.addEventListener("focus", () => toggleCalendar(calendar, true));
+        input.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent click event from closing the calendar
+          toggleCalendar(calendar, true);
         });
 
-        function toggleCalendar(calendar, show) {
-            calendar.style.display = show ? "block" : "none";
-        }
+        document.addEventListener("click", (e) => {
+          if (!calendar.contains(e.target) && e.target !== input) {
+            toggleCalendar(calendar, false);
+          }
+        });
 
-        function renderCalendar(calendar, currentDate, input) {
-            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            const selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+        // Initialize the calendar with the current date
+        renderCalendar(calendar, new Date(), input);
+      });
 
-            let calendarHtml = `
+      function toggleCalendar(calendar, show) {
+        calendar.style.display = show ? "block" : "none";
+      }
+
+      function renderCalendar(calendar, currentDate, input) {
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+
+        let calendarHtml = `
         <div class="calendar-header">
             <span class="calendar-title">${monthNames[selectedDate.getMonth()]} ${selectedDate.getFullYear()}</span>
             <div>
@@ -749,84 +1204,68 @@
             <tbody>
     `;
 
-            // Fill the days in the calendar
-            for (let i = 0; i < 6; i++) {
-                calendarHtml += "<tr>";
-                for (let j = 0; j < 7; j++) {
-                    const day = i * 7 + j - selectedDate.getDay() + 1;
-                    const isValidDay = day > 0 && day <= 31;
-                    const isToday = isValidDay && day === currentDate.getDate();
-                    const activeClass = isToday ? "ui-state-active" : "";
-                    calendarHtml += `<td><a href="#" class="${isValidDay ? activeClass : ""}">${isValidDay ? day : ""}</a></td>`;
-                }
-                calendarHtml += "</tr>";
-            }
+        // Fill the days in the calendar
+        for (let i = 0; i < 6; i++) {
+          calendarHtml += "<tr>";
+          for (let j = 0; j < 7; j++) {
+            const day = i * 7 + j - selectedDate.getDay() + 1;
+            const isValidDay = day > 0 && day <= 31;
+            const isToday = isValidDay && day === currentDate.getDate();
+            const activeClass = isToday ? "ui-state-active" : "";
+            calendarHtml += `<td><a href="#" class="${isValidDay ? activeClass : ""}">${isValidDay ? day : ""}</a></td>`;
+          }
+          calendarHtml += "</tr>";
+        }
 
-            calendarHtml += `
+        calendarHtml += `
             </tbody>
         </table>
     `;
 
-            calendar.innerHTML = calendarHtml;
+        calendar.innerHTML = calendarHtml;
 
-            // Attach event listeners for the navigation buttons after rendering
-            calendar.querySelector(".prev-btn").addEventListener("click", (e) => {
-                e.preventDefault();
-                renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() - 1)), input);
-            });
+        // Attach event listeners for the navigation buttons after rendering
+        calendar.querySelector(".prev-btn").addEventListener("click", (e) => {
+          e.preventDefault();
+          renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() - 1)), input);
+        });
 
-            calendar.querySelector(".next-btn").addEventListener("click", (e) => {
-                e.preventDefault();
-                renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() + 1)), input);
-            });
+        calendar.querySelector(".next-btn").addEventListener("click", (e) => {
+          e.preventDefault();
+          renderCalendar(calendar, new Date(currentDate.setMonth(currentDate.getMonth() + 1)), input);
+        });
 
-            // Handle date selection
-            calendar.querySelectorAll("td a").forEach(dateLink => {
-                dateLink.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    if (this.textContent) {
-                        // Update input value
-                        const dateValue = `${this.textContent.padStart(2, '0')}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${currentDate.getFullYear()}`;
-                        input.value = dateValue;
+        // Handle date selection
+        calendar.querySelectorAll("td a").forEach(dateLink => {
+          dateLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (this.textContent) {
+              // Update input value
+              const dateValue = `${this.textContent.padStart(2, '0')}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${currentDate.getFullYear()}`;
+              input.value = dateValue;
 
-                        // Remove the active class from all dates
-                        calendar.querySelectorAll("td a").forEach(link => link.classList.remove("ui-state-active"));
+              // Remove the active class from all dates
+              calendar.querySelectorAll("td a").forEach(link => link.classList.remove("ui-state-active"));
 
-                        // Add the active class to the selected date
-                        this.classList.add("ui-state-active");
+              // Add the active class to the selected date
+              this.classList.add("ui-state-active");
 
-                        // Hide the calendar after selection
-                        toggleCalendar(calendar, false);
-                    }
-                });
-            });
-        }
+              // Hide the calendar after selection
+              toggleCalendar(calendar, false);
+            }
+          });
+        });
+      }
     });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const participantsList = [
-        { name: 'Ralph Edwards' },
-        { name: 'Theresa Webb' },
-        { name: 'Esther Howard' },
-        { name: 'Marvin McKinney' },
-        { name: 'Wade Warren' }
+      { name: 'Ralph Edwards' },
+      { name: 'Theresa Webb' },
+      { name: 'Esther Howard' },
+      { name: 'Marvin McKinney' },
+      { name: 'Wade Warren' }
     ];
 
     const participantInput = document.getElementById('customParticipantInput');
@@ -840,118 +1279,118 @@
 
     // Focus on hidden input when the main container is clicked
     participantInput.addEventListener('click', () => {
-        hiddenInput.focus();
+      hiddenInput.focus();
     });
 
     // Function to add a participant tag inside the main container
     function addParticipant(participant) {
-        const existingParticipant = Array.from(participantInput.children).some(
-            (elem) => elem.textContent.trim() === participant.trim()
-        );
-        if (!existingParticipant) {
-            const participantElement = document.createElement('span');
-            participantElement.className = 'participant';
-            participantElement.textContent = participant;
-            participantElement.setAttribute('contenteditable', 'false'); // Make tag non-editable
+      const existingParticipant = Array.from(participantInput.children).some(
+        (elem) => elem.textContent.trim() === participant.trim()
+      );
+      if (!existingParticipant) {
+        const participantElement = document.createElement('span');
+        participantElement.className = 'participant';
+        participantElement.textContent = participant;
+        participantElement.setAttribute('contenteditable', 'false'); // Make tag non-editable
 
-            // Insert the tag before the hidden input
-            participantInput.insertBefore(participantElement, hiddenInput);
+        // Insert the tag before the hidden input
+        participantInput.insertBefore(participantElement, hiddenInput);
 
-            hiddenInput.value = ''; // Clear the hidden input
-            suggestionsDropdown.style.display = 'none'; // Hide suggestions after adding a participant
-        }
+        hiddenInput.value = ''; // Clear the hidden input
+        suggestionsDropdown.style.display = 'none'; // Hide suggestions after adding a participant
+      }
     }
 
     // Function to remove all participants from the input
     function deselectAllParticipants() {
-        Array.from(participantInput.children).forEach(child => {
-            if (child.classList.contains('participant')) {
-                child.remove();
-            }
-        });
+      Array.from(participantInput.children).forEach(child => {
+        if (child.classList.contains('participant')) {
+          child.remove();
+        }
+      });
     }
 
     // Function to show suggestions in the dropdown, with filtering
     function showSuggestions() {
-        suggestionsDropdown.innerHTML = ''; // Clear previous content
+      suggestionsDropdown.innerHTML = ''; // Clear previous content
 
-        // Create header with Select All and Deselect All links
-        const header = document.createElement('div');
-        header.className = 'dropdown-header';
+      // Create header with Select All and Deselect All links
+      const header = document.createElement('div');
+      header.className = 'dropdown-header';
 
-        const selectAllLink = document.createElement('a');
-        selectAllLink.textContent = 'Select All';
-        selectAllLink.href = '#';
-        selectAllLink.className = 'link-primary';
-        selectAllLink.onclick = (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            participantsList.forEach(participant => addParticipant(participant.name));
-        };
+      const selectAllLink = document.createElement('a');
+      selectAllLink.textContent = 'Select All';
+      selectAllLink.href = '#';
+      selectAllLink.className = 'link-primary';
+      selectAllLink.onclick = (e) => {
+        e.preventDefault(); // Prevent default link behavior
+        participantsList.forEach(participant => addParticipant(participant.name));
+      };
 
-        const deselectAllLink = document.createElement('a');
-        deselectAllLink.textContent = 'Deselect All';
-        deselectAllLink.href = '#';
-        deselectAllLink.className = 'link-danger';
-        deselectAllLink.onclick = (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            deselectAllParticipants();
-        };
+      const deselectAllLink = document.createElement('a');
+      deselectAllLink.textContent = 'Deselect All';
+      deselectAllLink.href = '#';
+      deselectAllLink.className = 'link-danger';
+      deselectAllLink.onclick = (e) => {
+        e.preventDefault(); // Prevent default link behavior
+        deselectAllParticipants();
+      };
 
-        header.appendChild(selectAllLink);
-        header.appendChild(deselectAllLink);
-        suggestionsDropdown.appendChild(header);
+      header.appendChild(selectAllLink);
+      header.appendChild(deselectAllLink);
+      suggestionsDropdown.appendChild(header);
 
-        // Filter and show suggestions based on input
-        const filterValue = hiddenInput.value.toLowerCase();
-        participantsList.forEach(participant => {
-            if (participant.name.toLowerCase().includes(filterValue)) {
-                const suggestionElement = document.createElement('div');
-                suggestionElement.className = 'suggestion-item';
+      // Filter and show suggestions based on input
+      const filterValue = hiddenInput.value.toLowerCase();
+      participantsList.forEach(participant => {
+        if (participant.name.toLowerCase().includes(filterValue)) {
+          const suggestionElement = document.createElement('div');
+          suggestionElement.className = 'suggestion-item';
 
-                const nameText = document.createElement('span');
-                nameText.textContent = participant.name;
+          const nameText = document.createElement('span');
+          nameText.textContent = participant.name;
 
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = participant.name;
-                checkbox.value = participant.name;
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.id = participant.name;
+          checkbox.value = participant.name;
 
-                // Set checkbox state based on whether the participant is already added
-                checkbox.checked = Array.from(participantInput.children).some(
-                    (elem) => elem.textContent.trim() === participant.name.trim()
-                );
+          // Set checkbox state based on whether the participant is already added
+          checkbox.checked = Array.from(participantInput.children).some(
+            (elem) => elem.textContent.trim() === participant.name.trim()
+          );
 
-                checkbox.onchange = () => {
-                    if (checkbox.checked) {
-                        addParticipant(participant.name);
-                    } else {
-                        const participantElement = Array.from(participantInput.children).find(
-                            (elem) => elem.textContent.trim() === participant.name
-                        );
-                        if (participantElement) {
-                            participantElement.remove();
-                        }
-                    }
-                };
-
-                suggestionElement.appendChild(nameText);
-                suggestionElement.appendChild(checkbox);
-                suggestionsDropdown.appendChild(suggestionElement);
+          checkbox.onchange = () => {
+            if (checkbox.checked) {
+              addParticipant(participant.name);
+            } else {
+              const participantElement = Array.from(participantInput.children).find(
+                (elem) => elem.textContent.trim() === participant.name
+              );
+              if (participantElement) {
+                participantElement.remove();
+              }
             }
-        });
+          };
 
-        suggestionsDropdown.style.display = 'block'; // Show the dropdown
+          suggestionElement.appendChild(nameText);
+          suggestionElement.appendChild(checkbox);
+          suggestionsDropdown.appendChild(suggestionElement);
+        }
+      });
+
+      suggestionsDropdown.style.display = 'block'; // Show the dropdown
     }
 
     // Capture text input and add as tag on "Enter"
     hiddenInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && hiddenInput.value.trim() !== '') {
-            addParticipant(hiddenInput.value.trim());
-            e.preventDefault(); // Prevent form submission if inside a form
-        }
+      if (e.key === 'Enter' && hiddenInput.value.trim() !== '') {
+        addParticipant(hiddenInput.value.trim());
+        e.preventDefault(); // Prevent form submission if inside a form
+      }
 
-        // Show suggestions while typing
-        showSuggestions();
+      // Show suggestions while typing
+      showSuggestions();
     });
 
     // Show dropdown when hidden input is focused
@@ -959,13 +1398,13 @@
 
     // Hide suggestions when clicking outside the input
     document.addEventListener('click', (event) => {
-        if (!participantInput.contains(event.target) && !suggestionsDropdown.contains(event.target)) {
-            suggestionsDropdown.style.display = 'none';
-        }
+      if (!participantInput.contains(event.target) && !suggestionsDropdown.contains(event.target)) {
+        suggestionsDropdown.style.display = 'none';
+      }
     });
 
 
-</script>
+  </script>
 
   <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -1100,7 +1539,7 @@
 
 
 </script> -->
-   
+
 </body>
 
 </html>

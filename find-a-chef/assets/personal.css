@@ -43,14 +43,16 @@
 
 .cancel-btn {
     border: 1px solid var(--primary-clr1);
-    border-radius: .4rem;
-    background-color: var(--primarybg-color1);
-    font-size: 14px;
+    /* background-color: var(--primarybg-color1); */
+    background-color: transparent;
+    font-size: 12px;
     font-weight: bold;
     color: var(--secondary-clr1);
-    width: 6rem;
-    height: 2.5rem;
     transition: var(--ease);
+    width: 107px;
+    height: 34px;
+    /* padding: 10px; */
+    border-radius: 7px;
 }
 
 .cancel-btn:hover {
@@ -61,16 +63,20 @@
 }
 
 .save-btn {
-    border: 1px solid var(--primary-clr1);
-    border-radius: .4rem;
-    background-color: var(--primary-clr1);
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--tertiary-clr1);
-    width: 6rem;
-    height: 2.5rem;
-    transition: var(--ease);
 
+    border: 1px solid var(--primary-clr1);
+    /* background-color: var(--primarybg-color1); */
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--secondary-clr1);
+    transition: var(--ease);
+    width: 107px;
+    height: 34px;
+    /* padding: 10px; */
+    border-radius: 7px;
+    background-color: var(--primary-clr1);   
+    color: var(--tertiary-clr1);
+    transition: var(--ease);
 }
 
 .save-btn:hover {
