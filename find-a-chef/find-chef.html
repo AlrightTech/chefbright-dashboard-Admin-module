@@ -335,48 +335,59 @@
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
               <label for="lastName" class="form-label">Event</label>
               <div class="custom-select personal-input" id="customSelect">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                  <span class="selected">Select</span>
-                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                <div class="select-trigger-ok22 d-flex justify-content-between align-items-center" id="customSelect">
+                  <span class="selected-text-ok22">Select Event</span>
+                  <svg class="chevron-icon-ok22" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </div>
-                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="1">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Birthday Party</span>
+                <style>
+  .chevron-icon-ok22 {
+    width: 16px;
+    height: 16px;
+  }
+
+  .selected-text-ok22 {
+    color: #6E727A;
+    font-size: 11.5px;
+    color: #D9D9D9;
+    /* font-family: Avenir LT Std; */
+    line-height: 21.6px;
+  }
+
+  /* Keep your existing dropdown styles */
+  .custom-dropdown-ok11 {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+  }
+                </style>
+                <div class="custom-dropdown custom-dropdown-ok11 position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-3 pb-3 mt-4" style="width: 23% !important;">
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 text-center py-2 ps-4" data-value="1">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Birthday Party</span>
                   </div>
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="2">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Private Dinner</span>
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Private Dinner</span>
                   </div>
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="1">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Family Trip</span>
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="1">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Family Trip</span>
                   </div>
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="2">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Wedding</span>
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Wedding</span>
                   </div>
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="1">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Festival Event</span>
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="1">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Festival Event</span>
                   </div>
-                  <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                    data-value="2">
-                    <input type="radio" name="event">
-                    <span class=" fw-bold">Christmas</span>
+                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
+                    <input type="radio" name="event" class="radio-custom-ok11">
+                    <span class="fw-bold">Christmas</span>
                   </div>
-                </div>
+                </div>                
               </div>
             </div>
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
@@ -559,175 +570,8 @@
             <!-- amna -->
             <!-- amna -->
 
-            <style>
-              .slet-all {
-                color: #0E0D0C;
-                font-family: "Avenir LT Std";
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 28.8px;
-              }
 
-              .dslet-all {
-                font-family: "Avenir LT Std";
-                font-size: 11.5px;
-                font-weight: 500;
-                line-height: 21.6px;
-                color: #171718;
-              }
-
-              .optn-bdr-analysii {
-                padding: 8px 24px;
-                border-radius: 8px;
-                border: 1px solid #E53935;
-              }
-
-              .selected-peoples-analysii {
-                padding: 2px 7px 2px 1.5px;
-                gap: 11.46px;
-                border-radius: 8px;
-                background: #F5B0AE;
-                /* width: 138px; */
-                /* height: 35px; */
-                display: flex !important;
-                align-items: center !important;
-              }
-
-              .form-select-analysii {
-                --bs-form-select-bg-img: none;
-                display: block;
-              }
-
-              .custom-dropdown-container-analysii {
-                position: relative;
-                display: inline-block;
-                width: 100%;
-              }
-
-              .asin-peoples-analysii {
-                appearance: none;
-                -webkit-appearance: none;
-                padding-right: 50px;
-                border: 1px solid #E53935;
-                border-radius: 8px;
-                height: 37px;
-                width: 100%;
-                background-color: transparent;
-                position: relative;
-                z-index: 2;
-              }
-
-              .custom-icon-analysii {
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                display: flex;
-                align-items: center;
-                pointer-events: none;
-                z-index: 1;
-              }
-
-              .vertical-line-analysii {
-                width: 1.15px;
-                height: 24px;
-                background-color: #6E727A;
-                margin-right: 8px;
-              }
-
-              .dropdown-img-analysii {
-                width: 24px;
-                height: 24px;
-                border-radius: 97.65px;
-              }
-
-              .dropdown-options-analysii {
-                display: none;
-                position: absolute;
-                width: 92%;
-                z-index: 1000;
-                background-color: white;
-              }
-
-              .dropdown-options-analysii.show {
-                display: block;
-                margin-top: 12px;
-              }
-              .dropdown-options-analysii .selected-peoples-analysii {
-    background: transparent;
-  }
-
-              .custom-checkbox-analysii {
-                display: inline-flex;
-                align-items: center;
-                cursor: pointer;
-              }
-
-              .custom-checkbox-analysii input {
-                display: none;
-              }
-
-              .checkmark-analysii {
-                width: 20px;
-                height: 20px;
-                border: 1px solid #E53935;
-                border-radius: 3px;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                background: #E53935;
-              }
-
-              .custom-checkbox-analysii input:checked + .checkmark-analysii::after {
-    content: '✓';
-    color: white;
-    font-size: 14px;
-    line-height: 1;
-  }
-
-  .custom-checkbox-analysii input:checked + .checkmark-analysii {
-    background: #E53935;
-  }
-
-  #selectedOptions-analysii .selected-peoples-analysii {
-    background: #F5B0AE;
-    padding: 2px 7px 2px 1.5px;
-    gap: 11.46px;
-    border-radius: 8px;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  /* Modified styles for checkboxes */
-  .custom-checkbox-analysii .checkmark-analysii {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #E53935;
-    border-radius: 3px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-  }
-              /* .custom-checkbox-analysii input:checked + .checkmark-analysii::after {
-    content: '';
-    display: inline-block;    
-    background-color: #E53935;
-    background-image: url('../find-a-chef/assets/img/tik.svg');
-    background-size: cover;
-    background-position: center;
-    color: transparent; 
-} */
-
-              #selectedOptions-analysii {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 5px;
-                margin-top: 2px;
-              }
-            </style>
-
-            <div class="container">
+            <div >
                 <div class="custom-dropdown-container-analysii">
                   <div class="form-select-analysii asin-peoples-analysii" id="customSelect-analysii">
                     <div id="selectedOptions-analysii"></div>
@@ -825,110 +669,17 @@
                         <span class="checkmark-analysii"></span>
                       </label>
                     </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                  
+                
+
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div>
+                </div>
+
+
+                <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center" style="gap: 34px;">
+                  <button class="cancel-btn">Cancel</button>
+                  <button class="save-btn">Send</button>
                 </div>
             </div>
             <script>
@@ -996,10 +747,7 @@ border-radius: 8px;
              <div class="abcd-ok"></div>
             <!-- amna -->
 
-            <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center" style="gap: 34px;">
-              <button class="cancel-btn">Cancel</button>
-              <button class="save-btn">Send</button>
-            </div>
+            
 
           </form>
         </div>
@@ -1539,6 +1287,22 @@ border-radius: 8px;
 
 
 </script> -->
+<!-- radio-buttons -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const radioButtons = document.querySelectorAll('.radio-custom-ok11');
+    
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', function() {
+        // Update the selected text
+        if (this.checked) {
+          const selectedText = this.nextElementSibling.textContent;
+          document.querySelector('.selected').textContent = selectedText;
+        }
+      });
+    });
+  });
+  </script>
 
 </body>
 
