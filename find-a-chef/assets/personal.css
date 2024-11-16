@@ -51,8 +51,8 @@
     background-clip: padding-box !important;
     border: 1px solid var(--primary-clr1) !important;
     border-radius: 7px !important;
-    transition: border-color 0.15s ease-in-out, 
-    box-shadow 0.15s ease-in-out ;
+    transition: border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
 }
 
 .personal-input::placeholder {
@@ -93,7 +93,7 @@
     height: 34px;
     /* padding: 10px; */
     border-radius: 7px;
-    background-color: var(--primary-clr1);   
+    background-color: var(--primary-clr1);
     color: var(--tertiary-clr1);
     transition: var(--ease);
 }
@@ -124,7 +124,7 @@
 
 /* ___________________________________________________________________________________________________ */
 /* General styling */
-.telephone-input-wrapper  {
+.telephone-input-wrapper {
     background-color: #fff;
     position: relative;
 }
@@ -496,52 +496,78 @@ th {
 
 
 .slet-all {
-  color: #0E0D0C;
-  font-family: "Avenir LT Std";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 28.8px;
+    color: #0E0D0C;
+    font-family: "Avenir LT Std";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+}
+
+.slet-all:hover {
+    color: #E53935 !important;
+
 }
 
 .dslet-all {
-  font-family: "Avenir LT Std";
-  font-size: 11.5px;
-  font-weight: 500;
-  line-height: 21.6px;
-  color: #171718;
+    font-family: "Avenir LT Std";
+    font-size: 11.5px;
+    font-weight: 500;
+    line-height: 21.6px;
+    color: #171718;
+}
+
+.dslet-all:hover {
+    color: #E53935 !important;
+
 }
 
 .optn-bdr-analysii {
-  padding: 8px 24px;
-  border-radius: 8px;
-  border: 1px solid #E53935;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 1px solid #E53935;
 }
 
 .selected-peoples-analysii {
-  padding: 2px 7px 2px 1.5px;
-  gap: 11.46px;
-  border-radius: 8px;
-  background: #F5B0AE;
-  /* width: 138px; */
-  /* height: 35px; */
-  display: flex !important;
-  align-items: center !important;
+    padding: 2px 7px 2px 1.5px;
+    gap: 7.5px;
+    border-radius: 8px;
+    background: #F5B0AE;
+    /* width: 138px; */
+    /* height: 35px; */
+    display: flex !important;
+    align-items: center !important;
+}
+
+.asini-lst {
+    color: #171718 !important;
+    /* font-family: Avenir LT Std; */
+    font-size: 12.5px !important;
+    line-height: 21.6px !important;
+}
+
+.asini-lst:hover {
+    color: #E53935 !important;
+
+}
+.selected11 {
+  color: #D9D9D9 !important;
+  font-size: 11.6px !important;
 }
 
 .form-select-analysii {
-  --bs-form-select-bg-img: none;
-  display: block;
+    --bs-form-select-bg-img: none;
+    display: block;
 }
 
 .custom-dropdown-container-analysii {
-  position: relative;
-  display: inline-block;
-  width: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 .asin-peoples-analysii {
-  appearance: none;
-  -webkit-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
     padding-right: 50px;
     padding-left: 22px;
     border: 1px solid #E53935;
@@ -554,110 +580,116 @@ th {
 }
 
 .custom-icon-analysii {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-  z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .vertical-line-analysii {
-  width: 1.15px;
-  height: 24px;
-  background-color: #6E727A;
-  margin-right: 8px;
+    width: 1.15px;
+    height: 24px;
+    background-color: #6E727A;
+    margin-right: 8px;
 }
 
 .dropdown-img-analysii {
-  width: 24px;
-  height: 24px;
-  border-radius: 97.65px;
+    width: 24px;
+    height: 24px;
+    border-radius: 97.65px;
 }
 
 .dropdown-options-analysii {
-  display: none;
-  position: absolute;
-  width: 91.2%;
-  z-index: 1000;
-  background-color: white;
+    display: none;
+    position: absolute;
+    width: 90.5% !important;
+    z-index: 1000;
+    background-color: white;
 }
+
+/* .personal-textarea::placeholder {
+    color: #D9D9D9 !important;
+  } */
 
 @media (max-width: 992px) {
     .dropdown-options-analysii {
-        width: 90% !important; 
+        width: 90% !important;
     }
 }
 
 @media (max-width: 580px) {
     .dropdown-options-analysii {
-        
+
         width: 85% !important;
     }
 }
 
 .dropdown-options-analysii.show {
-  display: block;
-  margin-top: 12px;
+    display: block;
+    margin-top: 12px;
 }
+
 .dropdown-options-analysii .selected-peoples-analysii {
-background: transparent;
+    background: transparent;
 }
 
 .custom-checkbox-analysii {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .custom-checkbox-analysii input {
-  display: none;
+    display: none;
 }
 
 .checkmark-analysii {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #E53935;
-  border-radius: 3px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: #E53935;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E53935;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #E53935;
 }
 
-.custom-checkbox-analysii input:checked + .checkmark-analysii::after {
-content: '✓';
-color: white;
-font-size: 14px;
-line-height: 1;
+.custom-checkbox-analysii input:checked+.checkmark-analysii::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    line-height: 1;
 }
 
-.custom-checkbox-analysii input:checked + .checkmark-analysii {
-background: #E53935;
+.custom-checkbox-analysii input:checked+.checkmark-analysii {
+    background: #E53935;
 }
 
 #selectedOptions-analysii .selected-peoples-analysii {
-background: #F5B0AE;
-padding: 2px 7px 2px 1.5px;
-gap: 11.46px;
-border-radius: 8px;
-display: flex !important;
-align-items: center !important;
+    background: #F5B0AE;
+    padding: 2px 7px 2px 1.5px;
+    gap: 11.46px;
+    border-radius: 8px;
+    display: flex !important;
+    align-items: center !important;
 }
 
 /* Modified styles for checkboxes */
 .custom-checkbox-analysii .checkmark-analysii {
-width: 20px;
-height: 20px;
-border: 1px solid #E53935;
-border-radius: 3px;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-background: transparent;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E53935;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 }
+
 /* .custom-checkbox-analysii input:checked + .checkmark-analysii::after {
 content: '';
 display: inline-block;    
@@ -669,67 +701,92 @@ color: transparent;
 } */
 
 #selectedOptions-analysii {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 2px;
 }
 
 .dropdown-options-analysii {
-display: none;
-position: absolute;
-width: 92%;
-z-index: 1000;
-background-color: white;
-max-height: 150px; /* Set a fixed height */
-overflow-y: auto; /* Add vertical scrollbar when content exceeds height */
+    display: none;
+    position: absolute;
+    width: 90.5%;
+    z-index: 1000;
+    background-color: white;
+    max-height: 150px;
+    /* Set a fixed height */
+    overflow-y: auto;
+    /* Add vertical scrollbar when content exceeds height */
 }
 
 
 
-.border-bottom, .border-left, .border-right, .border-top {
-border: 0.6px solid #D9D9D9 !important;
+.border-bottom,
+.border-left,
+.border-right,
+.border-top {
+    border: 0.6px solid #D9D9D9 !important;
 }
+
 .radio-custom-ok11 {
-appearance: none;
--webkit-appearance: none;
-width: 16px;
-height: 16px;
-border: 2px solid #6E727A; /* Changed to gray for unchecked state */
-border-radius: 50%;
-position: relative;
-cursor: pointer;
-margin-right: 8px;
-transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6E727A;
+    /* Changed to gray for unchecked state */
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all 0.3s ease;
 }
 
 .radio-custom-ok11:checked {
-width: 16px;
-border: 4px solid #E53935;
-box-shadow: 0 0 0 2px #E53935;
-background-color: white;
-height: 16px;
+    width: 16px;
+    border: 4px solid #E53935;
+    box-shadow: 0 0 0 2px #E53935;
+    background-color: white;
+    height: 16px;
 }
 
 /* Dropdown item styles */
 .dropdown-item-ok11 {
-color: #6E727A;
-transition: color 0.3s ease;
+    color: #6E727A;
+    transition: color 0.3s ease;
 }
 
 .dropdown-item-ok11:hover {
-color: #E53935 !important;
-background-color: transparent;
+    color: #E53935 !important;
+    background-color: transparent;
 }
 
-.dropdown-item-ok11 input[type="radio"]:checked + span {
-color: #E53935;
+.dropdown-item-ok11 input[type="radio"]:checked+span {
+    color: #E53935;
 }
 
 /* Container styles */
 .custom-dropdown-ok11 {
 
-background: white;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-border: 1px solid #eee;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
 }
+
+
+.form-label-ok9 {
+    /* font-family: Avenir LT Std; */
+font-size: 15.5px !important;
+/* font-weight: 600; */
+line-height: 28.8px;
+color: #29292B;
+
+}
+
+.date-picker-input {
+  padding-right: 1.5rem !important;
+}
+
+.personal-textarea::placeholder {
+    color: #D9D9D9 !important;
+  }
