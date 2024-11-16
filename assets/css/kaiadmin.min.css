@@ -5836,7 +5836,8 @@ label.error {
 .table > tbody > tr > td,
 .table > tbody > tr > th {
   padding: 6px 24px !important;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .table > tfoot > tr > td,
@@ -5844,8 +5845,9 @@ label.error {
   padding: 12px 24px !important;
 }
 
-.table thead th {
+.table thead  th {
   font-size: 10px;
+  font-family:  sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 12px 24px !important;
@@ -6092,6 +6094,7 @@ label.error {
     right: 5px;
     padding: 0px 7px 0px 6px;
     letter-spacing: -1px;
+
 }
 
 .navbar-header {
