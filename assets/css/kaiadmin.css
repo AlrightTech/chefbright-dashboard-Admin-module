@@ -3181,6 +3181,7 @@ label.error {
 .navbar-header {
   padding: 0px 30px; }
   .navbar-header .container-fluid {
+    background-color: var(--primarybg-color2);
     min-height: inherit;
     padding: 0 !important; }
   .navbar-header .dropdown-toggle::after {
