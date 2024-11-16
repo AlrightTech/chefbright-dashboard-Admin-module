@@ -8,6 +8,8 @@
 
   <!-- favicon -->
   <link rel="icon" href="../assets/img/kaiadmin/cut 1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   <!-- Fonts and icons -->
   <script src="assets/js/plugin/webfont/webfont.min.js"></script>
@@ -332,120 +334,130 @@
               <label for="firstName" class="form-label">User Name</label>
               <input type="text" class="personal-input" placeholder="Enter" required>
             </div>
+            <style>
+              .selected11 {
+                color: #D9D9D9 !important;
+                font-size: 11.6px !important;
+              }
+            </style>
+
+            <!-- dfjdj -->
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-              <label for="lastName" class="form-label">Event</label>
+              <label for="emailInfo" class="form-label">Event</label>
               <div class="custom-select personal-input" id="customSelect">
-                <div class="select-trigger-ok22 d-flex justify-content-between align-items-center" id="customSelect">
-                  <span class="selected-text-ok22">Select Event</span>
-                  <svg class="chevron-icon-ok22" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 9L12 15L18 9" stroke="#BDBDBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <span class="selected selected11">Select Event</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <style>
-  .chevron-icon-ok22 {
-    width: 16px;
-    height: 16px;
-  }
-
-  .selected-text-ok22 {
-    color: #6E727A;
-    font-size: 11.5px;
-    color: #D9D9D9;
-    /* font-family: Avenir LT Std; */
-    line-height: 21.6px;
-  }
-
-  /* Keep your existing dropdown styles */
-  .custom-dropdown-ok11 {
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #eee;
-  }
-                </style>
-                <div class="custom-dropdown custom-dropdown-ok11 position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-3 pb-3 mt-4" style="width: 23% !important;">
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 text-center py-2 ps-4" data-value="1">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Birthday Party</span>
+                <div
+                  class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
+                  style="width: 218px;">
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1  text-center pt-3 pb-2 ps-4"
+                    data-value="1">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Birthday Party</span>
                   </div>
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Private Dinner</span>
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                    data-value="2">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Private Dinner</span>
                   </div>
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="1">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Family Trip</span>
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                    data-value="1">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Family Trip</span>
                   </div>
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Wedding</span>
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                    data-value="2">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Wedding</span>
                   </div>
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="1">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Festival Event</span>
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                    data-value="2">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Festival Event</span>
                   </div>
-                  <div class=" dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
-                    <input type="radio" name="event" class="radio-custom-ok11">
-                    <span class="fw-bold">Christmas</span>
+                  <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                    data-value="2">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
+                    <span class=" fw-bold">Christmas</span>
                   </div>
-                </div>                
+                </div>
               </div>
             </div>
+            <!-- sdsdj -->
+
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
               <label for="emailInfo" class="form-label">Event Type</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                  <span class="selected">Enter Type</span>
-                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                  <span class="selected selected11">Enter Type</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                <!-- ok -->
+                <div
+                  class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
+                  style="width: 218px;">
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1  text-center pt-3 pb-2 ps-4"
                     data-value="1">
-                    <input type="radio" name="event-type">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Breakfast</span>
                   </div>
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
                     data-value="2">
-                    <input type="radio" name="event-type">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Brunch</span>
                   </div>
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
                     data-value="1">
-                    <input type="radio" name="event-type">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Lunch</span>
                   </div>
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
                     data-value="2">
-                    <input type="radio" name="event-type">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Dinner</span>
                   </div>
                 </div>
+                <!-- ok -->
               </div>
             </div>
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
               <label for="firstName" class="form-label">Services</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                  <span class="selected">Select</span>
-                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                  <span class="selected selected11">Select</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 py-2 mt-4">
+                <!-- ok -->
+                <div
+                  class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
+                  style="width: 218px;">
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1  text-center pt-3 pb-2 ps-4"
                     data-value="1">
-                    <input type="radio" name="service">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Single Day</span>
                   </div>
                   <div
-                    class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 px-2"
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
                     data-value="2">
-                    <input type="radio" name="service">
+                    <input type="radio" name="event-type" class="radio-custom-ok11">
                     <span class=" fw-bold">Several Dates</span>
                   </div>
+
                 </div>
+                <!-- ok -->
               </div>
             </div>
             <div class="col-md-5 mt-2 mt-sm-3">
@@ -456,51 +468,93 @@
               <label for="event" class="form-label">Number of Persons</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                  <span class="selected">Select</span>
-                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd;"></i>
+                  <span class="selected selected11">Select</span>
+                  <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <div class="custom-dropdown position-absolute rounded-4 mt-4">
-                  <div
-                    class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                <!-- children -->
+                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
+                style="width: 218px;">
+                  <div class="dropdown-item dropdown-item-ok11 parent d-flex align-items-center  gap-3 text-center pt-3 pb-2 ps-4"
                     data-value="1">
-                    <input type="radio" name="person-type">
+                    <input type="radio" name="person-type" class="radio-custom-ok11">
                     <span class="fw-bold">Children</span>
-                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                    <i class="fa-solid fa-chevron-right" style="color: #bdbdbd; font-size: 10px;"></i>
                   </div>
-                  <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                  <div class="child-dropdown" style="display: none; padding-left: 15px;">
                     <div
-                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
                       data-value="1-1">
-                      <input type="radio" name="person">
+                      <input type="radio" name="person" class="radio-custom-ok11">
                       <span class="fw-bold">3-5</span>
+                    </div>            
+                    <div
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                      data-value="1-2">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">5-10</span>
                     </div>
                     <div
-                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
-                      data-value="1-2">
-                      <input type="radio" name="person">
-                      <span class="fw-bold">5-10</span>
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                      data-value="1-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">10-15</span>
+                    </div>
+                    <div
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                      data-value="1-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">15-20</span>
+                    </div>
+                    <div
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
+                      data-value="1-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">20-25</span>
                     </div>
                   </div>
 
                   <div
-                    class="dropdown-item parent d-flex align-items-center justify-content-between gap-1 border-bottom text-center py-2 px-2"
+                  class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
+                  style="width: 218px;">
+                </div>
+                  <!-- adults -->
+                  <div
+                    class="dropdown-item dropdown-item-ok11 parent d-flex align-items-center gap-3 border-bottom text-center pt-3 pb-2 ps-4"
                     data-value="2">
-                    <input type="radio" name="person-type">
-                    <span class="fw-bold">Private Dinner</span>
-                    <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i>
+                    <input type="radio" name="person-type" class="radio-custom-ok11">
+                    <span class="fw-bold">Adults</span>
+                    <i class="fa-solid fa-chevron-right" style="color: #bdbdbd; font-size: 10px;"></i>
                   </div>
-                  <div class="child-dropdown" style="display: none; padding-left: 20px;">
+                  <div class="child-dropdown" style="display: none; padding-left: 25px;">
                     <div
-                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
                       data-value="2-1">
-                      <input type="radio" name="person">
-                      <span class="fw-bold">3-5 Guests</span>
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">3-5</span>
                     </div>
                     <div
-                      class="dropdown-item d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
                       data-value="2-2">
-                      <input type="radio" name="person">
-                      <span class="fw-bold">5-10 Guests</span>
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">5-10</span>
+                    </div>
+                    <div
+                      class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="2-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">10-15</span>
+                    </div>
+                    <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="2-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">15-20</span>
+                    </div>
+                    <div
+                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-2"
+                      data-value="2-3">
+                      <input type="radio" name="person" class="radio-custom-ok11">
+                      <span class="fw-bold">20-25</span>
                     </div>
                   </div>
                 </div>
@@ -571,188 +625,191 @@
             <!-- amna -->
 
 
-            <div >
-                <div class="custom-dropdown-container-analysii">
-                  <div class="form-select-analysii asin-peoples-analysii" id="customSelect-analysii">
-                    <div id="selectedOptions-analysii"></div>
-                    <div class="placeholder-analysii"></div>
+            <div>
+              <div class="custom-dropdown-container-analysii">
+                <div class="form-select-analysii asin-peoples-analysii" id="customSelect-analysii">
+                  <div id="selectedOptions-analysii"></div>
+                  <div class="placeholder-analysii"></div>
+                </div>
+                <div class="custom-icon-analysii">
+                  <span class="vertical-line-analysii"></span>
+                  <img src="../find-a-chef/assets/img/dd-img.png"
+                    style="width: 25px; height: 25px; border-radius: 99px;" alt="Icon" class="dropdown-img-analysii" />
+                </div>
+              </div>
+              <div class="dropdown-options-analysii optn-bdr-analysii" id="dropdownOptions-analysii">
+                <div class="mb-2 d-flex justify-content-between">
+                  <div id="selectAll-analysii" class="slet-all" style="cursor: pointer;">Select All</div>
+                  <div id="deselectAll-analysii" class="dslet-all" style="cursor: pointer;">Deselect All</div>
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Cameron</p>
                   </div>
-                  <div class="custom-icon-analysii">
-                    <span class="vertical-line-analysii"></span>
-                    <img src="../find-a-chef/assets/img/dd-img.png"
-                      style="width: 25px; height: 25px; border-radius: 99px;" alt="Icon" class="dropdown-img-analysii" />
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Cameron" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
                   </div>
                 </div>
-                <div class="dropdown-options-analysii optn-bdr-analysii" id="dropdownOptions-analysii">
-                  <div class="mb-2 d-flex justify-content-between">
-                    <div id="selectAll-analysii" class="slet-all" style="cursor: pointer;">Select All</div>
-                    <div id="deselectAll-analysii" class="dslet-all" style="cursor: pointer;">Deselect All</div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Alex</p>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Cameron</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Cameron" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Alex" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Alex</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Alex" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Taylor</p>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Taylor" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Taylor</p>
                   </div>
-                  <div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
-                  </div><div class="option-analysii d-flex justify-content-between mb-2">
-                    <div class="selected-peoples-analysii d-flex align-items-center">
-                      <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                      <p class="mb-0">Taylor</p>
-                    </div>
-                    <div>
-                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                        <input type="checkbox" value="Taylor" />
-                        <span class="checkmark-analysii"></span>
-                      </label>
-                    </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Taylor" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
                   </div>
-                  
-                
-
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Taylor</p>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Taylor" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Taylor</p>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Taylor" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="option-analysii d-flex justify-content-between mb-2">
+                  <div class="selected-peoples-analysii d-flex align-items-center">
+                    <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
+                    <p class="mb-0">Taylor</p>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                      <input type="checkbox" value="Taylor" />
+                      <span class="checkmark-analysii"></span>
+                    </label>
                   </div>
                 </div>
 
 
-                <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center" style="gap: 34px;">
-                  <button class="cancel-btn">Cancel</button>
-                  <button class="save-btn">Send</button>
-                </div>
+
+              </div>
             </div>
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                const customSelectAnalysii = document.getElementById('customSelect-analysii');
-                const dropdownOptionsAnalysii = document.getElementById('dropdownOptions-analysii');
-                const selectAllAnalysii = document.getElementById('selectAll-analysii');
-                const deselectAllAnalysii = document.getElementById('deselectAll-analysii');
-                const checkboxesAnalysii = document.querySelectorAll('.custom-checkbox-analysii input');
-                const selectedOptionsAnalysii = document.getElementById('selectedOptions-analysii');
-                const placeholderAnalysii = document.querySelector('.placeholder-analysii');
 
-                customSelectAnalysii.addEventListener('click', function () {
-                  dropdownOptionsAnalysii.classList.toggle('show');
-                });
 
-                function updateSelectedOptionsAnalysii() {
-                  selectedOptionsAnalysii.innerHTML = '';
-                  let selected = false;
-                  checkboxesAnalysii.forEach(checkbox => {
-                    if (checkbox.checked) {
-                      selected = true;
-                      const option = document.createElement('div');
-                      option.className = 'selected-peoples-analysii d-flex justify-content-center align-items-center';
-                      option.innerHTML = `
+            <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center"
+              style="gap: 34px;">
+              <button class="cancel-btn">Cancel</button>
+              <button class="save-btn">Send</button>
+            </div>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const customSelectAnalysii = document.getElementById('customSelect-analysii');
+            const dropdownOptionsAnalysii = document.getElementById('dropdownOptions-analysii');
+            const selectAllAnalysii = document.getElementById('selectAll-analysii');
+            const deselectAllAnalysii = document.getElementById('deselectAll-analysii');
+            const checkboxesAnalysii = document.querySelectorAll('.custom-checkbox-analysii input');
+            const selectedOptionsAnalysii = document.getElementById('selectedOptions-analysii');
+            const placeholderAnalysii = document.querySelector('.placeholder-analysii');
+
+            customSelectAnalysii.addEventListener('click', function () {
+              dropdownOptionsAnalysii.classList.toggle('show');
+            });
+
+            function updateSelectedOptionsAnalysii() {
+              selectedOptionsAnalysii.innerHTML = '';
+              let selected = false;
+              checkboxesAnalysii.forEach(checkbox => {
+                if (checkbox.checked) {
+                  selected = true;
+                  const option = document.createElement('div');
+                  option.className = 'selected-peoples-analysii d-flex justify-content-center align-items-center';
+                  option.innerHTML = `
                       <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
                       <p class="mb-0">${checkbox.value}</p>
                   `;
-                      selectedOptionsAnalysii.appendChild(option);
-                    }
-                  });
-                  placeholderAnalysii.style.display = selected ? 'none' : 'block';
+                  selectedOptionsAnalysii.appendChild(option);
                 }
-
-                checkboxesAnalysii.forEach(checkbox => {
-                  checkbox.addEventListener('change', updateSelectedOptionsAnalysii);
-                });
-
-                selectAllAnalysii.addEventListener('click', function () {
-                  checkboxesAnalysii.forEach(checkbox => checkbox.checked = true);
-                  updateSelectedOptionsAnalysii();
-                });
-
-                deselectAllAnalysii.addEventListener('click', function () {
-                  checkboxesAnalysii.forEach(checkbox => checkbox.checked = false);
-                  updateSelectedOptionsAnalysii();
-                });
-
-                document.addEventListener('click', function (event) {
-                  if (!customSelectAnalysii.contains(event.target) && !dropdownOptionsAnalysii.contains(event.target)) {
-                    dropdownOptionsAnalysii.classList.remove('show');
-                  }
-                });
               });
-            </script>
-            <!-- amna -->
-             <style>
-              .abcd-ok {
-                
-padding: 6px;
-border-radius: 8px;
+              placeholderAnalysii.style.display = selected ? 'none' : 'block';
+            }
 
+            checkboxesAnalysii.forEach(checkbox => {
+              checkbox.addEventListener('change', updateSelectedOptionsAnalysii);
+            });
+
+            selectAllAnalysii.addEventListener('click', function () {
+              checkboxesAnalysii.forEach(checkbox => checkbox.checked = true);
+              updateSelectedOptionsAnalysii();
+            });
+
+            deselectAllAnalysii.addEventListener('click', function () {
+              checkboxesAnalysii.forEach(checkbox => checkbox.checked = false);
+              updateSelectedOptionsAnalysii();
+            });
+
+            document.addEventListener('click', function (event) {
+              if (!customSelectAnalysii.contains(event.target) && !dropdownOptionsAnalysii.contains(event.target)) {
+                dropdownOptionsAnalysii.classList.remove('show');
               }
-             </style>
-             <div class="abcd-ok"></div>
-            <!-- amna -->
+            });
+          });
+        </script>
+        <!-- amna -->
+        <style>
+          .abcd-ok {
 
-            
+            padding: 6px;
+            border-radius: 8px;
 
-          </form>
-        </div>
-      </section>
-    </section>
+          }
+        </style>
+        <div class="abcd-ok"></div>
+        <!-- amna -->
+
+
+
+        </form>
+  </div>
+  </section>
+  </section>
 
 
 
@@ -1287,8 +1344,8 @@ border-radius: 8px;
 
 
 </script> -->
-<!-- radio-buttons -->
-<script>
+  <!-- radio-buttons -->
+  <!-- <script>
   document.addEventListener('DOMContentLoaded', function() {
     const radioButtons = document.querySelectorAll('.radio-custom-ok11');
     
@@ -1302,7 +1359,7 @@ border-radius: 8px;
       });
     });
   });
-  </script>
+  </script> -->
 
 </body>
 
