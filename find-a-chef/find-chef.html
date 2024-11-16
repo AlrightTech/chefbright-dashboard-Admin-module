@@ -331,19 +331,12 @@
 
           <form class="row g-3 w-100 rounded-3 d-flex justify-content-between">
             <div class="col-md-5">
-              <label for="firstName" class="form-label">User Name</label>
+              <label for="firstName" class="form-label form-label-ok9">User Name</label>
               <input type="text" class="personal-input" placeholder="Enter" required>
             </div>
-            <style>
-              .selected11 {
-                color: #D9D9D9 !important;
-                font-size: 11.6px !important;
-              }
-            </style>
-
-            <!-- dfjdj -->
+<!-- event dropdown -->
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-              <label for="emailInfo" class="form-label">Event</label>
+              <label for="emailInfo" class="form-label form-label-ok9">Event</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <span class="selected selected11">Select Event</span>
@@ -391,16 +384,14 @@
                 </div>
               </div>
             </div>
-            <!-- sdsdj -->
-
+<!-- event-type dropdown -->
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-              <label for="emailInfo" class="form-label">Event Type</label>
+              <label for="emailInfo" class="form-label form-label-ok9">Event Type</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <span class="selected selected11">Enter Type</span>
                   <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <!-- ok -->
                 <div
                   class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
                   style="width: 218px;">
@@ -429,17 +420,18 @@
                     <span class=" fw-bold">Dinner</span>
                   </div>
                 </div>
-                <!-- ok -->
               </div>
             </div>
+
+            <!-- services dropdown -->
+
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-              <label for="firstName" class="form-label">Services</label>
+              <label for="firstName" class="form-label form-label-ok9">Services</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <span class="selected selected11">Select</span>
                   <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <!-- ok -->
                 <div
                   class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
                   style="width: 218px;">
@@ -457,15 +449,17 @@
                   </div>
 
                 </div>
-                <!-- ok -->
               </div>
             </div>
+
             <div class="col-md-5 mt-2 mt-sm-3">
-              <label for="lastName" class="form-label">Location</label>
+              <label for="lastName" class="form-label form-label-ok9">Location</label>
               <input type="text" class="personal-input" placeholder="Enter" required>
             </div>
+
+            <!-- number of person dropdown -->
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
-              <label for="event" class="form-label">Number of Persons</label>
+              <label for="event" class="form-label form-label-ok9">Number of Persons</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
                   <span class="selected selected11">Select</span>
@@ -573,19 +567,23 @@
 
 
 
-            <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
-              <label class="form-label">Date</label>
-              <input type="text" id="datepicker-from" class="date-picker-input personal-input" autocomplete="off"
-                placeholder="From">
-              <div class="calendar p-0 p-sm-2" id="calendar-from"></div>
-            </div>
-            <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
-              <label class="form-label">Date</label>
-              <input type="text" id="datepicker-to" class="date-picker-input personal-input" autocomplete="off"
-                placeholder="To">
-              <div class="calendar p-0 p-sm-2" id="calendar-to"></div>
-            </div>
-
+                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+                      <label class="form-label" for="datepicker-from">Date</label>
+                      <div class="position-relative">
+                        <input type="text" id="datepicker-from" class="date-picker-input personal-input form-control pe-4" autocomplete="off" placeholder="From">
+                        <i class="fa-solid fa-chevron-down position-absolute end-0 top-50 translate-middle-y pe-3" style="color: #bdbdbd; font-size: 10px;"></i>
+                      </div>
+                      <div class="calendar p-0 p-sm-2" id="calendar-from"></div>
+                    </div>
+                    <div class="date-picker-wrapper col-sm-6 col-md-5 col-12">
+                      <label class="form-label text-white" for="datepicker-to" >Date</label>
+                      <div class="position-relative">
+                        <input type="text" id="datepicker-to" class="date-picker-input personal-input form-control pe-4" autocomplete="off" placeholder="To">
+                        <i class="fa-solid fa-chevron-down position-absolute end-0 top-50 translate-middle-y pe-3" style="color: #bdbdbd; font-size: 10px;"></i>
+                      </div>
+                      <div class="calendar p-0 p-sm-2" id="calendar-to"></div>
+                    </div>
+                   
 
 
             <!-- <div class="col-md-5 mt-2 mt-sm-3">
@@ -599,7 +597,7 @@
                             onblur="hideDate(this)">
                     </div> -->
             <div class="col-12">
-              <label for="firstName" class="form-label">Description</label>
+              <label for="firstName" class="form-label form-label-ok9">Description</label>
               <textarea class="m-0 w-100 rounded-4 personal-textarea"
                 style="padding-block: 11px; font-size: 11.5px; padding-inline: 10px;" placeholder="Type Here..."
                 style="resize: none;"></textarea>
@@ -608,23 +606,9 @@
 
 
 
-            <div class="participant-input-container">
-              <label class="form-label">Assign to</label>
-              <!-- <div id="customParticipantInput" class="form-control rounded-3 mb-2 w-100" contenteditable="true"
-                placeholder="Add a participant"></div>
-              <div id="suggestionsDropdown" class="suggestions-dropdown pt-2 container col-12 rounded-3"
-                style="display: none;">
-                <div class="dropdown-header">
-                  <a id="selectAllLink" href="#" class="link-primary">Select All</a>
-                  <a id="deselectAllLink" href="#" class="link-danger">Deselect All</a>
-                </div>
-              </div> -->
+            <div class="participant-input-container mb-0">
+              <label class="form-label mb-0 form-label-ok9">Assign to</label>            
             </div>
-
-            <!-- amna -->
-            <!-- amna -->
-
-
             <div>
               <div class="custom-dropdown-container-analysii">
                 <div class="form-select-analysii asin-peoples-analysii" id="customSelect-analysii">
@@ -642,10 +626,11 @@
                   <div id="selectAll-analysii" class="slet-all" style="cursor: pointer;">Select All</div>
                   <div id="deselectAll-analysii" class="dslet-all" style="cursor: pointer;">Deselect All</div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Cameron</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
@@ -654,89 +639,93 @@
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Alex</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Alex" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Taylor</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Taylor" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Taylor</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Taylor" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Taylor</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Taylor" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Taylor</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Taylor" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-                <div class="option-analysii d-flex justify-content-between mb-2">
+                <div class="option-analysii d-flex justify-content-between mb-1">
                   <div class="selected-peoples-analysii d-flex align-items-center">
                     <img src="../find-a-chef/assets/img/dd-img.png" alt="Icon" class="dropdown-img-analysii ms-1" />
-                    <p class="mb-0">Taylor</p>
+                    <p class="mb-0 asini-lst">Cameron</p>
+                    
                   </div>
                   <div>
                     <label class="custom-checkbox-analysii d-inline-flex align-items-center">
-                      <input type="checkbox" value="Taylor" />
+                      <input type="checkbox" value="Cameron" />
                       <span class="checkmark-analysii"></span>
                     </label>
                   </div>
                 </div>
-
-
-
               </div>
             </div>
 
-
-            <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center"
+            <div>
+              <div class="d-flex w-100 justify-content-sm-end justify-content-center align-items-center"
               style="gap: 34px;">
               <button class="cancel-btn">Cancel</button>
               <button class="save-btn">Send</button>
+            </div>
             </div>
         </div>
         <script>
@@ -748,11 +737,17 @@
             const checkboxesAnalysii = document.querySelectorAll('.custom-checkbox-analysii input');
             const selectedOptionsAnalysii = document.getElementById('selectedOptions-analysii');
             const placeholderAnalysii = document.querySelector('.placeholder-analysii');
-
+            const buttonContainer = document.querySelector('.d-flex.w-100.justify-content-sm-end.justify-content-center.align-items-center');
+          
+            let isOpen = false;
+          
             customSelectAnalysii.addEventListener('click', function () {
+              isOpen = !isOpen;
               dropdownOptionsAnalysii.classList.toggle('show');
+              dropdownOptionsAnalysii.style.display = isOpen ? 'block' : 'none';
+              buttonContainer.style.marginTop = isOpen ? '180px' : '0';
             });
-
+          
             function updateSelectedOptionsAnalysii() {
               selectedOptionsAnalysii.innerHTML = '';
               let selected = false;
@@ -770,41 +765,31 @@
               });
               placeholderAnalysii.style.display = selected ? 'none' : 'block';
             }
-
+          
             checkboxesAnalysii.forEach(checkbox => {
               checkbox.addEventListener('change', updateSelectedOptionsAnalysii);
             });
-
+          
             selectAllAnalysii.addEventListener('click', function () {
               checkboxesAnalysii.forEach(checkbox => checkbox.checked = true);
               updateSelectedOptionsAnalysii();
             });
-
+          
             deselectAllAnalysii.addEventListener('click', function () {
               checkboxesAnalysii.forEach(checkbox => checkbox.checked = false);
               updateSelectedOptionsAnalysii();
             });
-
+          
             document.addEventListener('click', function (event) {
               if (!customSelectAnalysii.contains(event.target) && !dropdownOptionsAnalysii.contains(event.target)) {
+                isOpen = false;
                 dropdownOptionsAnalysii.classList.remove('show');
+                dropdownOptionsAnalysii.style.display = 'none';
+                buttonContainer.style.marginTop = '0';
               }
             });
           });
-        </script>
-        <!-- amna -->
-        <style>
-          .abcd-ok {
-
-            padding: 6px;
-            border-radius: 8px;
-
-          }
-        </style>
-        <div class="abcd-ok"></div>
-        <!-- amna -->
-
-
+          </script>
 
         </form>
   </div>
