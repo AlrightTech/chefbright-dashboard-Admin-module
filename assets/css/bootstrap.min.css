@@ -869,6 +869,17 @@ progress {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y)
 }
+.hr-first{
+    margin-bottom: -10px;
+    margin-top: -12px;
+}
+
+.hr-second{
+    margin-top: -8px;
+    margin-bottom: -9px;
+}
+ 
+
 
 .col {
     flex: 1 0 0%
@@ -2756,6 +2767,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type=radio] {
+  
+    border: 1px solid #6E727A;
     border-radius: 50%
 }
 
