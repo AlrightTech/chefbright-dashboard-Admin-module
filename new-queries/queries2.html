@@ -31,6 +31,58 @@
     .dropdown-toggle::after {
       display: none;
     }
+    .table-custom th,
+  .table-custom td {
+    min-width: 150px; 
+    padding: 10px;
+  }
+  
+  .table-custom th:first-child,
+  .table-custom td:first-child {
+    min-width: 135px; 
+  }
+  
+  .table-custom th:nth-child(2),
+  .table-custom td:nth-child(2) {
+    min-width: 203px; 
+  }
+
+  .table-custom th:nth-child(3),
+  .table-custom td:nth-child(3) {
+    min-width: 122px; 
+  }
+
+  .table-custom th:nth-child(4),
+  .table-custom td:nth-child(4) {
+    min-width: 122px;
+  }
+
+
+  .table-custom th:nth-child(5),
+  .table-custom td:nth-child(5) {
+    min-width: 102px; 
+  }
+  .table-custom th:nth-child(6),
+  .table-custom td:nth-child(6) {
+    min-width: 120px; 
+  }
+
+  .table-custom th:nth-child(7),
+  .table-custom td:nth-child(7) {
+    min-width: 1px; 
+  }
+  
+  .table-custom th:nth-child(9),
+  .table-custom td:nth-child(9),
+  .table-custom th:last-child,
+  .table-custom td:last-child {
+    min-width: 90px; 
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+
   </style>
   <script>
     WebFont.load({
@@ -344,7 +396,7 @@
         <div class=" mt-2">
           <div class="container">
             <div class="row">
-              <h4  class="mt-2 mb-3" style="color: #171718;font-weight: 600;">Account Management</h4>
+              <h4  class="mt-2 mb-3" style="color: #171718;font-weight: 600;">Enquiry Management</h4>
             </div>
           </div>
         </div>
@@ -356,7 +408,7 @@
             <div class="row ">
               <div class="col-lg-6">
                 <div class="custom-search-container">
-                  <input type="text" class="form-control custom-search-input" placeholder="Search" aria-label="Search">
+                  <input type="text" class="form-control custom-search-input" style="background: #F1F1F1;" placeholder="Search" aria-label="Search">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                     class="bi bi-search custom-search-icon" viewBox="0 0 16 16">
                     <path
@@ -387,15 +439,16 @@
 
           </div>
         </div>
+       
         <!-- ***************** Table ********************** -->
-        <div class="container mt-3">
+        <div class="container-fluid mt-3"> <!-- Changed to container-fluid for full width -->
           <div class="enquiry-table-bg">
-            <p class="mb-4 enquiry-table-h px-3 pt-3">All Enquires</p>
-            <div class="table-responsive ">
-              <table class="table table-custom table-hover ">
+            <p class="mb-4 enquiry-table-h px-3 pt-3" style="font-style: normal;">All Enquires</p>
+            <div class="table-responsive">
+              <table class="table table-custom table-hover">
                 <thead>
                   <tr>
-                    <th class="ps-4">User Name</th>
+                    <th class="ps-4">User Name </th>
                     <th>Description</th>
                     <th>Location</th>
                     <th>Event</th>
@@ -461,13 +514,68 @@
                           </div>
                         </div>
                       </td>
-                      </tr>
+                    </tr>
+
                       <tr>
-                        <td class="ps-4">Bennie Kulas</td>
+                        <td class="ps-4">Melody Grimes</td>
                         <td>Some optional description ab...</td>
-                        <td>Columbia</td>
-                        <td>Birthday Party</td>
-                        <td>26-10-24</td>
+                        <td>Beattyhaven</td>
+                        <td>Anniversary</td>
+                        <td>22-07-26</td>
+                        <td>Several day</td>
+                        <td>Breakfast</td>
+                        <td>3 Adults, 2 children</td>
+                       
+                        <td>
+                          <div class="client-custom-dropdown">
+                            <div class="complete-dot me-2"></div>
+                            <button class="client-dropdown-button">Accept</button>
+                            <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+    
+                            <div class="client-dropdown-content">
+                                <div class="client-dropdown-option" data-value="option1">Approved</div>
+                                <div class="client-dropdown-option" data-value="option2">Pending</div>
+                                <div class="client-dropdown-option" data-value="option2">Declined</div>
+                            </div>
+                        </div>
+                     
+                       <p class="client-selected-option" style="display: none;">Selected: None</p>
+                        </td>
+                        <td> <div class="container mt-5">
+                          <div class="dropdown">
+                            <!-- Dropdown Header with three vertical lines -->
+                            <a class="dropdown-toggle dot-dropdown-toggle-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </a>
+                      
+                            <!-- Dropdown Menu -->
+                            <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                              <li class="dropdown-item dot-dropdown-item">
+                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit">
+                                <label for="edit">Edit</label>
+                              </li>
+                              <li class="dropdown-item dot-dropdown-item">
+                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                                <label for="delete">Delete</label>
+                              </li>
+                              <li class="dropdown-item dot-dropdown-item">
+                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                                <label for="view">View</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                      </tr>
+
+                      <tr>
+                        <td class="ps-4">Ramon Goldner</td>
+                        <td>Some optional description ab...</td>
+                        <td>East Winnifred</td>
+                        <td>Bridal Shower</td>
+                        <td>21-04-28</td>
                         <td>Single day</td>
                         <td>Lunch</td>
                         <td>3 Adults, 2 Children</td>
@@ -516,67 +624,14 @@
                       </td>
                       </tr>
                       <tr>
-                        <td class="ps-4">Bennie Kulas</td>
+                        <td class="ps-4">Rickey Gislason</td>
                         <td>Some optional description ab...</td>
-                        <td>Columbia</td>
-                        <td>Birthday Party</td>
+                        <td>Worcester</td>
+                        <td>Anniversary</td>
                         <td>26-10-24</td>
                         <td>Single day</td>
                         <td>Lunch</td>
-                        <td>3 Adults, 2 Children</td>
-                       
-                        <td>
-                          <div class="client-custom-dropdown">
-                            <div class="complete-dot me-2"></div>
-                            <button class="client-dropdown-button">Accept</button>
-                            <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
-    
-                            <div class="client-dropdown-content">
-                                <div class="client-dropdown-option" data-value="option1">Approved</div>
-                                <div class="client-dropdown-option" data-value="option2">Pending</div>
-                                <div class="client-dropdown-option" data-value="option2">Declined</div>
-                            </div>
-                        </div>
-                     
-                       <p class="client-selected-option" style="display: none;">Selected: None</p>
-                        </td>
-                        <td> <div class="container mt-5">
-                          <div class="dropdown">
-                            <!-- Dropdown Header with three vertical lines -->
-                            <a class="dropdown-toggle dot-dropdown-toggle-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </a>
-                      
-                            <!-- Dropdown Menu -->
-                            <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
-                              <li class="dropdown-item dot-dropdown-item">
-                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit">
-                                <label for="edit">Edit</label>
-                              </li>
-                              <li class="dropdown-item dot-dropdown-item">
-                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
-                                <label for="delete">Delete</label>
-                              </li>
-                              <li class="dropdown-item dot-dropdown-item">
-                                <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
-                                <label for="view">View</label>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </td>
-                      </tr>
-                      <tr>
-                        <td class="ps-4">Bennie Kulas</td>
-                        <td>Some optional description ab...</td>
-                        <td>Columbia</td>
-                        <td>Birthday Party</td>
-                        <td>26-10-24</td>
-                        <td>Single day</td>
-                        <td>Lunch</td>
-                        <td>3 Adults, 2 Children</td>
+                        <td>3 Adults, 2 children</td>
                        
                         <td>
                           <div class="client-custom-dropdown">

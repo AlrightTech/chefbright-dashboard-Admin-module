@@ -283,10 +283,9 @@
             <li class="nav-item topbar-user dropdown hidden-caret">
               <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                 <div class="avatar-sm">
-                  <img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                  <img src="../assets/img/profile.jpg"  alt="..." class="avatar-img rounded-circle" />
                 </div>
                 <span class="profile-username">
-
                 </span>
               </a>
               <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -334,56 +333,45 @@
               <label for="firstName" class="form-label form-label-ok9">User Name</label>
               <input type="text" class="personal-input" placeholder="Enter" required>
             </div>
-<!-- event dropdown -->
+<!-- event dropdown -->     
+
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
               <label for="emailInfo" class="form-label form-label-ok9">Event</label>
               <div class="custom-select personal-input" id="customSelect">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                  <span class="selected selected11">Select Event</span>
+                  <span class="selected selected11" id="selectedPlaceholder">Select Event</span>
                   <i class="fa-solid fa-chevron-down" style="color: #bdbdbd; font-size: 10px;"></i>
                 </div>
-                <div
-                  class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4"
-                  style="width: 218px;">
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1  text-center pt-3 pb-2 ps-4"
-                    data-value="1">
+                <div class="custom-dropdown position-absolute rounded-4 col-xxl-1 col-md-2 col-sm-3 col-5 pt-2 pb-3 mt-4" style="width: 218px;">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 text-center pt-3 pb-2 ps-4" data-value="1">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Birthday Party</span>
+                    <span class="fw-bold option-text">Birthday Party</span>
                   </div>
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
-                    data-value="2">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="2">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Private Dinner</span>
+                    <span class="fw-bold option-text">Private Dinner</span>
                   </div>
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
-                    data-value="1">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="3">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Family Trip</span>
+                    <span class="fw-bold option-text">Family Trip</span>
                   </div>
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
-                    data-value="2">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="4">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Wedding</span>
+                    <span class="fw-bold option-text">Wedding</span>
                   </div>
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
-                    data-value="2">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="5">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Festival Event</span>
+                    <span class="fw-bold option-text">Festival Event</span>
                   </div>
-                  <div
-                    class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4"
-                    data-value="2">
+                  <div class="dropdown-item dropdown-item-ok11 d-flex align-items-center justify-content-start gap-1 border-bottom text-center py-2 ps-4" data-value="6">
                     <input type="radio" name="event-type" class="radio-custom-ok11">
-                    <span class=" fw-bold">Christmas</span>
+                    <span class="fw-bold option-text">Christmas</span>
                   </div>
                 </div>
               </div>
             </div>
+            
+           
 <!-- event-type dropdown -->
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
               <label for="emailInfo" class="form-label form-label-ok9">Event Type</label>
@@ -422,7 +410,6 @@
                 </div>
               </div>
             </div>
-
             <!-- services dropdown -->
 
             <div class="custom-select-wrapper pointer col-md-5 mt-3 m-0">
@@ -470,7 +457,13 @@
                 style="width: 218px;">
                   <div class="dropdown-item dropdown-item-ok11 parent d-flex align-items-center  gap-3 text-center pt-3 pb-2 ps-4"
                     data-value="1">
-                    <input type="radio" name="person-type" class="radio-custom-ok11">
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Cameron" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                    <!-- <input type="radio" name="person-type" class="radio-custom-ok11"> -->
                     <span class="fw-bold">Children</span>
                     <i class="fa-solid fa-chevron-right" style="color: #bdbdbd; font-size: 10px;"></i>
                   </div>
@@ -515,7 +508,13 @@
                   <div
                     class="dropdown-item dropdown-item-ok11 parent d-flex align-items-center gap-3 border-bottom text-center pt-3 pb-2 ps-4"
                     data-value="2">
-                    <input type="radio" name="person-type" class="radio-custom-ok11">
+                    <div>
+                      <label class="custom-checkbox-analysii d-inline-flex align-items-center">
+                        <input type="checkbox" value="Cameron" />
+                        <span class="checkmark-analysii"></span>
+                      </label>
+                    </div>
+                    <!-- <input type="radio" name="person-type" class="radio-custom-ok11"> -->
                     <span class="fw-bold">Adults</span>
                     <i class="fa-solid fa-chevron-right" style="color: #bdbdbd; font-size: 10px;"></i>
                   </div>
@@ -1345,6 +1344,34 @@
     });
   });
   </script> -->
+
+
+  <script>
+    // JavaScript to handle dropdown selection for multiple instances
+    const dropdowns = document.querySelectorAll('.dropdown'); // Assuming each dropdown has a class 'dropdown'
+  
+    dropdowns.forEach(dropdown => {
+      const dropdownItems = dropdown.querySelectorAll('.dropdown-item-ok11');
+      const selectedPlaceholder = dropdown.querySelector('.selectedPlaceholder'); // Make sure each dropdown has its own placeholder
+  
+      // Initially set the placeholder to gray
+      selectedPlaceholder.classList.add('gray-placeholder');
+  
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', function () {
+          const selectedText = this.querySelector('.option-text').innerText;
+          selectedPlaceholder.innerText = selectedText;
+  
+          // Change the placeholder color to black when an option is selected
+          selectedPlaceholder.classList.remove('gray-placeholder');
+          selectedPlaceholder.classList.add('black-placeholder');
+        });
+      });
+    });
+  </script>
+  
+  
+  
 
 </body>
 
