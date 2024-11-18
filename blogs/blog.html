@@ -121,20 +121,20 @@
               
               <li class="nav-item">
                 <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
-                  <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+                  <img class="pe-3" src="/assets/img/sidebar-links/enquiery.svg" alt="">
                   <p>Enquiry Management</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
-                  <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+                  <img class="pe-3" src="/assets/img/sidebar-links/find-chef.svg" alt="">
                   <p>Find a Chef</p>
                 </a>
               </li>
               <li class="nav-item active" >
                 <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
-                  <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
-                  <p>Creating Blog Post</p>
+                  <img class="pe-3" src="/assets/img/sidebar-links/create-blog.svg" alt="">
+                  <p>Create Blog Post</p>
                 </a>
               </li>
               <!-- <li class="nav-item">
@@ -406,10 +406,10 @@
         <div class="container px-0 px-sm-5">
           <div class="row">
             <div><h1 class="card-title">View Blogs</h1></div>
-            <div class="row ms-3 px-0 px-sm-4" id="blog-list"></div>
+            <div class="row ms-3 ps-5 px-0 px-sm-4 pt-5  mb-3 pb-3" id="blog-list" style="background-color: white; border-radius: 4px;"></div>
           </div>
           <div class="d-flex justify-content-end my-3">
-            <button type="button" class="btn me-4 blog-btn text-danger">Cancel</button>
+            <button type="button" class="btn me-5 blog-btn text-danger">Cancel</button>
             <button type="button" class="btn blog-btn-2" onclick="redirectToAddMore()">Add More</button>
           </div>
         </div>
@@ -507,11 +507,11 @@ function saveBlog() {
   const blogCard = document.createElement('div');
   blogCard.className = 'col-md-3';
   blogCard.innerHTML = `
-    <div class="cards">
+    <div class="cards for-width">
       <img
         src="../blogs/assets/Images/Frame 4.png"
         class="card-img-top"
-        alt="${heading}"
+        alt="${heading}" 
       />
       <div class="card-body">
         <h5 class="card-title" contenteditable="false">${heading}</h5>

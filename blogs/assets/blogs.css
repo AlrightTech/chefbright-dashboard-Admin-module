@@ -125,8 +125,9 @@ input[type="text"]:not(:placeholder-shown) + label {
   color: var(--primary-color3);
   border: 1px solid var(--primary-color2);
   width: 120px;
-  height: 36px;
+  height: 39px;
   margin-top: 20px;
+  border-radius: 7px;
 }
 .blog-btn-2{
   font-size: 16px;
@@ -135,19 +136,22 @@ input[type="text"]:not(:placeholder-shown) + label {
   color: var(--primary-color1);
   background-color: var(--primary-color2);
   width: 120px;
-  height: 36px;
+  height: 39px;
   margin-top: 20px;
+  border-radius: 7px;
 }
 
 .blog-btn:hover{
   color: var(--primary-color1);
   background-color: var(--primary-color2);
   border: none;
+  color: white !important;
 }
 .blog-btn-2:hover {
   color: var(--primary-color3);
   background-color: none;
   border: 1px solid var(--primary-color2);
+  opacity: 1;
 }
 
 /* Upload Image Section */
@@ -202,6 +206,9 @@ input[type="text"]:not(:placeholder-shown) + label {
 .blog-icon {
   cursor: pointer;
   color: var(--primary-color2);
+  padding-left: 12px;
+  font-size: 16px;
+
 }
 
 /* Blog Card Text Styling */
@@ -221,11 +228,13 @@ h5 {
 
 /* Icon Spacing */
 .icon-1 {
-  margin-top: 185px;
+  margin-top: 140px;
 }
-
+.for-width{
+  width: 195px !important;
+}
 .icon-2 {
-  margin-top: 186px;
+  margin-top: 140px;
 }
 
 .icon-3 {

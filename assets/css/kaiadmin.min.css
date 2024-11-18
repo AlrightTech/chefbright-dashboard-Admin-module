@@ -3731,10 +3731,11 @@ body[data-background-color='dark'] .border-top {
 
 .card-title {
   margin: 0;
-  color: #2a2f5b;
+  color: #171718;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
+  padding-top: 7px;
 }
 
 .card-title a,
@@ -7139,7 +7140,7 @@ label.error {
 
 .btn:focus,
 .btn:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .btn .btn-label {
