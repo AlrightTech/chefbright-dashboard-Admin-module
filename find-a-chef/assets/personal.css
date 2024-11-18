@@ -646,11 +646,34 @@ th {
     cursor: pointer;
 }
 
+.custom-checkbox-analysii55 {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
 .custom-checkbox-analysii input {
     display: none;
 }
 
+.custom-checkbox-analysii55 input {
+    display: none;
+}
+
 .checkmark-analysii {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E53935;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #E53935;
+}
+
+
+.checkmark-analysii55 {
     width: 20px;
     height: 20px;
     border: 1px solid #E53935;
@@ -667,8 +690,18 @@ th {
     font-size: 14px;
     line-height: 1;
 }
+.custom-checkbox-analysii55 input:checked+.checkmark-analysii::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    line-height: 1;
+}
 
 .custom-checkbox-analysii input:checked+.checkmark-analysii {
+    background: #E53935;
+}
+
+.custom-checkbox-analysii55 input:checked+.checkmark-analysii {
     background: #E53935;
 }
 
@@ -683,6 +716,16 @@ th {
 
 /* Modified styles for checkboxes */
 .custom-checkbox-analysii .checkmark-analysii {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E53935;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.custom-checkbox-analysii55 .checkmark-analysii {
     width: 20px;
     height: 20px;
     border: 1px solid #E53935;
