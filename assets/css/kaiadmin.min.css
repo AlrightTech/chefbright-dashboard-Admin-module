@@ -500,7 +500,7 @@ body {
   overflow: hidden;
   width: 100%;
   max-width: unset;
-  padding: 0 !important;
+  padding-right: 15px;
 }
 
 .main-panel > .container-full {
@@ -5384,12 +5384,12 @@ label {
 .form-check,
 .form-group {
   margin-bottom: 0;
-  padding: 10px;
+ 
 }
 
 .form-check label,
 .form-group label {
-  margin-bottom: 0.5rem;
+  
   color: #495057;
   font-size: 1rem;
   white-space: nowrap;
@@ -5871,6 +5871,44 @@ label.error {
 .table .thead-dark th {
   background-color: #1a2035;
   color: #fff;
+}
+ /* Style for the three-dot icon */
+ .three-dot-menu {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+.three-dot-icon {
+  font-size: 24px;
+  color: gray;
+}
+.three-dot-container{
+  display: flex;
+  justify-content: end;
+}
+/* Dropdown menu styling */
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  min-width: 120px;
+  z-index: 1000;
+}
+.custom-dropdown a {
+  padding: 8px 12px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+.custom-dropdown a:hover {
+  background-color: #f0f0f0;
 }
 
 .table-full-width {

@@ -17,15 +17,15 @@
     }
 
     .custom-dropdown-icon {
-      width: px;
-      height: 12px;
-      background-image: url('./assets/images/table-dd-icon.png') !important;
+       width: 10px;
+      height: 12px; 
+      background-image: url('/assets/img/kaiadmin/drop-down-icon.svg') !important;
       background-size: contain;
       background-repeat: no-repeat;
-      margin-left: 5px;
+      
       position: absolute;
-      top: 45%;
-      right: 5px;
+      top: 40%;
+      right: 10px;
     }
 
     .dropdown-toggle::after {
@@ -64,7 +64,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
@@ -339,7 +339,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Registered People</p>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Registered Chef</p>
                 </div>
               </div>
             </div>
@@ -371,7 +371,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Completed Enquiries</p>
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Pending Enquiries</p>
                 </div>
               </div>
             </div>
@@ -400,14 +400,15 @@
       <div class="container mt-1" style="position: relative;">
         <div class="search-container px-3 d-flex justify-content-between align-items-center">
           <div class="row ">
-            <div class="col-lg-6">
+            <div class="col-lg-6 ">
               <div class="custom-search-container">
-                <input type="text" class="form-control custom-search-input" placeholder="Search" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                <input type="text" class="form-control custom-search-input" width="11" height="11" placeholder="Search" aria-label="Search">
+                <img src="/assets/img/search-bar-icon.png" alt="" class="bi bi-search custom-search-icon">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                   class="bi bi-search custom-search-icon" viewBox="0 0 16 16">
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
+                </svg> -->
               </div>
             </div>
           </div>
@@ -442,25 +443,23 @@
               <thead>
                 <tr>
                   <th class="ps-4">User Name</th>
-                  <th>Description</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
                   <th>Location</th>
-                  <th>Date</th>
-                  <th>Services</th>
-                  <th>Event Type</th>
-                  <th>Member</th>
+                  <th>Area Code</th>
                   <th>Status</th>
+                  <th style="text-align: end;">Action</th>
 
                 </tr>
               </thead>
-              <tbody class="px-4">
+              <tbody class="ps-4">
                 <tr>
                   <td class="ps-4">Bennie Kulas</td>
-                  <td>Some optional description ab...</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
                   <td>Columbia</td>
-                  <td>26-01-25</td>
-                  <td>Single day</td>
-                  <td>Lunch</td>
-                  <td>3 Adults, 4 children</td>
+                  <td>13302</td>
+                  
                   <td>
                     <div class="client-custom-dropdown">
                       <div class="complete-dot me-2"></div>
@@ -469,23 +468,39 @@
 
                       <div class="client-dropdown-content">
                         <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
                       </div>
                     </div>
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
                   </td>
                   
                 </tr>
                 <tr>
-                  <td class="ps-4">Melody Grimes</td>
-                  <td>Some optional description ab...</td>
-                  <td>Beattyhaven</td>
-                  <td>19-11-24</td>
-                  <td>Several day</td>
-                  <td>Breakfast</td>
-                  <td>3 Adults, 4 children</td>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
                   <td>
                     <div class="client-custom-dropdown">
                       <div class="complete-dot me-2"></div>
@@ -494,23 +509,39 @@
 
                       <div class="client-dropdown-content">
                         <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
                       </div>
                     </div>
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
                   </td>
                  
                 </tr>
                 <tr>
-                  <td class="ps-4">Ramon Goldner</td>
-                  <td>Some optional description ab...</td>
-                  <td>East Winnifred</td>
-                  <td>21-04-28</td>
-                  <td>Single day</td>
-                  <td>Dinner</td>
-                  <td>3 Adults, 4 children</td>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
                   <td>
                     <div class="client-custom-dropdown">
                       <div class="complete-dot me-2"></div>
@@ -519,14 +550,410 @@
 
                       <div class="client-dropdown-content">
                         <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
                         <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
                       </div>
                     </div>
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
                   </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
                 
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td class="ps-4">Bennie Kulas</td>
+                  <td>Bennie.Kulas@gmail.comcomcom</td>
+                  <td>1-501-633-9479</td>
+                  <td>Columbia</td>
+                  <td>13302-297</td>
+                  
+                  <td>
+                    <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
+                  <td>
+                    <div class="container three-dot-container">
+                      <!-- Three-dot menu -->
+                      <div class="three-dot-menu" onclick="toggleDropdown()">
+                        <span class="three-dot-icon">&#8942;</span>
+                      </div>
+                  
+                      <!-- Dropdown menu options -->
+                      <div class="custom-dropdown" id="dropdownMenu">
+                        <a href="#" onclick="closeDropdown()">Option 1</a>
+                        <a href="#" onclick="closeDropdown()">Option 2</a>
+                        <a href="#" onclick="closeDropdown()">Option 3</a>
+                      </div>
+                    </div>
+                  </td>
+                  
                 </tr>
                 <!-- Add more rows here following the same pattern -->
               </tbody>
@@ -775,6 +1202,26 @@
         lineColor: "#ffa534",
         fillColor: "rgba(255, 165, 52, .14)",
       });
+
+       // Function to toggle the dropdown visibility
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Function to close the dropdown
+    function closeDropdown() {
+      document.getElementById('dropdownMenu').style.display = 'none';
+    }
+
+    // Close dropdown when clicking outside of it
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('dropdownMenu');
+      const menu = document.querySelector('.three-dot-menu');
+      if (!dropdown.contains(event.target) && !menu.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
     </script>
 </body>
 
