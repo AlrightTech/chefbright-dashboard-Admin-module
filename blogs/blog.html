@@ -328,71 +328,71 @@
 
     <!-- ############### Shayan-Hayat 375 started here ################-->
 
-    <div class="container">
+    <div class="container ps-lg-0">
       <!-- Main Content -->
       <section>
         <div class="container-fluid my-3" id="parent">
           <div class="row">
-            <div class="cards">
+            <div class="cards ps-lg-0">
               <div class="card-body">
-                <h1 class="card-title">Create Blog Post</h1>
-    
+                <h1 class="card-title-blg ps-lg-2 text-black mb-3">Create Blog Post</h1>   
                 <!-- Blog Post Form -->
-                <form class="px-0 px-sm-4">
+                
+                <form class="pt-4 pb-4" style="background: #FFFFFF; border-radius: 4px; padding: 0 34px;">
                   <!-- Heading Field -->
                   <div class="mb-3">
-                    <label for="heading" class="form-label">Heading*</label>
-                    <input type="text" class="form-control form-height" id="heading" placeholder="Flavor Fusion" required />
+                    <label for="heading" class="form-label blog-labels">Heading*</label>
+                    <input type="text" class="form-control form-height" id="heading" placeholder="Flavor Fusion" required style="font-size: 11px;  padding-left: 20px !important; width: 100%;  padding: 11px;" />
                   </div>
     
                   <!-- Tags Field -->
                   <div class="mb-3">
-                    <label for="tags" class="form-label">Tag (any 5)</label>
+                    <label for="tags" class="form-label blog-labels">Tag (any 5)</label>
                     <input
                       type="text"
                       class="form-control form-height"
                       id="tags"
                       name="tags"
-                      placeholder="e.g. Breakfast, Chicken"
-                      style="border: 1px solid rgba(229, 57, 53, 1)";
+                      placeholder="Breakfast        Chicken"
+                      style="border: 1px solid rgba(229, 57, 53, 1); padding: 10px; border-radius: 10px !important; font-size: 11px;  padding-left: 20px !important; width: 100%;  padding: 11px;";
                     />
                   </div>
     
                   <!-- Description Field -->
                   <div class="mb-3">
-                    <label for="description" class="form-label">Description</label>
+                    <label for="description" class="form-label blog-labels">Description</label>
                     <textarea
                       class="form-control"
                       id="description"
                       rows="5"
                       placeholder="Type here..."
                       required
-                      style="border: 1px solid rgba(229, 57, 53, 1);  resize: none;"
+                      style="border: 1px solid rgba(229, 57, 53, 1); font-size: 12.5px;  resize: none; padding: 10px; padding-left: 20px !important; border-radius: 10px !important; "
                     ></textarea>
                   </div>
                    <!-- Upload Section -->
-                <div class="mb-3 upload-img">
-                  <img src="../blogs/assets/Images/camra.svg" alt="Upload Icon" />
-                  <label for="upload" class="form-label"
-                    >Upload your photo</label
-                  >
-                  <div
-                    class="upload-section"
-                    onclick="document.getElementById('upload').click();"
-                  ></div>
-                  <input
-                    type="file"
-                    class="form-control-file mt-2 d-none"
-                    id="upload"
-                    accept="image/*"
-                  />
-                </div>
+                  <div class="mb-3 upload-img">
+                    <img src="../blogs/assets/Images/camra.svg" alt="Upload Icon" />
+                    <label for="upload" class="form-label" style="font-weight: 500; font-size: 12px !important; margin-top: 11px;"
+                      >Upload your photo</label
+                    >
+                    <div
+                      class="upload-section"
+                      onclick="document.getElementById('upload').click();"
+                    ></div>
+                    <input
+                      type="file"
+                      class="form-control-file mt-2 d-none"
+                      id="upload"
+                      accept="image/*"
+                    />
+                  </div>
     
                   <!-- Submit Buttons -->
                    
-                  <div class="d-flex justify-content-end">
-                    <button type="button" class="btn me-4 blog-btn form-cancel">Cancel</button>
-                    <button type="button" class="btn blog-btn-2 form-save" onclick="saveBlog()">Save</button>
+                  <div class="d-flex justify-content-end" style="gap:35px;">
+                    <button type="button" class=" blog-btn form-cancel">Cancel</button>
+                    <button type="button" class="blog-btn-2 form-save" onclick="saveBlog()">Save</button>
                   </div>
                 </form>
               </div>
@@ -416,6 +416,8 @@
       </section>
     </div>
     <!-- View Blog -->
+    
+    
       <!-- ############### Shayan-Hayat 375 started here ################-->
   
       </div>
