@@ -99,57 +99,76 @@
                 <p>Dashboard</p>
               </a>
             </li>
-            <!-- <li class="nav-item active">
-              <a href="../personal/personal.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
-                <p>Acounnt Management</p>
-              </a>
-            </li> -->
-
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
-                <p class="mb-0">Account Management</p>
-              </a>
             
-              <ul class="dropdown-menu" aria-labelledby="accountDropdown" style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
-                <li onclick="location.href='../client/client.html'">
-                  <a href="../client/client.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-                    <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
-                    <label class="form-check-label" for="client">Client</label>
+
+           
+            
+            <li class="nav-item">
+              <div class="accordion " id="accountAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header accordion_header" id="headingAccount">
+                    <button 
+                      class="accordion-button collapsed d-flex align-items-center rounded-4 " 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapseAccount" 
+                      aria-expanded="false" 
+                      aria-controls="collapseAccount"
+                    >
+                      <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
+                      <span class="mb-0">Account Management</span>
+                    </button>
+                  </h2>
+            
+                  <div 
+                    id="collapseAccount" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="headingAccount" 
+                    data-bs-parent="#accountAccordion"
+                  >
+                    <div class="accordion-body" style="background: transparent; color: white !important; border: none;">
+                      <ul class="list-unstyled">
+                        <li onclick="location.href='../client/client.html'">
+                          <a href="../client/client.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
+                              <label class="form-check-label text-white" for="client">Client</label>
+                            </div>
+                          </a>
+                        </li>
+                        <li onclick="location.href='../chef/chef.html'">
+                          <a href="../chef/chef.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
+                              <label class="form-check-label text-white" for="chef">Chef</label>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </a>
-                </li>
-                <li  onclick="location.href='../chef/chef.html'">
-                  <a href="../chef/chef.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-                    <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
-                    <label class="form-check-label" for="chef">Chef</label>
-                  </div>
-                </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </li>
             
             
             
             <li class="nav-item">
               <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+                <img class="pe-3" src="/assets/img/sidebar-links/enquiery.svg" alt="">
                 <p>Enquiry Management</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="../find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+                <img class="pe-3" src="/assets/img/sidebar-links/find-chef.svg" alt="">
                 <p>Find a Chef</p>
               </a>
             </li>
             <li class="nav-item " >
               <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
-                <p>Creating Blog Post</p>
+                <img class="pe-3" src="/assets/img/sidebar-links/create-blog.svg" alt="">
+                <p>Create Blog Post</p>
               </a>
             </li>
             <!-- <li class="nav-item">
@@ -610,7 +629,33 @@
                  
                    <p class="client-selected-option" style="display: none;">Selected: None</p>
                     </td>
-                    <td></td>
+                    <td> <div class="container mt-5">
+                      <div class="dropdown">
+                        <!-- Dropdown Header with three vertical lines -->
+                        <a class="dropdown-toggle dot-dropdown-toggle-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                  
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                          <li class="dropdown-item dot-dropdown-item">
+                            <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" >
+                            <label for="edit">Edit</label>
+                          </li>
+                          <li class="dropdown-item dot-dropdown-item">
+                            <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                            <label for="delete">Delete</label>
+                          </li>
+                          <li class="dropdown-item dot-dropdown-item">
+                            <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                            <label for="view">View</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
                   </tr>
                   <tr>
                     <td class="ps-4">Yvonne Reichel</td>
@@ -1153,17 +1198,20 @@
 
 
     
-s    
     <!--############## js for client page Ended here ############## -->
 
   <!--   Core JS Files   -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
 
 
   <!-- jQuery Scrollbar -->
