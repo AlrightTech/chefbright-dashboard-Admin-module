@@ -326,32 +326,32 @@
           <div class="row">
             <div class="cards">
               <div class="card-body">
-                <h1 class="card-title">Create Blog Post</h1>
+                <h1 class="card-title">Update Blog Post</h1>
   
-                <!-- Blog Post Form -->
-                <form class="px-0 px-sm-4">
-                  <!-- Heading Field -->
+                
+                <form class="px-0 py-4 px-sm-4 background-white ">
+                  
                   <div class="mb-3">
                     <label for="heading" class="form-label">Heading*</label>
                     <input type="text" class="form-control form-height"
                     id="heading" placeholder="Flavor Fusion" required  />
                   </div>
   
-                  <!-- Tags Field -->
+                 
                   <div class="mb-3">
-                    <label for="tags" class="form-label">Tag (any 5)</label>
+                    <label for="tags" class="form-label ">Tag <span style="color: #D9D9D9;">(any 5)</span></label>
                     <input
                       type="text"
-                      class="form-control form-height"
+                      class="form-control form-height tagss"
                       id="tags"
                       name="tags"
                       data-role="tagsinput"
                       placeholder="e.g. Breakfast, Chicken"
-                      style="border: 1px solid rgba(229, 57, 53, 1);"
+                     
                     />
                   </div>
   
-                  <!-- Description Field -->
+                  
                   <div class="mb-3">
                     <label for="description" class="form-label"
                       >Description</label
@@ -366,7 +366,7 @@
                     ></textarea>
                   </div>
   
-                  <!-- Upload Section -->
+                  
                   <div class="mb-3 upload-img">
                     <img src="./assets/Images/camra.svg" alt="Upload Icon" />
                     <label for="upload" class="form-label"
@@ -384,7 +384,7 @@
                     />
                   </div>
   
-                  <!-- Preview Section (Initially Hidden) -->
+                  
                   <div class="view" id="upload-view" style="display: none">
                     <img
                       id="preview-image"
@@ -406,12 +406,12 @@
                     </div>
                   </div>
   
-                  <!-- Submit Buttons -->
+                  
                   <div class="d-flex justify-content-end">
-                    <button type="button" class="btn me-4 blog-btn form-cancel">
+                    <button type="button" class="btn me-4 blog-btn form-cancel blogbtn-border-radius" >
                       Cancel
                     </button>
-                    <button type="button" class="btn blog-btn-2 form-save">
+                    <button type="button" class="btn ms-4 blog-btn-2 form-save blogbtn-border-radius">
                       Update
                     </button>
                   </div>
@@ -508,7 +508,7 @@
             dropdownList.style.display = isVisible ? 'none' : 'block';
         });
 
-        // Select a country code from the dropdown
+        
         dropdownList.addEventListener('click', (e) => {
             const item = e.target.closest('.dropdown-item');
             if (item) {
@@ -526,6 +526,20 @@
         });
     });
 
+
+    document.addEventListener('DOMContentLoaded', () => {
+  
+  const storedData = JSON.parse(localStorage.getItem('editBlogData'));
+
+  if (storedData) {
+    
+    document.getElementById('heading').value = storedData.heading;
+    document.getElementById('description').value = storedData.description;
+
+   
+    localStorage.removeItem('editBlogData');
+  }
+});
 
 
 

@@ -33,6 +33,7 @@
     }
   </style>
   <script>
+    
     WebFont.load({
       google: { families: ["Public Sans:300,400,500,600,700"] },
       custom: {
@@ -465,6 +466,7 @@
                   <th>Event Type</th>
                   <th>Member</th>
                   <th>Status</th>
+                  <th>Action</th>
 
                 </tr>
               </thead>
@@ -492,7 +494,33 @@
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
                   </td>
-
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
                 </tr>
                 <tr>
                   <td class="ps-4">Melody Grimes</td>
@@ -517,6 +545,33 @@
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
                   </td>
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" >
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
 
                 </tr>
                 <tr>
@@ -542,7 +597,33 @@
 
                     <p class="client-selected-option" style="display: none;">Selected: None</p>
                   </td>
-
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" >
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
                 </tr>
                 <!-- Add more rows here following the same pattern -->
               </tbody>
@@ -551,71 +632,52 @@
         </div>
       </div>
 
-      <!--################### modal for edit started fro here ###############-->\
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 150%;">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex gap-5 modals-inputs">
-                <div class="">
-                  <label for="fname">First Name *</label><br>
-                  <input type="text" name="fname" id="name" placeholder="Bennie ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="sname">Surname*</label><br>
-                  <input type="text" name="sname" id="sname" placeholder=" Kulas ">
-                </div>
-              </div>
-              <div class="d-flex gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Event">Event</label><br>
-                  <input type="text" name="Event" id="Event" placeholder="Birthday ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="EventType">Event Type</label><br>
-                  <input type="text" name="Event Type" id="EventType" placeholder=" Single day ">
-                </div>
-              </div>
-              <div class="d-flex gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Service">Service</label><br>
-                  <input type="text" name="Service" id="Service" placeholder="Lunch ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="Date">Date</label><br>
-                  <input type="text" name="Date" id="Date" placeholder=" 26-01-2024 ">
-                </div>
-              </div>
-              <div class="d-flex  gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Location">Location</label><br>
-                  <input type="text" name="Location" id="Location" placeholder="Canada">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="Members">Members</label><br>
-                  <input type="text" name="Members" id="Members" placeholder=" 3 Adults , 2 Children ">
-                </div>
-              </div>
-              <div class=" modals-input-descrip pt-2 ">
-                <label for="Description">Description</label><br>
-                <input type="text" name="Description" id="Description" placeholder=" Type here.."
-                  style="padding-bottom: 50px !important;">
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn cancel-butn me-5" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn  edit-butn">Edit</button>
-            </div>
+         <!--################### modal for edit started fro here ###############-->
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Responsive form layout -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="fname">First Name *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="fname" id="name" placeholder="Bennie" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="sname">Surname *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="sname" id="sname" placeholder="Kulas" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Email">Email</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Email" id="Email" placeholder="email@example.com" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Phone No">Phone No *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Phone No" id="Phone No" placeholder="+333 333" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country">Country</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country" id="Country" placeholder="Canada" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country code">Country Code</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country code" id="Country code" placeholder="45634" class="form-control">
           </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn cancel-butn me-2" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn edit-butn">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--################### modal for edit ended fro here ###############-->
 
 
       <!-- pagination -->
@@ -684,10 +746,10 @@
         document.querySelectorAll('.client-custom-dropdown').forEach(dropdown => {
           const button = dropdown.querySelector('.client-dropdown-button');
           const options = dropdown.querySelectorAll('.client-dropdown-option');
-          const selectedOptionDisplay = dropdown.nextElementSibling; // Selects the corresponding <p> element
-          const completeDot = dropdown.querySelector('.complete-dot'); // Select the complete dot
+          const selectedOptionDisplay = dropdown.nextElementSibling; 
+          const completeDot = dropdown.querySelector('.complete-dot'); 
 
-          // Toggle dropdown visibility when the button is clicked
+        
           button.addEventListener('click', function () {
             dropdown.classList.toggle('active');
           });
@@ -696,28 +758,28 @@
           options.forEach(option => {
             option.addEventListener('click', function () {
               const selectedText = this.textContent;
-              button.textContent = selectedText; // Update button text
-              selectedOptionDisplay.textContent = `Selected: ${selectedText}`; // Update display text
+              button.textContent = selectedText; 
+              selectedOptionDisplay.textContent = `Selected: ${selectedText}`; 
 
-              // Update complete dot color based on selection
-              completeDot.classList.remove('approved', 'pending', 'declined'); // Remove previous classes
+           
+              completeDot.classList.remove('approved', 'pending', 'declined'); 
               switch (this.dataset.value) {
-                case 'option1': // Approved
+                case 'option1': 
                   completeDot.classList.add('approved');
                   break;
-                case 'option2': // Pending
+                case 'option2': 
                   completeDot.classList.add('pending');
                   break;
-                case 'option3': // Declined
+                case 'option3': 
                   completeDot.classList.add('declined');
                   break;
               }
 
-              dropdown.classList.remove('active'); // Close the dropdown
+              dropdown.classList.remove('active'); 
             });
           });
 
-          // Optional: Close dropdown if clicking outside of it
+          
           document.addEventListener('click', function (event) {
             if (!dropdown.contains(event.target) && dropdown.classList.contains('active')) {
               dropdown.classList.remove('active');
