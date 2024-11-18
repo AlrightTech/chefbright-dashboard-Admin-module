@@ -75,6 +75,8 @@
     height: 34px;
     /* padding: 10px; */
     border-radius: 7px;
+    padding-right: 0;
+    margin-right: 0 !important;
 }
 
 .cancel-btn:hover {
@@ -630,7 +632,15 @@ th {
         width: 85% !important;
     }
 }
-
+.setbtn-mobile{
+    gap: 34px !important;
+}
+@media (max-width: 500px) {
+    .setbtn-mobile {
+     gap: 15px !important;
+     margin-left: 15px !important;
+    }
+}
 .dropdown-options-analysii.show {
     display: block;
     margin-top: 12px;

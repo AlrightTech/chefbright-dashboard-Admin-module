@@ -285,7 +285,7 @@ h5 {
   }
 
   .upload-img {
-    width: 100%;
+    width: 25%;
   }
 
   .card-text {
@@ -341,8 +341,23 @@ h5 {
 
   .blog-btn,
   .blog-btn-2 {
-    width: 30%;
-    height: 35px;
+    width: 40%;
+    height: 40px;
     font-size: 11px;
+  }
+}
+
+.creatblog-form{
+  background: #FFFFFF; 
+  border-radius: 4px; 
+  padding: 0 34px;
+}
+@media (max-width: 580px) {
+  .creatblog-form{
+    
+  padding: 0 15px;
+  }
+  .upload-img {
+    width: 50%;
   }
 }

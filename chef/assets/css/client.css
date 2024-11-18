@@ -277,7 +277,7 @@ a {
 }
 
 .tb-nm-bg {
-  width: 30px;
+  width: 50px !important;
   height: 25px;
   /* padding: 2.34px 9.36px 2.34px 9.36px; */
   border-radius: 2.34px;
