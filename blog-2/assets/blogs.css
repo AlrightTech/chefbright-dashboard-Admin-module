@@ -278,7 +278,7 @@ textarea::placeholder{
   }
 
   .upload-img {
-    width: 100%;
+    width: 25%;
   }
 
   .card-text {
@@ -337,5 +337,11 @@ textarea::placeholder{
     width: 30%;
     height: 35px;
     font-size: 11px;
+  }
+  .upload-img {
+    width: 50%;
+  }
+  .upload-img label{
+    font-size: 12px !important;
   }
 }

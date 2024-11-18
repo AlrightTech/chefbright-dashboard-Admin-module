@@ -105,7 +105,11 @@
   cursor: pointer;
   position: relative;
 }
+.action-icon{
+  margin-left: 50%;
+}
 .action-icon span{
   background-color: #D9D9D9 !important;
   border-radius: 50%;
+  
 }

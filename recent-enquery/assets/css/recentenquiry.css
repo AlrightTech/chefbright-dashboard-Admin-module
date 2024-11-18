@@ -201,7 +201,11 @@ a {
   color: #757575;
   pointer-events: none;
 }
-
+.table > tbody > tr > td, .table > tbody > tr > th {
+  padding: 5px 5px !important;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .table-custom th {
   background-color: #1a1a1a;
   color: white;
@@ -212,8 +216,17 @@ a {
   line-height: 9.45px;
   letter-spacing: 0.7876167297363281px;
   padding-block: 13px;
+  padding-inline: 5px !important;
 }
-
+.table thead th {
+  font-size: 10px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px !important;
+  border-bottom-width: 1px;
+  font-weight: 400;
+}
 .table-custom tbody tr:nth-of-type(odd) {
   background-color: #f8f9fa;
 }

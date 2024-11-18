@@ -401,3 +401,9 @@ background-color:#b9babf;
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
 }
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+  padding: 5px 5px !important;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
