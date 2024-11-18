@@ -60,6 +60,9 @@
     color: #D9D9D9 !important;
 }
 
+
+
+
 .cancel-btn {
     border: 1px solid var(--primary-clr1);
     /* background-color: var(--primarybg-color1); */
@@ -761,6 +764,10 @@ color: transparent;
     background-color: transparent;
 }
 
+.dropdown-item:hover {
+    color: #E53935 !important;
+}
+
 .dropdown-item-ok11 input[type="radio"]:checked+span {
     color: #E53935;
 }
@@ -790,3 +797,38 @@ color: #29292B;
 .personal-textarea::placeholder {
     color: #D9D9D9 !important;
   }
+
+
+  .custom-select-wrapper {
+    position: relative;
+  }
+
+  .custom-dropdown {
+    display: none;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-select:hover .custom-dropdown {
+    display: block;
+  }
+
+  .selected11 {
+    color: #bdbdbd;
+  }
+
+  .selected11.active {
+    color: black !important;
+  }
+/* Initially, the placeholder text is gray */
+.gray-placeholder {
+    color: gray;
+  }
+  
+  /* When an option is selected, the placeholder text changes to black */
+  .black-placeholder {
+    color: black;
+  }
+  
+  
