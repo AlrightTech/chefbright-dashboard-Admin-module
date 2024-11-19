@@ -8,7 +8,7 @@
 /* Root Variables */
 :root {
   --primary-color1: rgba(255, 255, 255, 1);
-  --primary-color2: rgba(229, 57, 53, 1);
+  --primary-color2: #E53935;
   --primary-color3: rgba(23, 23, 24, 1);
   --primary-color4: rgba(255, 210, 208, 1);
 }
@@ -20,15 +20,18 @@
   
 }
 
-/* Card Title Styling */
-h1 {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 24px;
+
+.background-white{
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .card-title {
-  margin-bottom: 15px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  margin-bottom: 15px !important;
+   color: #171718 !important;
 }
 
 /* Labels Styling */
@@ -39,7 +42,7 @@ label {
   cursor: pointer;
 }
 
-/* Input Fields Styling */
+
 input.form-control {
   border: 1px solid var(--primary-color2);
 }
@@ -52,8 +55,7 @@ input.form-control {
   border-radius: 10px;
 }
 
-/* Tags Input Styling */
-/* Tags Input Styling */
+
 .bootstrap-tagsinput {
   border: 1px solid var(--primary-color2);
   width: 100%;
@@ -65,7 +67,7 @@ input.form-control {
   cursor: text;
   background-color: var(
     --primary-color1
-  ); /* Ensure input background is visible */
+  ); 
 }
 
 .bootstrap-tagsinput .tag {
@@ -92,6 +94,10 @@ input.form-control {
   align-items: center;
   margin: 0;
 }
+.tagss{
+  padding: 10px 10px !important;
+  border-radius: 10px !important;
+}
 
 .tag i {
   margin-left: 5px;
@@ -105,6 +111,7 @@ input[type="text"] {
   min-width: 120px;
   background-color: var(--primary-color1);
   color: var(--primary-color3);
+  border: 1px solid #E53935 !important;
   padding: 5px;
 }
 
@@ -126,8 +133,8 @@ input[type="text"]:not(:placeholder-shown) + label {
 
 /* Buttons Styling */
 .blog-btn {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 21px;
   color: var(--primary-color3);
   border: 1px solid var(--primary-color2);
@@ -136,20 +143,22 @@ input[type="text"]:not(:placeholder-shown) + label {
   margin-top: 20px;
 }
 .blog-btn-2{
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 21px;
   color: var(--primary-color1);
   background-color: var(--primary-color2);
   width: 120px;
   height: 36px;
   margin-top: 20px;
+  border: 1px solid transparent;
 }
 
 .blog-btn:hover{
   color: var(--primary-color1);
-  background-color: var(--primary-color2);
-  border: none;
+  background-color: #E53935 !important;
+  border: 1px solid transparent;
+  opacity: 1 !important;
 }
 .blog-btn-2:hover {
   color: var(--primary-color3);
@@ -159,9 +168,10 @@ input[type="text"]:not(:placeholder-shown) + label {
 
 /* Upload Image Section */
 .upload-img {
-  border: 1px dotted var(--primary-color2);
+  border: 1.88px dotted #E53935;
   border-radius: 20px;
-  width: 184px;
+  width: 150px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -193,11 +203,11 @@ input[type="text"]:not(:placeholder-shown) + label {
   border: 2px solid var(--primary-color2);
 }
 
-/* Form Fields */
+
 .form-label {
-  color: var(--primary-color3);
+  color: #171718 !important;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 21px;
 }
 
@@ -242,6 +252,17 @@ h5 {
 .icon-4 {
   margin-top: 155px;
 }
+
+.blogbtn-border-radius{
+  border-radius: 7px !important;
+}
+input::placeholder{
+  color: #171718;
+  font-size: 12px !important;
+}
+textarea::placeholder{
+  color: #d9d9d9 !important; 
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .icon-1,
@@ -257,7 +278,7 @@ h5 {
   }
 
   .upload-img {
-    width: 100%;
+    width: 25%;
   }
 
   .card-text {
@@ -316,5 +337,11 @@ h5 {
     width: 30%;
     height: 35px;
     font-size: 11px;
+  }
+  .upload-img {
+    width: 50%;
+  }
+  .upload-img label{
+    font-size: 12px !important;
   }
 }
