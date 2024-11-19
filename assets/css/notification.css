@@ -115,7 +115,7 @@ a {
 
 @media (min-width:320px) and (max-width:767px) {
     .custom-search-input{
-        border: 2px solid red !important;
+        border: 1px solid red !important;
         width: 90%;
     }
     .custom-search-icon{

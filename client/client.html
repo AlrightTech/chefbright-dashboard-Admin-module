@@ -28,6 +28,10 @@
       top: 45%;
       right: 5px;
     }
+    .form-check-input:focus {
+  outline: none;
+  box-shadow: none; /* Removes the default focus ring */
+}
 
     .dropdown-toggle::after {
       display: none;
@@ -151,7 +155,37 @@
               </div>
             </li>
             
-            
+                     <!-- script for make client active started here  -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+        const currentPage = window.location.pathname;
+
+
+        if (currentPage.endsWith("/client/client.html")) {
+
+        const accountAccordion = document.getElementById("collapseAccount");
+        if (accountAccordion) {
+        accountAccordion.classList.add("show");
+        }
+
+
+        const chefItem = document.querySelector('li a[href="../cliebt/client.html"]');
+        if (chefItem) {
+        chefItem.parentElement.classList.add("active");
+        }
+
+
+        const chefRadioButton = document.getElementById("client");
+        if (chefRadioButton) {
+        chefRadioButton.checked = true;
+        }
+        }
+        });
+
+        </script>
+          <!-- script for make client active ended here  -->
+
             
             <li class="nav-item">
               <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
@@ -362,7 +396,7 @@
         <div class=" mt-2">
           <div class="container">
             <div class="row">
-              <h5 style="color: #171718;">Account Management</h5>
+              <h5 style="color: #171718; font-weight: 600;">Account Management</h5>
             </div>
           </div>
         </div>
@@ -383,6 +417,7 @@
                 </div>
               </div>
             </div>
+            
 
             <!-- <div class="filter-bg d-flex align-items-center justify-content-center">
               <img src="./assets/images/candle-2.png" style="width: 16px; height: 16px;">
@@ -427,19 +462,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -474,19 +517,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -522,19 +573,27 @@
                      
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -569,19 +628,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -616,19 +683,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                 
                   </tr>
                   <tr>
@@ -637,19 +712,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -684,19 +767,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -731,19 +822,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -778,19 +877,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -825,19 +932,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -873,19 +988,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -920,19 +1043,27 @@
                     
                     <td>
                       <div class="client-custom-dropdown">
-                        <div class="complete-dot me-2"></div>
-                        <button class="client-dropdown-button">Accept</button>
-                        <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
+                     <div class="complete-dot me-2"></div>
+                     <button class="client-dropdown-button">Accept</button>
+                     <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
-                        <div class="client-dropdown-content">
-                            <div class="client-dropdown-option" data-value="option1">Approved</div>
-                            <div class="client-dropdown-option" data-value="option2">Pending</div>
-                            <div class="client-dropdown-option" data-value="option2">Declined</div>
-                        </div>
-                    </div>
-                 
-                   <p class="client-selected-option" style="display: none;">Selected: None</p>
-                    </td>
+                     <div class="client-dropdown-content">
+                       <div class="complete-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option1">Approved</div>
+                       
+                         <hr style="margin: 0 !important;">
+                     
+                       <div class="complet-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Pending</div> 
+
+                       <hr style="margin: 0 !important;">
+                     
+                       <div class="complet3-dt me-2"></div>
+                       <div class="client-dropdown-option" data-value="option2">Declined</div> 
+                    
+                     </div>
+                      </div>
+                   </td>
                     <td> <div class="container mt-5">
                       <div class="dropdown">
                         <!-- Dropdown Header with three vertical lines -->
@@ -1018,8 +1149,8 @@
 
       <div class="container">
         <div class="row mt-5 mb-5">
-          <div class="col-2"></div>
-          <div class="col-2 d-flex justify-content-center align-items-center">
+          <div class="col-3"></div>
+          <div class="col-1 d-flex justify-content-center align-items-center">
             <div class="right-bg" style="background-color: transparent;">
               <img src="../recent-enquery/assets/images/left-iconn.png" style="width: 5px; height: 8px;">
             </div>
@@ -1038,12 +1169,12 @@
 
 
           </div>
-          <div class="col-2 d-flex justify-content-center align-items-center">
+          <div class="col-1 d-flex justify-content-center align-items-center">
             <div class="right-bg">
               <img src="../recent-enquery/assets/images/right-iconn.png" style="width: 5px; height: 8px;">
             </div>
           </div>
-          <div class="col-2"></div>
+          <div class="col-3"></div>
         </div>
       </div>
     </div>
