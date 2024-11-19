@@ -579,6 +579,11 @@ legend+* {
 ::-webkit-datetime-edit-year-field {
     padding: 0
 }
+.hr-heading hr{
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
 
 ::-webkit-inner-spin-button {
     height: auto
@@ -2398,6 +2403,7 @@ progress {
 
 .form-label {
     margin-bottom: .5rem
+    
 }
 
 .col-form-label {

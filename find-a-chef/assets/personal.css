@@ -23,6 +23,7 @@
 }
 
 .form-container {
+    /* background-color: #ffffff; */
     background-color: var(--primarybg-color2);
 
 }
@@ -30,7 +31,7 @@
 .personal-input {
     display: block;
     width: 100%;
-    padding: 7px 14px 6px 14px;
+    padding: .9rem 1.75rem;
     font-size: .8rem;
     color: #495057;
     background-color: #fff;
@@ -38,6 +39,12 @@
     border: 1px solid var(--primary-clr1);
     border-radius: 7px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.personal-input::placeholder{
+    color: #D9D9D9;
+}
+.custom-select{
+    color: #D9D9D9;
 }
 
 .personal-input11 {
@@ -236,6 +243,8 @@
 .pointer {
     cursor: pointer;
 }
+
+
 
 
 
