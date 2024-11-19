@@ -274,13 +274,31 @@ a {
 
 }
 
+.complete-dt{
+    width: 6.5px;
+    height: 6.5px;
+    background: #42F18B;
+    border-radius: 50px;
+    position: relative;
+    top: 25px;
+    left: 5px;
+}
+.complet-dt {
+    width: 6.5px;
+    height: 6.5px;
+    background: #F1DD42;
+    border-radius: 50px;
+    position: relative;
+    top: 25px;
+    left: 5px;
+}
+
 .decline-dot {
     background: #E53935;
     width: 6.5px;
     height: 6.5px;
     border-radius: 50px;
 }
-
 
 .tb-nm {
     color: #6E727A;
@@ -295,7 +313,7 @@ a {
 .tb-nm-bg {
     width: 30px;
     height: 25px;
-    /* padding: 2.34px 9.36px 2.34px 9.36px; */
+     padding: 2.34px 9.36px 2.34px 9.36px; 
     border-radius: 2.34px;
     background: #E53935;
 
@@ -308,7 +326,7 @@ a {
     background: #FFFFFF;
     width: 30px;
     height: 25px;
-    /* padding: 8.55px 12.83px 8.55px 12.83px; */
+    / padding: 8.55px 12.83px 8.55px 12.83px; /
     border-radius: 2.14px;
 
 }

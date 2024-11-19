@@ -89,6 +89,15 @@ a {
 .client-dropdown-option:hover {
   background-color: #f1f1f1;
 }
+.client-dropdown-option ::before {
+  width: 6.5px;
+  height: 6.5px;
+  background: #42f18b;
+  border-radius: 50px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
 
 /* Show the dropdown on button click */
 .client-custom-dropdown.active .client-dropdown-content {
