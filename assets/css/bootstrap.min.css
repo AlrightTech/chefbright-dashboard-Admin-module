@@ -583,7 +583,20 @@ legend+* {
     margin-bottom: -5px;
     margin-top: -5px;
 }
+.client-dropdown-option {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items */
+    padding: 8px 12px; /* Add padding around the item */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+  }
 
+  .client-dropdown-option .circle {
+    height: 8px; /* Size of the circle */
+    width: 8px;
+    border-radius: 50%; /* Make it circular */
+    background-color: #000; /* Black circle */
+    margin-right: 8px; /* Space between circle and text */
+  }
 
 ::-webkit-inner-spin-button {
     height: auto
