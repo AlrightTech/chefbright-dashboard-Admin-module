@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="../blog-2/assets/blogs.css" />
   <link rel="stylesheet" href="../blog-2/assets/dropdown.css">
   <link rel="stylesheet" href="../assets/css/notification.css">
+  <link rel="stylesheet" href="../client/assets/css/client.css" />
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link rel="stylesheet" href="../assets/css/demo.css" />
@@ -51,7 +52,7 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
           <a href="../index.html" class="logo">
-            <img src="../assets/img/kaiadmin/Frame 1597882065.png" alt="navbar brand" class="navbar-brand mt-3" />
+            <img src="../assets/img/kaiadmin/Frame 1597882065.png" alt="navbar brand" class="navbar-brand mt-3 ms-md-0 ms-4" />
           </a>
           <div class="nav-toggle">
             <button class="btn btn-toggle toggle-sidebar">
@@ -83,52 +84,72 @@
               </a>
             </li> -->
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
-                <p class="mb-0">Account Management</p>
-              </a>
+            <li class="nav-item">
+              <div class="accordion " id="accountAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header accordion_header" id="headingAccount">
+                    <button 
+                      class="accordion-button collapsed d-flex align-items-center rounded-4 " 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapseAccount" 
+                      aria-expanded="false" 
+                      aria-controls="collapseAccount"
+                    >
+                      <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
+                      <span class="mb-0">Account Management</span>
+                    </button>
+                  </h2>
             
-              <ul class="dropdown-menu" aria-labelledby="accountDropdown" style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
-                <li onclick="location.href='../client/client.html'">
-                  <a href="../client/client.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-                   <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
-                    <label class="form-check-label" for="client">Client</label>
+                  <div 
+                    id="collapseAccount" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="headingAccount" 
+                    data-bs-parent="#accountAccordion"
+                  >
+                    <div class="accordion-body" style="background: transparent; color: white !important; border: none;">
+                      <ul class="list-unstyled">
+                        <li onclick="location.href='../client/client.html'">
+                          <a href="../client/client.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
+                              <label class="form-check-label text-white" for="client">Client</label>
+                            </div>
+                          </a>
+                        </li>
+                        <li onclick="location.href='../chef/chef.html'">
+                          <a href="../chef/chef.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
+                              <label class="form-check-label text-white" for="chef">Chef</label>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </a>
-                </li>
-                <li  onclick="location.href='../chef/chef.html'">
-                  <a href="../chef/chef.html">
-                  <div class="form-check dropdown-item sidebardropdown-menu">
-
-                    <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
-                    <label class="form-check-label" for="chef">Chef</label>
-                  
-                  </div>
-                </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </li>
             
             
             
             <li class="nav-item">
               <a href="../new-queries/queries2.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+                <img class="pe-3" src="/assets/img/sidebar-links/enquiery.svg" alt="">
                 <p>Enquiry Management</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="../find-a-chef/" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+                <img class="pe-3" src="/assets/img/sidebar-links/find-chef.svg" alt="">
                 <p>Find a Chef</p>
               </a>
             </li>
             <li class="nav-item active" >
               <a href="../blogs/blog.html" class="collapsed" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
-                <p>Creating Blog Post</p>
+                <img class="pe-3" src="/assets/img/sidebar-links/create-blog.svg" alt="">
+                <p>Create Blog Post</p>
               </a>
             </li>
             <!-- <li class="nav-item">
@@ -196,7 +217,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <img src="../assets/img/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
-              <span class="notification">4</span>
+              <span class="notification">11</span>
               <!-- <i class="fa fa-bell"></i> -->
              
             </a>
@@ -324,34 +345,34 @@
     <section >
         <div class="container-fluid  my-3" id="parent" >
           <div class="row">
-            <div class="cards">
+            <div class="cards mt-3">
               <div class="card-body">
-                <h1 class="card-title">Create Blog Post</h1>
+                <h1 class="card-title">Update Blog Post</h1>
   
-                <!-- Blog Post Form -->
-                <form class="px-0 px-sm-4">
-                  <!-- Heading Field -->
+                
+                <form class="px-3 py-4 px-md-4  background-white ">
+                  
                   <div class="mb-3">
                     <label for="heading" class="form-label">Heading*</label>
                     <input type="text" class="form-control form-height"
                     id="heading" placeholder="Flavor Fusion" required  />
                   </div>
   
-                  <!-- Tags Field -->
+                 
                   <div class="mb-3">
-                    <label for="tags" class="form-label">Tag (any 5)</label>
+                    <label for="tags" class="form-label ">Tag <span style="color: #D9D9D9;">(any 5)</span></label>
                     <input
                       type="text"
-                      class="form-control form-height"
+                      class="form-control form-height tagss"
                       id="tags"
                       name="tags"
                       data-role="tagsinput"
                       placeholder="e.g. Breakfast, Chicken"
-                      style="border: 1px solid rgba(229, 57, 53, 1);"
+                     
                     />
                   </div>
   
-                  <!-- Description Field -->
+                  
                   <div class="mb-3">
                     <label for="description" class="form-label"
                       >Description</label
@@ -366,7 +387,7 @@
                     ></textarea>
                   </div>
   
-                  <!-- Upload Section -->
+                  
                   <div class="mb-3 upload-img">
                     <img src="./assets/Images/camra.svg" alt="Upload Icon" />
                     <label for="upload" class="form-label"
@@ -384,7 +405,7 @@
                     />
                   </div>
   
-                  <!-- Preview Section (Initially Hidden) -->
+                  
                   <div class="view" id="upload-view" style="display: none">
                     <img
                       id="preview-image"
@@ -406,12 +427,12 @@
                     </div>
                   </div>
   
-                  <!-- Submit Buttons -->
+                  
                   <div class="d-flex justify-content-end">
-                    <button type="button" class="btn me-4 blog-btn form-cancel">
+                    <button type="button" class="btn me-sm-4 me-2 blog-btn form-cancel blogbtn-border-radius" >
                       Cancel
                     </button>
-                    <button type="button" class="btn blog-btn-2 form-save">
+                    <button type="button" class="btn ms-sm-4 ms-2 blog-btn-2 form-save blogbtn-border-radius">
                       Update
                     </button>
                   </div>
@@ -508,7 +529,7 @@
             dropdownList.style.display = isVisible ? 'none' : 'block';
         });
 
-        // Select a country code from the dropdown
+        
         dropdownList.addEventListener('click', (e) => {
             const item = e.target.closest('.dropdown-item');
             if (item) {
@@ -526,6 +547,20 @@
         });
     });
 
+
+    document.addEventListener('DOMContentLoaded', () => {
+  
+  const storedData = JSON.parse(localStorage.getItem('editBlogData'));
+
+  if (storedData) {
+    
+    document.getElementById('heading').value = storedData.heading;
+    document.getElementById('description').value = storedData.description;
+
+   
+    localStorage.removeItem('editBlogData');
+  }
+});
 
 
 

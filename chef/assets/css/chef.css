@@ -340,3 +340,8 @@ a {
         top: 153px;
     }
 }
+.table > tbody > tr > td, .table > tbody > tr > th {
+    padding: 5px 5px !important;
+    font-weight: 500;
+    font-family: "Avenir LT Std";
+  }

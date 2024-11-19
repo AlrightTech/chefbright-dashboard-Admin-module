@@ -4188,7 +4188,7 @@ fieldset:disabled .btn {
 .dropdown-item {
     display: block;
     width: 100%;
-    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    /* padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x); */
     clear: both;
     font-weight: 400;
     color: var(--bs-dropdown-link-color);
@@ -5287,11 +5287,13 @@ fieldset:disabled .btn {
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
+    filter: invert(86%) brightness(92%);
     content: "";
     background-image: var(--bs-accordion-btn-icon);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition)
+    
 }
 
 @media (prefers-reduced-motion:reduce) {

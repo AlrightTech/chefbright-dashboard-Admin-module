@@ -17,22 +17,23 @@
     }
 
     .custom-dropdown-icon {
-      width: px;
-      height: 12px;
-      background-image: url('./assets/images/table-dd-icon.png') !important;
+       width: 10px;
+      height: 12px; 
+      background-image: url('/assets/img/kaiadmin/drop-down-icon.svg') !important;
       background-size: contain;
       background-repeat: no-repeat;
-      margin-left: 5px;
+      
       position: absolute;
-      top: 45%;
-      right: 5px;
+      top: 40%;
+      right: 10px;
     }
 
     .dropdown-toggle::after {
       display: none;
-    }
+    }   
   </style>
   <script>
+    
     WebFont.load({
       google: { families: ["Public Sans:300,400,500,600,700"] },
       custom: {
@@ -61,10 +62,11 @@
   <link rel="stylesheet" href="blog-2/assets/dropdown.css">
   <link rel="stylesheet" href="Admin-modals/assets/Admin-modals.css">
   <link rel="stylesheet" href="assets/css/notification.css">
+  <link rel="stylesheet" href="../client/assets/css/client.css" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
@@ -81,7 +83,7 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
           <a href="index.html" class="logo">
-            <img src="assets/img/kaiadmin/Frame 1597882065.png" alt="navbar brand" class="navbar-brand mt-3" />
+            <img src="assets/img/kaiadmin/Frame 1597882065.png" alt="navbar brand" class="navbar-brand mt-3 ms-4 logo-negative-left" >
           </a>
           <div class="nav-toggle">
             <button class="btn btn-toggle toggle-sidebar">
@@ -106,53 +108,71 @@
                 <p>Dashboard</p>
               </a>
             </li>
-
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle d-flex align-items-center  text-white" href="#" id="accountDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
-                <p class="mb-0">Account Management</p>
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="accountDropdown"
-                style="background: linear-gradient(180deg, #3E3D45 0%, #202020 100%); color: white !important; border: none;">
-                <li onclick="location.href='client/client.html'">
-                  <a href="client/client.html">
-                    <div class="form-check dropdown-item sidebardropdown-menu">
-                      <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
-                      <label class="form-check-label" for="client">Client</label>
-                  </a>
-        </div>
-        </li>
-        <li onclick="location.href='chef/chef.html'">
-          <a href="chef/chef.html">
-            <div class="form-check dropdown-item sidebardropdown-menu">
-              <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
-              <label class="form-check-label" for="chef">Chef</label>
-            </div>
-          </a>
-        </li>
-        </ul>
-        </li>
-
+            <li class="nav-item">
+              <div class="accordion " id="accountAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header accordion_header" id="headingAccount">
+                    <button 
+                      class="accordion-button collapsed d-flex align-items-center rounded-4 " 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapseAccount" 
+                      aria-expanded="false" 
+                      aria-controls="collapseAccount"
+                    >
+                      <img class="pe-3" src="/assets/img/sidebar-links/_Group_.png" alt="">
+                      <span class="mb-0">Account Management</span>
+                    </button>
+                  </h2>
+            
+                  <div 
+                    id="collapseAccount" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="headingAccount" 
+                    data-bs-parent="#accountAccordion"
+                  >
+                    <div class="accordion-body" style="background: transparent; color: white !important; border: none;">
+                      <ul class="list-unstyled">
+                        <li onclick="location.href='../client/client.html'">
+                          <a href="../client/client.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="client" value="client">
+                              <label class="form-check-label text-white" for="client">Client</label>
+                            </div>
+                          </a>
+                        </li>
+                        <li onclick="location.href='../chef/chef.html'">
+                          <a href="../chef/chef.html">
+                            <div class="form-check dropdown-item sidebardropdown-menu">
+                              <input class="form-check-input" type="radio" name="accountType" id="chef" value="chef">
+                              <label class="form-check-label text-white" for="chef">Chef</label>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
 
 
         <li class="nav-item">
           <a href="new-queries/queries2.html" class="collapsed" aria-expanded="false">
-            <img class="pe-3" src="/assets/img/sidebar-links/gallery.png" alt="">
+            <img class="pe-3" src="/assets/img/sidebar-links/enquiery.svg" alt="">
             <p>Enquiry Management</p>
           </a>
         </li>
         <li class="nav-item ">
           <a href="find-a-chef/find-chef.html" class="collapsed" aria-expanded="false">
-            <img class="pe-3" src="/assets/img/sidebar-links/task-square.png" alt="">
+            <img class="pe-3" src="/assets/img/sidebar-links/find-chef.svg" alt="">
             <p>Find a Chef</p>
           </a>
         </li>
         <li class="nav-item ">
           <a href="blogs/blog.html" class="collapsed" aria-expanded="false">
-            <img class="pe-3" src="/assets/img/sidebar-links/document.png" alt="">
-            <p>Creating Blog Post</p>
+            <img class="pe-3" src="/assets/img/sidebar-links/create-blog.svg" alt="">
+            <p>Create Blog Post</p>
           </a>
         </li>
         </ul>
@@ -194,27 +214,28 @@
               <p class="  m-0 welcome-h mt-2">Welcome</p>
               <h5 class="text-dark dashboard-h">My Dashboard</h5>
             </div>
-          </nav>
+        </nav>
 
-          <!-- notification icon and menu -->
-          <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
+        <!-- notification icon and menu -->
+        <ul class="navbar-nav topbar-nav ms-md-auto d-flex justify-content-between align-items-center">
+          
+          <li class="nav-item topbar-icon dropdown hidden-caret">
+            <img src="" alt="">
+            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="assets/img/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
+              <span class="notification">11</span>
+              <!-- <i class="fa fa-bell"></i> -->
+             
+            </a>
+            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+              <li>
+                <div class="dropdown-title d-flex justify-content-between align-items-start mb-0 border-0">
+                  <!-- left -->
+                  <div>
+                    <h5 class="fst-italic fw-lighter">Today</h5>
+                  </div>
 
-            <li class="nav-item topbar-icon dropdown hidden-caret">
-              <img src="" alt="">
-              <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img src="assets/img/notification.png" alt="notification icon" class="img-fluid mb-3 w-50">
-                <span class="notification">4</span>
-                <!-- <i class="fa fa-bell"></i> -->
-
-              </a>
-              <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
-                <li>
-                  <div class="dropdown-title d-flex justify-content-between align-items-start mb-0 border-0">
-                    <!-- left -->
-                    <div>
-                      <h5 class="fst-italic fw-lighter">Today</h5>
-                    </div>
 
                     <!-- right -->
                     <div style="color: #6E727A;" class="d-flex justify-content-between align-items-center">
@@ -295,7 +316,7 @@
 
                 </span>
               </a>
-              <ul class="dropdown-menu dropdown-user animated fadeIn">
+              <ul class="dropdown-menu dropdown-user animated fadeIn p-4">
                 <div class="dropdown-user-scroll scrollbar-outer">
                   <li>
                     <div class="user-box">
@@ -317,6 +338,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Account Setting</a>
                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item py-2" href="../chefbright-dashboard-Admin-module/login/login.html">LogIn another account</a>
                     <a class="dropdown-item" href="#">Logout</a>
                   </li>
                 </div>
@@ -344,7 +366,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Registered People</p>
                 </div>
               </div>
             </div>
@@ -361,7 +383,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Registered Chef</p>
                 </div>
               </div>
             </div>
@@ -378,7 +400,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Completed Enquiries</p>
                 </div>
               </div>
             </div>
@@ -395,7 +417,7 @@
                 </div>
                 <div class="card-body">
                   <div class="border-line mt-2"></div>
-                  <p class="enq-txt mt-2 pb-3 px-3">Total Enquiries</p>
+                  <p class="enq-txt mt-2 pb-3 px-3">Pending Enquiries</p>
                 </div>
               </div>
             </div>
@@ -408,14 +430,15 @@
       <div class="container mt-1" style="position: relative;">
         <div class="search-container px-3 d-flex justify-content-between align-items-center">
           <div class="row ">
-            <div class="col-lg-6">
+            <div class="col-lg-6 ">
               <div class="custom-search-container">
-                <input type="text" class="form-control custom-search-input" placeholder="Search" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                <input type="text" class="form-control custom-search-input" width="11" height="11" placeholder="Search" aria-label="Search">
+                <img src="/assets/img/search-bar-icon.png" alt="" class="bi bi-search custom-search-icon">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                   class="bi bi-search custom-search-icon" viewBox="0 0 16 16">
                   <path
                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
+                </svg> -->
               </div>
             </div>
           </div>
@@ -456,8 +479,10 @@
             <table class="table table-custom table-hover ">
               <thead>
                 <tr>
-                  <th class="ps-4" >User Name</th>
-                  <th>Description</th>
+                  <th class="ps-4">User Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+
                   <th>Location</th>
                   <th>Event </th>
                   <th>Date</th>
@@ -465,13 +490,15 @@
                   <th>Event Type</th>
                   <th>Member</th>
                   <th>Status</th>
+                  <th>Action</th>
 
                 </tr>
               </thead>
-              <tbody class="px-4">
+              <tbody class="ps-4">
                 <tr>
                   <td class="ps-4">Bennie Kulas</td>
-                  <td>Some optional description ab...</td>
+                  <td>Bennie.Kulas@gmail.com</td>
+                  <td>1-501-633-9479</td>
                   <td>Columbia</td>
                   <td>Birthday Party </td>
                   <td>26-01-25</td>
@@ -504,7 +531,34 @@
 
 
 
-
+                  
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
                 </tr>
                 <tr>
                   <td class="ps-4">Melody Grimes</td>
@@ -517,6 +571,7 @@
                   <td>3 Adults, 4 children</td>
                   <td>
                     <div class="client-custom-dropdown">
+
                    <div class="complete-dot me-2"></div>
                    <button class="client-dropdown-button">Accept</button>
                    <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
@@ -536,11 +591,39 @@
                      <div class="client-dropdown-option" data-value="option2">Declined</div> 
                   
                    </div>
+         
                     </div>
                  </td>
 
 
-
+                   
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" >
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
 
                 </tr>
                 <tr>
@@ -901,7 +984,39 @@
                   
                    </div>
                     </div>
+
                  </td>
+
+
+
+                  
+                  <td> <div class="container mt-5">
+                    <div class="dropdown">
+                      <!-- Dropdown Header with three vertical lines -->
+                      <a class="dropdown-toggle dot-dropdown-toggle-icon action-icon" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                
+                      <!-- Dropdown Menu -->
+                      <ul class="dropdown-menu dot-custom-dropdown" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="edit" >
+                          <label for="edit">Edit</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="delete">
+                          <label for="delete">Delete</label>
+                        </li>
+                        <li class="dropdown-item dot-dropdown-item">
+                          <input class="form-check-input dot-form-check-input" type="radio" name="filterOption" id="view">
+                          <label for="view">View</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
 
                 </tr>
                 <!-- Add more rows here following the same pattern -->
@@ -911,78 +1026,57 @@
         </div>
       </div>
 
-      <!--################### modal for edit started fro here ###############-->\
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 150%;">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex gap-5 modals-inputs">
-                <div class="">
-                  <label for="fname">First Name *</label><br>
-                  <input type="text" name="fname" id="name" placeholder="Bennie ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="sname">Surname*</label><br>
-                  <input type="text" name="sname" id="sname" placeholder=" Kulas ">
-                </div>
-              </div>
-              <div class="d-flex gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Event">Event</label><br>
-                  <input type="text" name="Event" id="Event" placeholder="Birthday ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="EventType">Event Type</label><br>
-                  <input type="text" name="Event Type" id="EventType" placeholder=" Single day ">
-                </div>
-              </div>
-              <div class="d-flex gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Service">Service</label><br>
-                  <input type="text" name="Service" id="Service" placeholder="Lunch ">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="Date">Date</label><br>
-                  <input type="text" name="Date" id="Date" placeholder=" 26-01-2024 ">
-                </div>
-              </div>
-              <div class="d-flex  gap-5 modals-inputs pt-2">
-                <div class="">
-                  <label for="Location">Location</label><br>
-                  <input type="text" name="Location" id="Location" placeholder="Canada">
-                </div>
-                <div class="ps-5 ms-5">
-                  <label for="Members">Members</label><br>
-                  <input type="text" name="Members" id="Members" placeholder=" 3 Adults , 2 Children ">
-                </div>
-              </div>
-              <div class=" modals-input-descrip pt-2 ">
-                <label for="Description">Description</label><br>
-                <input type="text" name="Description" id="Description" placeholder=" Type here.."
-                  style="padding-bottom: 50px !important;">
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn cancel-butn me-5" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn  edit-butn">Edit</button>
-            </div>
+         <!--################### modal for edit started fro here ###############-->
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Responsive form layout -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="fname">First Name *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="fname" id="name" placeholder="Bennie" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="sname">Surname *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="sname" id="sname" placeholder="Kulas" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Email">Email</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Email" id="Email" placeholder="email@example.com" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Phone No">Phone No *</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Phone No" id="Phone No" placeholder="+333 333" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country">Country</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country" id="Country" placeholder="Canada" class="form-control">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="Country code">Country Code</label>
+            <input type="text" style="border: 1px solid #E53935 !important;" name="Country code" id="Country code" placeholder="45634" class="form-control">
           </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn cancel-butn me-2" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn edit-butn">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--################### modal for edit ended fro here ###############-->
 
 
       <!-- pagination -->
 
-  <!-- pagination -->
 
-  <!-- pagination -->
 
   <div class="container">
     <div class="row mt-5 mb-5">
@@ -1005,10 +1099,15 @@
           style="background-color: transparent;">12</div>
 
 
+
       </div>
       <div class="col-1 d-flex justify-content-center align-items-center">
         <div class="right-bg">
           <img src="recent-enquery/assets/images/right-iconn.png" style="width: 5px; height: 8px;">
+
+          </div>
+         
+
         </div>
       </div>
       <div class="col-3"></div>
@@ -1048,10 +1147,10 @@
         document.querySelectorAll('.client-custom-dropdown').forEach(dropdown => {
           const button = dropdown.querySelector('.client-dropdown-button');
           const options = dropdown.querySelectorAll('.client-dropdown-option');
-          const selectedOptionDisplay = dropdown.nextElementSibling; // Selects the corresponding <p> element
-          const completeDot = dropdown.querySelector('.complete-dot'); // Select the complete dot
+          const selectedOptionDisplay = dropdown.nextElementSibling; 
+          const completeDot = dropdown.querySelector('.complete-dot'); 
 
-          // Toggle dropdown visibility when the button is clicked
+        
           button.addEventListener('click', function () {
             dropdown.classList.toggle('active');
           });
@@ -1060,28 +1159,28 @@
           options.forEach(option => {
             option.addEventListener('click', function () {
               const selectedText = this.textContent;
-              button.textContent = selectedText; // Update button text
-              selectedOptionDisplay.textContent = `Selected: ${selectedText}`; // Update display text
+              button.textContent = selectedText; 
+              selectedOptionDisplay.textContent = `Selected: ${selectedText}`; 
 
-              // Update complete dot color based on selection
-              completeDot.classList.remove('approved', 'pending', 'declined'); // Remove previous classes
+           
+              completeDot.classList.remove('approved', 'pending', 'declined'); 
               switch (this.dataset.value) {
-                case 'option1': // Approved
+                case 'option1': 
                   completeDot.classList.add('approved');
                   break;
-                case 'option2': // Pending
+                case 'option2': 
                   completeDot.classList.add('pending');
                   break;
-                case 'option3': // Declined
+                case 'option3': 
                   completeDot.classList.add('declined');
                   break;
               }
 
-              dropdown.classList.remove('active'); // Close the dropdown
+              dropdown.classList.remove('active'); 
             });
           });
 
-          // Optional: Close dropdown if clicking outside of it
+          
           document.addEventListener('click', function (event) {
             if (!dropdown.contains(event.target) && dropdown.classList.contains('active')) {
               dropdown.classList.remove('active');
@@ -1096,68 +1195,88 @@
       <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script> -->
-      <script src="assets/js/core/jquery-3.7.1.min.js"></script>
-      <script src="assets/js/core/popper.min.js"></script>
-      <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
 
-      <!-- jQuery Scrollbar -->
-      <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
-      <!-- Chart JS -->
-      <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
 
-      <!-- jQuery Sparkline -->
-      <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
 
-      <!-- Chart Circle -->
-      <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
 
-      <!-- Datatables -->
-      <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
 
-      <!-- Bootstrap Notify -->
-      <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
-      <!-- jQuery Vector Maps -->
-      <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-      <script src="assets/js/plugin/jsvectormap/world.js"></script>
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
 
-      <!-- Sweet Alert -->
-      <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
 
-      <!-- Kaiadmin JS -->
-      <script src="assets/js/kaiadmin.min.js"></script>
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
 
-      <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-      <script src="assets/js/setting-demo.js"></script>
-      <script>
-        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#177dff",
-          fillColor: "rgba(23, 125, 255, 0.14)",
-        });
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="assets/js/setting-demo.js"></script>
+    <script>
+      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#177dff",
+        fillColor: "rgba(23, 125, 255, 0.14)",
+      });
 
-        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#f3545d",
-          fillColor: "rgba(243, 84, 93, .14)",
-        });
+      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#f3545d",
+        fillColor: "rgba(243, 84, 93, .14)",
+      });
 
-        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
-          type: "line",
-          height: "70",
-          width: "100%",
-          lineWidth: "2",
-          lineColor: "#ffa534",
-          fillColor: "rgba(255, 165, 52, .14)",
-        });
-      </script>
+      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#ffa534",
+        fillColor: "rgba(255, 165, 52, .14)",
+      });
+
+       // Function to toggle the dropdown visibility
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Function to close the dropdown
+    function closeDropdown() {
+      document.getElementById('dropdownMenu').style.display = 'none';
+    }
+
+    // Close dropdown when clicking outside of it
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('dropdownMenu');
+      const menu = document.querySelector('.three-dot-menu');
+      if (!dropdown.contains(event.target) && !menu.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+    </script>
 </body>
 
 </html>

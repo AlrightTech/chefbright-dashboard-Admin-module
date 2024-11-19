@@ -106,7 +106,7 @@ a {
 
 .custom-search-input {
     border: 1px solid #E53935 !important;
-    background: #FFFFFF;
+    background: rgb(241, 241, 241);
     padding: 4.3px 16.61px 4px 11.61px;
     gap: 0px;
     border-radius: 10px;
@@ -115,7 +115,7 @@ a {
 
 @media (min-width:320px) and (max-width:767px) {
     .custom-search-input{
-        border: 2px solid red !important;
+        border: 1px solid red !important;
         width: 90%;
     }
     .custom-search-icon{
@@ -144,6 +144,8 @@ a {
     transform: translateY(-50%);
     color: #757575;
     pointer-events: none;
+    width: 11px;
+    height: 11px;
 }
 
 .table-custom th {
