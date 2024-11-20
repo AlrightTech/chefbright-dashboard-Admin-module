@@ -323,3 +323,56 @@ a {
     width: 215px;
   }
 }
+
+
+.table-custom th,
+  .table-custom td {
+    min-width: 150px; 
+    padding: 10px;
+  }
+  
+  .table-custom th:first-child,
+  .table-custom td:first-child {
+    min-width: 115px; 
+  }
+  
+  .table-custom th:nth-child(2),
+  .table-custom td:nth-child(2) {
+    min-width: 203px; 
+  }
+
+  .table-custom th:nth-child(3),
+  .table-custom td:nth-child(3) {
+    min-width: 122px; 
+  }
+
+  .table-custom th:nth-child(4),
+  .table-custom td:nth-child(4) {
+    min-width: 122px;
+  }
+
+
+  .table-custom th:nth-child(5),
+  .table-custom td:nth-child(5) {
+    min-width: 102px; 
+  }
+  .table-custom th:nth-child(6),
+  .table-custom td:nth-child(6) {
+    min-width: 120px; 
+  }
+
+  .table-custom th:nth-child(7),
+  .table-custom td:nth-child(7) {
+    min-width: 1px; 
+  }
+  
+  .table-custom th:nth-child(9),
+  .table-custom td:nth-child(9),
+  .table-custom th:last-child,
+  .table-custom td:last-child {
+    min-width: 90px; 
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
