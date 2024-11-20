@@ -513,7 +513,9 @@
                         <hr class="m-0">
                       </div>
                     </div>
-                    
+
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
                   <td> <div class="container mt-5">
                     <div class="dropdown">
                       <!-- Dropdown Header with three vertical lines -->
@@ -550,9 +552,22 @@
                   <td>13302</td>
                   <td>
                     <div class="client-custom-dropdown">
+                      <div class="complete-dot me-2"></div>
+                      <button class="client-dropdown-button">Accept</button>
+                      <div class="custom-dropdown-icon"></div> <!-- Custom icon -->
 
+                      <div class="client-dropdown-content">
+                        <div class="client-dropdown-option" data-value="option1">Approved</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Pending</div>
+                        <hr class="m-0">
+                        <div class="client-dropdown-option" data-value="option2">Declined</div>
+                        <hr class="m-0">
+                      </div>
+                    </div>
 
-                      
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
                   <td> <div class="container mt-5">
                     <div class="dropdown">
                       <!-- Dropdown Header with three vertical lines -->
@@ -603,21 +618,9 @@
                         <hr class="m-0">
                       </div>
                     </div>
-                 </td>
 
-
-
-
-                </tr>
-
-             
-
-
-                 </td>
-
-
-
-                  
+                    <p class="client-selected-option" style="display: none;">Selected: None</p>
+                  </td>
                   <td> <div class="container mt-5">
                     <div class="dropdown">
                       <!-- Dropdown Header with three vertical lines -->
@@ -645,7 +648,6 @@
                     </div>
                   </div>
                 </td>
-
                 </tr>
                 <!-- Add more rows here following the same pattern -->
               </tbody>
@@ -702,7 +704,7 @@
         <!--################### modal for edit ended fro here ###############-->
 
 
-  
+      <!-- pagination -->
 
       <div class="container">
         <div class="row mt-5 mb-5">
@@ -725,7 +727,15 @@
               style="background-color: transparent;">12</div>
 
 
-
+          </div>
+          <div class="col-1 d-flex justify-content-center align-items-center">
+            <div class="right-bg">
+              <img src="recent-enquery/assets/images/right-iconn.png" style="width: 5px; height: 8px;">
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
 
 
 
